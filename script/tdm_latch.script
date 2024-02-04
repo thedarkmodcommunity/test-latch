@@ -76,23 +76,23 @@ boolean tdm_latch::checkTolerance()
     vector AngToPlayer = sys.VecToAngles( $player1.getOrigin() - getOrigin() );
 
     //check whether the player is standing within the latch tolerance
-    return ( abs(anglemod180(AngToPlayer - LatchNormal)) < LATCH_TOLERANCE )
+    return ( sys.vecLength( anglemod180(AngToPlayer - LatchNormal)  ) < LATCH_TOLERANCE );
 }
 
 
 void tdm_latch::frobResponse()
 {
-	if( isMoving() || isRotating() )
-		return;
+    if( isMoving() || isRotating() )
+        return;
 
-	latchState = -latchState;
+    latchState = !latchState;
 
-	time( getFloatKey("move_time") );
-	moveToPos( getVectorKey("origin") + (1 - latchState) * getVectorKey("translate") );
-	rotateOnce( (2*latchState - 1) * getVectorKey("rotate") );
+    time( getFloatKey("move_time") );
+    moveToPos( getVectorKey("origin") + latchState * getVectorKey("translate") );
+    rotateOnce( (2*latchState - 1) * getVectorKey("rotate") );
 
-	sys.wait( getFloatKey("move_time") );
-	
-	door.setFrobable( latchState );
-	door.setKey( "ai_should_not_handle", !latchState );
+    sys.wait( getFloatKey("move_time") );
+    
+    door.setFrobable( latchState );
+    door.setKey( "ai_should_not_handle", !latchState );
 }
