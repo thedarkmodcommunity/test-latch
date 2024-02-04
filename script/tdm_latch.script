@@ -41,11 +41,11 @@ void tdm_latch::frobabilityLoop()
     while(1)
     {
         sys.wait(0.2);
-        if( sys.vecLength($player1.getOrigin() - latchPos )  < TRACE_LENGTH )
+        if( sys.vecLength($player1.getOrigin() - latchPos ) > TRACE_LENGTH )
             continue;    //skip if the player is too far away
 
         //player either has to be on the right side of the door or be able to reach through to the latch for it to be frobable
-        setFrobable( checkTolerance || checkObstruction );
+        setFrobable( checkTolerance() || checkObstruction() );
     }
 }
 
@@ -73,7 +73,7 @@ boolean tdm_latch::checkObstruction()
 boolean tdm_latch::checkTolerance()
 {
     vector LatchNormal = getVectorKey( "latch_normal" );
-    vector AngToPlayer = sys.vecToAngles( $player1.getOrigin() - getOrigin() );
+    vector AngToPlayer = sys.VecToAngles( $player1.getOrigin() - getOrigin() );
 
     //check whether the player is standing within the latch tolerance
     return ( abs(anglemod180(AngToPlayer - LatchNormal)) < LATCH_TOLERANCE )

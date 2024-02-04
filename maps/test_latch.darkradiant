@@ -2,16 +2,13 @@ DarkRadiant Map Information File Version 2
 {
 	MapProperties
 	{
-		KeyValue { "EditTimeInSeconds" "264" } 
-		KeyValue { "LastCameraAngle" "-11.4 88.2 0" } 
-		KeyValue { "LastCameraPosition" "-321.877 461.357 -33.6615" } 
+		KeyValue { "EditTimeInSeconds" "508" } 
+		KeyValue { "LastCameraAngle" "-15.6 73 0" } 
+		KeyValue { "LastCameraPosition" "-368.162 472.558 -20.9847" } 
 	}
 	MapEditTimings
 	{
-		TotalSecondsEdited { 264 }
-	}
-	SelectionSets
-	{
+		TotalSecondsEdited { 508 }
 	}
 	SelectionGroups
 	{
@@ -228,15 +225,6 @@ DarkRadiant Map Information File Version 2
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
-		Node { 0 } // entity (atdm_target_callscriptfunction_1)
-		Node { 0 } // entity (func_static_1)
-		Node { 0 } // brush (Brush)
-		Node { 0 } // brush (Brush)
-		Node { 0 } // brush (Brush)
-		Node { 0 } // entity (trigger_once_1)
-		Node { 0 } // brush (Brush)
-		Node { 0 } // entity (atdm_target_set_frobable_1)
-		Node { 0 } // brush (Brush)
 		Node { 0 } // entity (func_static_3)
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
@@ -244,5 +232,12 @@ DarkRadiant Map Information File Version 2
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
+		Node { 0 } // entity (func_static_1)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+	}
+	SelectionSets
+	{
 	}
 }

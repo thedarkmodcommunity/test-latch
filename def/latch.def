@@ -1,0 +1,6 @@
+entityDef atdm:latch
+{
+	"inherit"         "func_mover" 
+	
+    
+}
