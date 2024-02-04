@@ -1790,6 +1790,8 @@ brushDef3
 "latch_normal" "0 -90 0"
 "trace_radius" "90 0 0"
 "target0" "atdm_mover_door_1"
+"frob_action_script" "frobResponse"
+"move_time" "1"
 // primitive 0
 {
 brushDef3
