@@ -1,0 +1,303 @@
+//All assets in this pack are made by wellingtoncrab and released under cc0 license// 
+ 
+textures/darkmod/_proto/georges
+{
+
+	qer_editorimage		textures/darkmod/_proto/georges_ed
+    diffusemap			textures/darkmod/_proto/georges
+
+	description "A nice texture!"
+}
+
+textures/darkmod/_proto/georges_noire
+{
+	
+	qer_editorimage		textures/darkmod/_proto/georges_noire_ed
+    diffusemap			textures/darkmod/_proto/georges_noire
+	
+	description "A nice texture in black!"
+}
+
+textures/darkmod/_proto/proto
+{
+	
+	qer_editorimage		textures/darkmod/_proto/proto_ed
+    diffusemap			textures/darkmod/_proto/proto
+
+}
+
+textures/darkmod/_proto/proto_stone
+{
+    stone
+	
+	qer_editorimage		textures/darkmod/_proto/proto_stone_ed
+    diffusemap			textures/darkmod/_proto/proto_stone
+	
+}
+
+textures/darkmod/_proto/proto_wood
+{
+    wood
+	
+	qer_editorimage		textures/darkmod/_proto/proto_wood_ed
+    diffusemap			textures/darkmod/_proto/proto_wood
+		
+}
+
+textures/darkmod/_proto/proto_metal
+{
+    metal
+	
+	qer_editorimage		textures/darkmod/_proto/proto_metal_ed
+    diffusemap			textures/darkmod/_proto/proto_metal
+
+ 	
+}
+
+textures/darkmod/_proto/proto_carpet
+{
+    surftype15 
+	
+	description "carpet"
+	
+	qer_editorimage		textures/darkmod/_proto/proto_carpet_ed
+    diffusemap			textures/darkmod/_proto/proto_carpet
+
+ 	
+}
+
+textures/darkmod/_proto/proto_tile
+{
+    surftype15 
+	
+	description "tile"
+	
+	qer_editorimage		textures/darkmod/_proto/proto_tile_ed
+    diffusemap			textures/darkmod/_proto/proto_tile
+
+ 		
+}
+
+textures/darkmod/_proto/proto_sand
+{
+	surftype15 
+	
+	description "sand"
+	
+	qer_editorimage		textures/darkmod/_proto/proto_sand_ed
+    diffusemap			textures/darkmod/_proto/proto_sand
+
+ 		
+
+}
+
+textures/darkmod/_proto/proto_dirt
+{
+    surftype15
+    description "dirt vine_friendly"
+	
+	qer_editorimage		textures/darkmod/_proto/proto_dirt_ed
+    diffusemap			textures/darkmod/_proto/proto_dirt
+
+ 	
+}
+
+textures/darkmod/_proto/proto_flesh
+{
+	flesh	
+	
+	qer_editorimage		textures/darkmod/_proto/proto_flesh_ed
+    diffusemap			textures/darkmod/_proto/proto_flesh
+
+ 		
+
+}
+
+textures/darkmod/_proto/proto_grass
+{
+	surftype15 
+	
+	description "grass"
+	
+	qer_editorimage		textures/darkmod/_proto/proto_grass_ed
+    diffusemap			textures/darkmod/_proto/proto_grass
+
+ 		
+	
+}
+
+textures/darkmod/_proto/proto_gravel
+{
+	surftype15 
+	
+	description "gravel"
+	
+	qer_editorimage		textures/darkmod/_proto/proto_gravel_ed
+    diffusemap			textures/darkmod/_proto/proto_gravel
+	
+}
+
+textures/darkmod/_proto/proto_ice
+{
+	surftype15 
+	
+	description "ice"
+	slick
+	
+	qer_editorimage		textures/darkmod/_proto/proto_ice_ed
+    diffusemap			textures/darkmod/_proto/proto_ice
+	
+}
+
+textures/darkmod/_proto/proto_snow
+{
+	surftype15 
+	
+	description "snow"
+	
+	qer_editorimage		textures/darkmod/_proto/proto_snow_ed
+    diffusemap			textures/darkmod/_proto/proto_snow
+	
+}
+
+textures/darkmod/_proto/proto_twigs
+{
+	surftype15 
+	
+	description "twigs"
+	
+	qer_editorimage		textures/darkmod/_proto/proto_twigs_ed
+    diffusemap			textures/darkmod/_proto/proto_twigs
+
+}
+
+textures/darkmod/_proto/proto_straw
+{
+	surftype15 
+	
+	description "straw"
+	
+	qer_editorimage		textures/darkmod/_proto/proto_straw_ed
+    diffusemap			textures/darkmod/_proto/proto_straw
+	
+}
+
+textures/darkmod/_proto/proto_paper
+{
+	surftype15 
+	
+	description "paper"
+	
+	qer_editorimage		textures/darkmod/_proto/proto_paper_ed
+    diffusemap			textures/darkmod/_proto/proto_paper
+
+ 	
+}
+
+textures/darkmod/_proto/proto_moss
+{
+	surftype15 
+	
+	description "moss"
+	
+	qer_editorimage		textures/darkmod/_proto/proto_moss_ed
+    diffusemap			textures/darkmod/_proto/proto_moss
+
+}
+
+textures/darkmod/_proto/proto_mud
+{
+	surftype15 
+	
+	description "mud"
+	
+	qer_editorimage		textures/darkmod/_proto/proto_mud_ed
+    diffusemap			textures/darkmod/_proto/proto_mud
+	
+}
+
+textures/darkmod/_proto/proto_plastic
+{
+	plastic	
+	
+	qer_editorimage		textures/darkmod/_proto/proto_plastic_ed
+    diffusemap			textures/darkmod/_proto/proto_plastic
+		
+}
+
+textures/darkmod/_proto/proto_squeak
+{
+	surftype15 
+	
+	description "squeakboard"
+	
+	qer_editorimage		textures/darkmod/_proto/proto_squeak_ed
+    diffusemap			textures/darkmod/_proto/proto_squeak
+	
+}
+
+textures/darkmod/_proto/proto_cloth
+{
+	surftype15 
+	
+	description "cloth"
+	
+	qer_editorimage		textures/darkmod/_proto/proto_cloth_ed
+    diffusemap			textures/darkmod/_proto/proto_cloth
+
+}
+
+
+textures/darkmod/_proto/proto_brokeglass
+{
+	surftype15 
+	
+	description "brokeglass"
+	
+	qer_editorimage		textures/darkmod/_proto/proto_brokeglass_ed
+    diffusemap			textures/darkmod/_proto/proto_brokeglass
+	
+}
+
+textures/darkmod/_proto/proto_puddle
+{
+	surftype15 
+	
+	description "puddle"
+	
+	qer_editorimage		textures/darkmod/_proto/proto_puddle_ed
+    diffusemap			textures/darkmod/_proto/proto_puddle
+
+}
+
+textures/darkmod/_proto/proto_foliage
+{
+	surftype15 
+	
+	description "foliage"
+	
+	qer_editorimage		textures/darkmod/_proto/proto_foliage_ed
+    diffusemap			textures/darkmod/_proto/proto_foliage
+	
+}
+
+
+textures/darkmod/_proto/proto_liquid
+{
+
+	liquid	
+
+	qer_editorimage textures/darkmod/_proto/proto_liquid_ed		
+	diffusemap textures/darkmod/_proto/proto_liquid
+
+}
+
+textures/darkmod/_proto/proto_glass
+{
+	
+    glass	
+
+    qer_editorimage textures/darkmod/_proto/proto_glass_ed  
+    diffusemap textures/darkmod/_proto/proto_glass
+
+}

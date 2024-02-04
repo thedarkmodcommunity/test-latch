@@ -1,0 +1,14 @@
+void frob_latch(entity ent_target, entity ent_button, entity ent_callscriptfunction)
+{
+	ent_button.setFrobable(0);
+	sys.wait(.1);
+	ent_target.Unlock();
+	ent_target.setFrobable(1);
+}
+
+
+
+void main()
+{
+	sys.waitFrame();
+}

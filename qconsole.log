@@ -1,0 +1,297 @@
+log file 'qconsole.log' opened on Sun Feb  4 09:19:21 2024
+
+Automation now listens on port 3879
+Automation received incoming connection from 127.0.0.1:8952
+HotReload: SUCCESS
+HotReload: SUCCESS
+HotReload: SUCCESS
+]testmap test_latch
+--------- Game Map Shutdown ----------
+ModelGenerator memory: No LOD entries.
+--------- Game Map Shutdown done -----
+---- dmap ----
+--- LoadDMapFile ---
+loading fms\test_latch\maps\test_latch
+   19 total world brushes
+    0 total world triSurfs
+    0 patches
+   78 entities
+  250 planes
+    0 areaportals
+size:  -768, -728, -160 to   624,  864,  640
+############### entity 0 ###############
+-- ( worldspawn:  )
+  0.0 seconds for BuildLightShadows
+6 entities containing primitives processed.
+----- WriteOutputFile -----
+writing fms\test_latch\maps\test_latch.proc
+Dmap complete, moving on to collision world and AAS...
+408 total shadow triangles
+190 total shadow verts
+-----------------------
+    0 seconds for dmap
+collision data:
+     6 models
+   323 vertices (10 KB)
+   536 edges (25 KB)
+   201 polygons (14 KB)
+    55 brushes (7 KB)
+    44 nodes (2 KB)
+   236 polygon refs (3 KB)
+    76 brush refs (1 KB)
+   198 internal edges
+     0 sharp edges
+     0 contained polygons removed
+     0 polygons merged
+    64 KB total memory used
+0 msec to load collision data.
+-------------------------------------
+    0 seconds to create collision map
+no entities in map that use aas48
+=======================================================
+no entities in map that use aas96
+=======================================================
+no entities in map that use aas32
+=======================================================
+no entities in map that use aas100
+=======================================================
+no entities in map that use aas_rat
+=======================================================
+no entities in map that use aas_elemental
+reloading guis/msg.gui.
+reloading guis/map/loading.gui.
+reloading guis/playertools/spyglass.gui.
+reloading guis/tdm_hud.gui.
+reloading guis/cursor.gui.
+reloading guis/tdm_subtitles.gui.
+reloading guis/tdm_lockpick.gui.
+reloading guis/tdm_inv.gui.
+reloading guis/tdm_loot.gui.
+reloading guis/tdm_waituntilready.gui.
+reloading guis/playertools/compass.gui.
+reloading guis/mainmenu.gui.
+--------- Map Initialization ---------
+Map: test_latch
+idRenderWorldLocal::InitFromMap: timestamp has changed, reloading.
+----------- Game Map Init ------------
+collision data:
+     6 models
+   323 vertices (10 KB)
+   536 edges (25 KB)
+   201 polygons (14 KB)
+    55 brushes (7 KB)
+    44 nodes (2 KB)
+   236 polygon refs (3 KB)
+    76 brush refs (1 KB)
+   198 internal edges
+     0 sharp edges
+     0 contained polygons removed
+     0 polygons merged
+    64 KB total memory used
+0 msec to load collision data.
+map bounds are (1392.0, 1592.0, 800.0)
+    0 bytes passage memory used to build PVS
+    0 msec to calculate PVS
+    2 areas
+    0 portals
+    0 areas visible on average
+    8 bytes PVS data
+[Load AAS]
+missing maps/test_latch.aas48
+[Load AAS]
+missing maps/test_latch.aas96
+[Load AAS]
+missing maps/test_latch.aas32
+[Load AAS]
+missing maps/test_latch.aas100
+[Load AAS]
+missing maps/test_latch.aas_rat
+[Load AAS]
+missing maps/test_latch.aas_elemental
+ConversationManager: Found 0 valid conversations.
+Spawning entities
+---------- Compile stats ----------
+
+Memory usage:
+     Strings: 56, 6744 bytes
+  Statements: 23250, 930000 bytes
+   Functions: 1378, 181764 bytes
+   Variables: 109688 bytes
+    Mem used: 2167528 bytes
+ Static data: 408 bytes
+   Allocated: 1166700 bytes
+ Thread size: 7928 bytes
+
+... 37 entities spawned, 42 inhibited in   0.0 seconds
+
+==== Processing events ====
+Objective 1: Parsing success and failure logic
+Objective 2: Parsing success and failure logic
+Objective 3: Parsing success and failure logic
+Objective 4: Parsing success and failure logic
+Objective 5: Parsing success and failure logic
+Objective 6: Parsing success and failure logic
+Applied 0 objective conditions.
+--------------------------------------
+SpawnPlayer: 0
+-----------------------------------
+    72 msec to load test_latch
+Interaction table generated: size = 0/512
+Initial counts:  44 entities  4 lightDefs  33 entityDefs
+speaker_zone_ambient::init() called
+Color read from main ambient light 'ambient_world': 0.1 0.1 0.1
+]testmap test_latch
+--------- Game Map Shutdown ----------
+ModelGenerator memory: No LOD entries.
+--------- Game Map Shutdown done -----
+---- dmap ----
+--- LoadDMapFile ---
+loading fms\test_latch\maps\test_latch
+   19 total world brushes
+    0 total world triSurfs
+    0 patches
+   78 entities
+  250 planes
+    0 areaportals
+size:  -768, -728, -160 to   624,  864,  640
+############### entity 0 ###############
+-- ( worldspawn:  )
+  0.0 seconds for BuildLightShadows
+6 entities containing primitives processed.
+----- WriteOutputFile -----
+writing fms\test_latch\maps\test_latch.proc
+Dmap complete, moving on to collision world and AAS...
+408 total shadow triangles
+190 total shadow verts
+-----------------------
+    0 seconds for dmap
+collision data:
+     6 models
+   323 vertices (10 KB)
+   536 edges (25 KB)
+   201 polygons (14 KB)
+    55 brushes (7 KB)
+    44 nodes (2 KB)
+   236 polygon refs (3 KB)
+    76 brush refs (1 KB)
+   198 internal edges
+     0 sharp edges
+     0 contained polygons removed
+     0 polygons merged
+    64 KB total memory used
+0 msec to load collision data.
+-------------------------------------
+    0 seconds to create collision map
+no entities in map that use aas48
+=======================================================
+no entities in map that use aas96
+=======================================================
+no entities in map that use aas32
+=======================================================
+no entities in map that use aas100
+=======================================================
+no entities in map that use aas_rat
+=======================================================
+no entities in map that use aas_elemental
+reloading guis/msg.gui.
+reloading guis/map/loading.gui.
+reloading guis/cursor.gui.
+reloading guis/playertools/spyglass.gui.
+reloading guis/tdm_hud.gui.
+reloading guis/tdm_subtitles.gui.
+reloading guis/tdm_lockpick.gui.
+reloading guis/tdm_inv.gui.
+reloading guis/tdm_loot.gui.
+reloading guis/tdm_waituntilready.gui.
+reloading guis/playertools/compass.gui.
+reloading guis/mainmenu.gui.
+--------- Map Initialization ---------
+Map: test_latch
+idRenderWorldLocal::InitFromMap: timestamp has changed, reloading.
+----------- Game Map Init ------------
+collision data:
+     6 models
+   323 vertices (10 KB)
+   536 edges (25 KB)
+   201 polygons (14 KB)
+    55 brushes (7 KB)
+    44 nodes (2 KB)
+   236 polygon refs (3 KB)
+    76 brush refs (1 KB)
+   198 internal edges
+     0 sharp edges
+     0 contained polygons removed
+     0 polygons merged
+    64 KB total memory used
+0 msec to load collision data.
+map bounds are (1392.0, 1592.0, 800.0)
+    0 bytes passage memory used to build PVS
+    0 msec to calculate PVS
+    2 areas
+    0 portals
+    0 areas visible on average
+    8 bytes PVS data
+[Load AAS]
+missing maps/test_latch.aas48
+[Load AAS]
+missing maps/test_latch.aas96
+[Load AAS]
+missing maps/test_latch.aas32
+[Load AAS]
+missing maps/test_latch.aas100
+[Load AAS]
+missing maps/test_latch.aas_rat
+[Load AAS]
+missing maps/test_latch.aas_elemental
+ConversationManager: Found 0 valid conversations.
+Spawning entities
+---------- Compile stats ----------
+
+Memory usage:
+     Strings: 56, 6744 bytes
+  Statements: 23250, 930000 bytes
+   Functions: 1378, 181764 bytes
+   Variables: 109688 bytes
+    Mem used: 2167528 bytes
+ Static data: 408 bytes
+   Allocated: 1166700 bytes
+ Thread size: 7928 bytes
+
+... 37 entities spawned, 42 inhibited in   0.0 seconds
+
+==== Processing events ====
+Objective 1: Parsing success and failure logic
+Objective 2: Parsing success and failure logic
+Objective 3: Parsing success and failure logic
+Objective 4: Parsing success and failure logic
+Objective 5: Parsing success and failure logic
+Objective 6: Parsing success and failure logic
+Applied 0 objective conditions.
+--------------------------------------
+SpawnPlayer: 0
+-----------------------------------
+    70 msec to load test_latch
+Interaction table generated: size = 0/512
+Initial counts:  44 entities  4 lightDefs  33 entityDefs
+speaker_zone_ambient::init() called
+Color read from main ambient light 'ambient_world': 0.1 0.1 0.1
+Automation lost connection
+--------- Game Map Shutdown ----------
+ModelGenerator memory: No LOD entries.
+--------- Game Map Shutdown done -----
+Found 0 new missions and 0 packages.
+Found 119 mods in the FM folder.
+Shutting down sound hardware
+idRenderSystem::Shutdown()
+Shutting down OpenGL subsystem
+...wglMakeCurrent( NULL, NULL ): success
+...deleting GL context: success
+...releasing DC: success
+...destroying window
+...resetting display
+...shutting down QGL
+I18NLocal: Shutdown.
+------------ Game Shutdown -----------
+ModelGenerator memory: No LOD entries.
+Shutdown event system
+--------------------------------------
