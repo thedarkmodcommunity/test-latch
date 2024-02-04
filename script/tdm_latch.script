@@ -20,13 +20,13 @@ void tdm_latch::init()
 
 	for(i = 0; i < numTargets(); i++)
 	{
-	    entity e = getTarget(i);
-	
-	    if( e.getKey("spawnclass") == "CFrobDoor" )
-	    {
-	        door = e;
-	        break;        //stop searching for targeted doors, already found one
-	    }
+		entity e = getTarget(i);
+
+		if( e.getKey("spawnclass") == "CFrobDoor" )
+		{
+			door = e;
+			break;        //stop searching for targeted doors, already found one
+		}
 	}
 
 	//start checking whether the player is allowed to frob the latch
@@ -35,71 +35,71 @@ void tdm_latch::init()
 
 void tdm_latch::frobabilityLoop()
 {
-    vector latchPos = getWorldOrigin();
-    setFrobable(0);
+	vector latchPos = getWorldOrigin();
+	setFrobable(0);
 
-    while(1)
-    {
-        sys.wait(0.2);
-        if( sys.vecLength($player1.getEyePos() - latchPos ) > TRACE_LENGTH )
-            continue;    //skip if the player is too far away
+	while(1)
+	{
+		sys.wait(0.2);
+		if( sys.vecLength($player1.getEyePos() - latchPos ) > TRACE_LENGTH )
+			continue;    //skip if the player is too far away
 
-        //player either has to be on the right side of the door or be able to reach through to the latch for it to be frobable
+		//player either has to be on the right side of the door or be able to reach through to the latch for it to be frobable
 
 		// TODO this was split up to add debug - condense later
 		float frobable = checkTolerance() || checkObstruction();
 		sys.println("Frobable: " + frobable);
-        setFrobable( frobable );
+		setFrobable( frobable );
 
 		// Set the door to the opposite of the latch
 		door.setFrobable( !frobable );
-    }
+	}
 }
 
 boolean tdm_latch::checkObstruction()
 {
-    vector TraceDir        = sys.vecNormalize( $player1.getViewAngles() );
-    vector TraceRadius    = getVectorKey("trace_radius");    //as a vector
-    vector TraceStart    = $player1.getEyePos();
-    vector TraceEnd        = TraceStart + TraceDir * TRACE_LENGTH;
+	vector TraceDir        = sys.vecNormalize( $player1.getViewAngles() );
+	vector TraceRadius    = getVectorKey("trace_radius");    //as a vector
+	vector TraceStart    = $player1.getEyePos();
+	vector TraceEnd        = TraceStart + TraceDir * TRACE_LENGTH;
 
-    //check whether there is a clear line from the player's eyes to the latch
-    float TraceResult    = sys.trace( TraceStart, TraceEnd, -TraceRadius, TraceRadius, CONTENTS_SOLID, self );
+	//check whether there is a clear line from the player's eyes to the latch
+	float TraceResult    = sys.trace( TraceStart, TraceEnd, -TraceRadius, TraceRadius, CONTENTS_SOLID, self );
 
 
-    if( TraceResult == 1 )
-        return true;    //clear line
+	if( TraceResult == 1 )
+		return true;    //clear line
 
-    else if( sys.getTraceEntity().getBindMaster() == self )
-        return true;    //trace has hit something that's bound to the latch
+	else if( sys.getTraceEntity().getBindMaster() == self )
+		return true;    //trace has hit something that's bound to the latch
 
-    else
-        return false;    //line is obstructed by something else
+	else
+		return false;    //line is obstructed by something else
 }
 
 boolean tdm_latch::checkTolerance()
 {
-    vector LatchNormal = getVectorKey( "latch_normal" );
-    vector AngToPlayer = sys.VecToAngles( $player1.getOrigin() - getOrigin() );
+	vector LatchNormal = getVectorKey( "latch_normal" );
+	vector AngToPlayer = sys.VecToAngles( $player1.getOrigin() - getOrigin() );
 
-    //check whether the player is standing within the latch tolerance
-    return ( sys.vecLength( anglemod180(AngToPlayer - LatchNormal)  ) < LATCH_TOLERANCE );
+	//check whether the player is standing within the latch tolerance
+	return ( sys.vecLength( anglemod180(AngToPlayer - LatchNormal)  ) < LATCH_TOLERANCE );
 }
 
 
 void tdm_latch::frobResponse()
 {
-    if( isMoving() || isRotating() )
-        return;
+	if( isMoving() || isRotating() )
+		return;
 
-    latchState = !latchState;
+	latchState = !latchState;
 
-    time( getFloatKey("move_time") );
-    moveToPos( getVectorKey("origin") + latchState * getVectorKey("translate") );
-    rotateOnce( (2*latchState - 1) * getVectorKey("rotate") );
+	time( getFloatKey("move_time") );
+	moveToPos( getVectorKey("origin") + latchState * getVectorKey("translate") );
+	rotateOnce( (2*latchState - 1) * getVectorKey("rotate") );
 
-    sys.wait( getFloatKey("move_time") );
-    
-    door.setFrobable( latchState );
-    door.setKey( "ai_should_not_handle", !latchState );
+	sys.wait( getFloatKey("move_time") );
+
+	door.setFrobable( latchState );
+	door.setKey( "ai_should_not_handle", !latchState );
 }
