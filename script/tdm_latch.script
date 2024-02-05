@@ -58,10 +58,10 @@ void tdm_latch::frobabilityLoop()
 
 boolean tdm_latch::checkObstruction()
 {
-	vector TraceDir        = sys.vecNormalize( $player1.getViewAngles() );
-	vector TraceRadius    = getVectorKey("trace_radius");    //as a vector
-	vector TraceStart    = $player1.getEyePos();
-	vector TraceEnd        = TraceStart + TraceDir * TRACE_LENGTH;
+	vector TraceDir     = sys.vecNormalize( $player1.getViewAngles() );
+	vector TraceRadius  = getVectorKey("trace_radius");    //as a vector
+	vector TraceStart   = $player1.getEyePos();
+	vector TraceEnd     = TraceStart + TraceDir * TRACE_LENGTH;
 
 	//check whether there is a clear line from the player's eyes to the latch
 	float TraceResult    = sys.trace( TraceStart, TraceEnd, -TraceRadius, TraceRadius, CONTENTS_SOLID, self );
