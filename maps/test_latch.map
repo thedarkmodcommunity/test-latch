@@ -1874,7 +1874,6 @@ brushDef3
 "scriptobject" "tdm_latch"
 "snd_move" "metal_cabinet01_open"
 "target0" "atdm_mover_door_1"
-"trace_radius" "90 0 0"
 "translate" "10 0 0"
 // primitive 0
 {
@@ -1921,9 +1920,11 @@ brushDef3
 "origin" "-392 134 -128"
 "lock_picktype" "-"
 "lock_pins" "0"
-"locked" "0"
+"locked" "1"
 "rotate" "0 90 0"
 "used_by" "-"
+"snd_close" "chest_wood_close"
+"snd_open" "chest_wood_open"
 // primitive 0
 {
 brushDef3
@@ -1945,9 +1946,11 @@ brushDef3
 "origin" "-312 134 -128"
 "lock_picktype" "-"
 "lock_pins" "0"
-"locked" "0"
-"rotate" "0 90 0"
+"locked" "1"
+"rotate" "0 -90 0"
 "used_by" "-"
+"snd_close" "chest_wood_close"
+"snd_open" "chest_wood_open"
 // primitive 0
 {
 brushDef3
@@ -1968,6 +1971,7 @@ brushDef3
 "origin" "-368 136 -66"
 "model" "models/darkmod/door_related/latch_door_02_bracket.ase"
 "rotation" "-1 0 0 0 -1 0 0 0 1"
+"bind" "atdm_mover_door_2"
 }
 // entity 78
 {
@@ -1976,6 +1980,7 @@ brushDef3
 "origin" "-349 136 -66"
 "model" "models/darkmod/door_related/latch_door_02_bracket.ase"
 "rotation" "-1 0 0 0 -1 0 0 0 1"
+"bind" "atdm_mover_door_3"
 }
 // entity 79
 {
@@ -1984,24 +1989,18 @@ brushDef3
 "origin" "-343 136 -66"
 "model" "models/darkmod/door_related/latch_door_02_bracket.ase"
 "rotation" "-1 0 0 0 -1 0 0 0 1"
+"bind" "atdm_mover_door_3"
 }
 // entity 80
-{
-"classname" "func_static"
-"name" "func_static_6"
-"origin" "-353 138 -66"
-"model" "models/darkmod/door_related/latch_door_02_lock.ase"
-"rotation" "1 0 0 0 1 0 0 0 1"
-}
-// entity 81
 {
 "classname" "func_static"
 "name" "func_static_7"
 "origin" "-355 136 -66"
 "model" "models/darkmod/door_related/latch_door_02_bracket.ase"
 "rotation" "-1 0 0 0 -1 0 0 0 1"
+"bind" "atdm_mover_door_2"
 }
-// entity 82
+// entity 81
 {
 "classname" "light"
 "name" "light_3"
@@ -2014,4 +2013,13 @@ brushDef3
 "nospecular" "0"
 "origin" "-348 338 256"
 "rotation" "0 -1 0 1 0 0 0 0 1"
+}
+// entity 82
+{
+"classname" "atdm:latch"
+"name" "func_static_6"
+"origin" "-353 138 -66"
+"model" "models/darkmod/door_related/latch_door_02_lock.ase"
+"rotation" "1 0 0 0 1 0 0 0 1"
+"bind" "atdm_mover_door_2"
 }

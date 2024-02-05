@@ -2,13 +2,13 @@ DarkRadiant Map Information File Version 2
 {
 	MapEditTimings
 	{
-		TotalSecondsEdited { 1419 }
+		TotalSecondsEdited { 2166 }
 	}
 	MapProperties
 	{
-		KeyValue { "EditTimeInSeconds" "1419" } 
-		KeyValue { "LastCameraAngle" "-4.4 264.4 0" } 
-		KeyValue { "LastCameraPosition" "-362.815 168.024 -69.0102" } 
+		KeyValue { "EditTimeInSeconds" "2166" } 
+		KeyValue { "LastCameraAngle" "-9 249.4 0" } 
+		KeyValue { "LastCameraPosition" "-345.318 168.2 -67.2084" } 
 		KeyValue { "LastShaderClipboardMaterial" "textures/darkmod/door/wood/smooth_5panels01_tall" } 
 	}
 	SelectionSets
@@ -171,9 +171,9 @@ DarkRadiant Map Information File Version 2
 		Node { 0 } // entity (func_static_2)
 		Node { 0 } // entity (func_static_4)
 		Node { 0 } // entity (func_static_5)
-		Node { 0 } // entity (func_static_6)
 		Node { 0 } // entity (func_static_7)
 		Node { 0 } // entity (light_3)
+		Node { 0 } // entity (func_static_6)
 	}
 	SelectionGroups
 	{

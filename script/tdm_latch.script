@@ -8,8 +8,9 @@ object tdm_latch
 	boolean checkTolerance();
 	boolean checkObstruction();
 	void frobResponse();
+	void moveLatch();
 
-	float latchState;	//1 = up, 0 = down
+	float latchState;	//1 = open, 0 = closed
 	entity door;		//door entity
 };
 
@@ -28,6 +29,11 @@ void tdm_latch::init()
 			break;        //stop searching for targeted doors, already found one
 		}
 	}
+
+	latchState = getIntKey("open");
+
+	// DEBUG
+	sys.println("latch state: " + latchState);
 
 	//start checking whether the player is allowed to frob the latch
 	thread frobabilityLoop();
@@ -48,11 +54,20 @@ void tdm_latch::frobabilityLoop()
 
 		// TODO this was split up to add debug - condense later
 		float frobable = checkTolerance() || checkObstruction();
-		sys.println("Frobable: " + frobable);
+		//sys.println("Frobable: " + frobable);
 		setFrobable( frobable );
 
-		// Set the door to the opposite of the latch
-		door.setFrobable( !frobable );
+		// Set the door frobability
+		if ( latchState )
+		{
+			// always frobable when latch is open
+			door.setFrobable( 1 );
+		}
+		else 
+		{
+			// When latch is closed, depends on player position checks above
+			door.setFrobable( !frobable );
+		}
 	}
 }
 
@@ -94,12 +109,26 @@ void tdm_latch::frobResponse()
 
 	latchState = !latchState;
 
+	thread moveLatch();
+
+	door.setFrobable( latchState );
+	door.setKey( "ai_should_not_handle", !latchState );
+}
+
+void tdm_latch::moveLatch()
+{
 	time( getFloatKey("move_time") );
 	moveToPos( getVectorKey("origin") + latchState * getVectorKey("translate") );
 	rotateOnce( (2*latchState - 1) * getVectorKey("rotate") );
 
 	sys.wait( getFloatKey("move_time") );
 
-	door.setFrobable( latchState );
-	door.setKey( "ai_should_not_handle", !latchState );
+	if (latchState)
+	{
+		door.Unlock();
+	}
+	else
+	{
+		door.Lock();
+	}
 }
