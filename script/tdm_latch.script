@@ -54,8 +54,16 @@ void tdm_latch::frobabilityLoop()
 
 		// TODO this was split up to add debug - condense later
 		float frobable = checkTolerance() || checkObstruction();
-		//sys.println("Frobable: " + frobable);
-		setFrobable( frobable );
+		sys.println("Frobable: " + frobable);
+		
+		if (door.IsOpen())
+		{
+			setFrobable( 0 );
+		}
+		else
+		{
+			setFrobable( frobable );
+		}
 
 		// Set the door frobability
 		if ( latchState )
@@ -83,13 +91,24 @@ boolean tdm_latch::checkObstruction()
 
 
 	if( TraceResult == 1 )
+	{
+		sys.println("trace result = 1");
 		return true;    //clear line
+	}
+
 
 	else if( sys.getTraceEntity().getBindMaster() == self )
+	{
+		sys.println("trace has hit something that's bound to the latch");
 		return true;    //trace has hit something that's bound to the latch
+	}
 
 	else
+	{
+		sys.println("line is obstructed by something else");
 		return false;    //line is obstructed by something else
+	}
+
 }
 
 boolean tdm_latch::checkTolerance()

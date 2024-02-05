@@ -1478,11 +1478,11 @@ brushDef3
 "origin" "-384 536 -56"
 "rotate" "0 -130 0"
 "snd_close" "door_metal01_close"
+"snd_lock" "door_metal01_open"
 "snd_move" "door_open_creaky01"
 "snd_open" "door_open_10"
 "snd_unlock" "door_metal01_open"
 "used_by" "-"
-"snd_lock" "door_metal01_open"
 // primitive 0
 {
 brushDef3
@@ -1716,11 +1716,12 @@ brushDef3
 "model" "models/darkmod/door_related/latch_door_01_lock.ase"
 "move_time" ".5"
 "origin" "-312 534 -48"
+"rotation" "1 0 0 0 1 0 0 0 1"
 "scriptobject" "tdm_latch"
 "snd_move" "metal_cabinet01_open"
 "target0" "atdm_mover_door_1"
 "translate" "10 0 0"
-"rotation" "1 0 0 0 1 0 0 0 1"
+"frob_distance" "100"
 }
 // entity 75
 {
@@ -1837,7 +1838,7 @@ brushDef3
 {
 "classname" "func_static"
 "name" "func_static_8"
+"bind" "atdm_mover_door_1"
 "model" "models/darkmod/door_related/latch_door_01_plateB.ase"
 "origin" "-325 536 -48"
-"bind" "atdm_mover_door_1"
 }
