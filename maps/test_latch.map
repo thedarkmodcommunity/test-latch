@@ -1965,7 +1965,7 @@ brushDef3
 {
 "classname" "func_static"
 "name" "func_static_2"
-"origin" "-369 136 -66"
+"origin" "-368 136 -66"
 "model" "models/darkmod/door_related/latch_door_02_bracket.ase"
 "rotation" "-1 0 0 0 -1 0 0 0 1"
 }
@@ -1973,7 +1973,7 @@ brushDef3
 {
 "classname" "func_static"
 "name" "func_static_4"
-"origin" "-348 136 -66"
+"origin" "-349 136 -66"
 "model" "models/darkmod/door_related/latch_door_02_bracket.ase"
 "rotation" "-1 0 0 0 -1 0 0 0 1"
 }
@@ -1989,7 +1989,7 @@ brushDef3
 {
 "classname" "func_static"
 "name" "func_static_6"
-"origin" "-354 138 -66"
+"origin" "-353 138 -66"
 "model" "models/darkmod/door_related/latch_door_02_lock.ase"
 "rotation" "1 0 0 0 1 0 0 0 1"
 }
@@ -1997,7 +1997,7 @@ brushDef3
 {
 "classname" "func_static"
 "name" "func_static_7"
-"origin" "-356 136 -66"
+"origin" "-355 136 -66"
 "model" "models/darkmod/door_related/latch_door_02_bracket.ase"
 "rotation" "-1 0 0 0 -1 0 0 0 1"
 }
