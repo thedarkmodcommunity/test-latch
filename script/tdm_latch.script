@@ -5,31 +5,21 @@ object tdm_latch
 {
 	void init();
 	void frobabilityLoop();
+	boolean areDoorsOpen();
+	void setDoorsFrobable(float frobable);
+	void setDoorsAINotHandle(float value);
+	void lockDoors(float lock);
 	boolean checkTolerance();
 	boolean checkObstruction();
 	void frobResponse();
 	void moveLatch();
 
 	float latchState;	//1 = open, 0 = closed
-	entity door;		//door entity
+	//entity door;		//door entity
 };
 
 void tdm_latch::init()
 {
-	//find the door among this latch's targets
-	float i;
-
-	for(i = 0; i < numTargets(); i++)
-	{
-		entity e = getTarget(i);
-
-		if( e.getKey("spawnclass") == "CFrobDoor" )
-		{
-			door = e;
-			break;        //stop searching for targeted doors, already found one
-		}
-	}
-
 	latchState = getIntKey("open");
 
 	// DEBUG
@@ -56,7 +46,7 @@ void tdm_latch::frobabilityLoop()
 		float frobable = checkTolerance() || checkObstruction();
 		sys.println("Frobable: " + frobable);
 		
-		if (door.IsOpen())
+		if ( areDoorsOpen() )
 		{
 			setFrobable( 0 );
 		}
@@ -69,12 +59,83 @@ void tdm_latch::frobabilityLoop()
 		if ( latchState )
 		{
 			// always frobable when latch is open
-			door.setFrobable( 1 );
+			setDoorsFrobable( 1 );
 		}
 		else 
 		{
 			// When latch is closed, depends on player position checks above
-			door.setFrobable( !frobable );
+			setDoorsFrobable( !frobable );
+		}
+	}
+}
+
+boolean tdm_latch::areDoorsOpen()
+{
+	float i;
+
+	for(i = 0; i < numTargets(); i++)
+	{
+		entity e = getTarget(i);
+
+		if( e.getKey("spawnclass") == "CFrobDoor" )
+		{
+			if ( e.IsOpen() )
+				return true;
+		}
+	}
+	return false;
+}
+
+void tdm_latch::setDoorsFrobable(float frobable)
+{
+	float i;
+
+	for(i = 0; i < numTargets(); i++)
+	{
+		entity e = getTarget(i);
+
+		if( e.getKey("spawnclass") == "CFrobDoor" )
+		{
+			e.setFrobable(frobable);
+		}
+	}
+}
+
+void tdm_latch::setDoorsAINotHandle(float value)
+{
+	float i;
+
+	for(i = 0; i < numTargets(); i++)
+	{
+		entity e = getTarget(i);
+
+		if( e.getKey("spawnclass") == "CFrobDoor" )
+		{
+			e.setKey( "ai_should_not_handle", value );
+		}
+	}
+}
+
+// 1: lock doors
+// 0: unlock doors
+void tdm_latch::lockDoors(float lock)
+{
+	float i;
+
+	for(i = 0; i < numTargets(); i++)
+	{
+		entity e = getTarget(i);
+
+		if( e.getKey("spawnclass") == "CFrobDoor" )
+		{
+			if (lock)
+			{
+				e.Lock();
+			}
+			else
+			{
+				e.Unlock();
+			}
 		}
 	}
 }
@@ -130,8 +191,10 @@ void tdm_latch::frobResponse()
 
 	thread moveLatch();
 
-	door.setFrobable( latchState );
-	door.setKey( "ai_should_not_handle", !latchState );
+	setDoorsFrobable( latchState );
+	setDoorsAINotHandle( !latchState );
+
+	//door.setKey( "ai_should_not_handle", !latchState );
 }
 
 void tdm_latch::moveLatch()
@@ -144,10 +207,10 @@ void tdm_latch::moveLatch()
 
 	if (latchState)
 	{
-		door.Unlock();
+		lockDoors( 0 );
 	}
 	else
 	{
-		door.Lock();
+		lockDoors( 1 );
 	}
 }
