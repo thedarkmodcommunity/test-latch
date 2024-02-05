@@ -8,4 +8,7 @@ entityDef atdm:latch
 	"translate"       "10 0 0"
 	"rotate"          "0 0 0"
 	"open"            "0"
+
+	"scriptobject"          "tdm_latch"
+	"frob_action_script"    "frobResponse"
 }

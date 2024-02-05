@@ -1833,6 +1833,10 @@ brushDef3
 "model" "models/darkmod/door_related/latch_door_02_lock.ase"
 "origin" "-353 138 -66"
 "rotation" "1 0 0 0 1 0 0 0 1"
+"target0" "atdm_mover_door_2"
+"target1" "atdm_mover_door_3"
+"translate" "-10 0 0"
+"move_time" "0.5"
 }
 // entity 83
 {
