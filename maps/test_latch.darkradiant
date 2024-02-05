@@ -1,15 +1,15 @@
 DarkRadiant Map Information File Version 2
 {
-	MapEditTimings
-	{
-		TotalSecondsEdited { 2166 }
-	}
 	MapProperties
 	{
-		KeyValue { "EditTimeInSeconds" "2166" } 
-		KeyValue { "LastCameraAngle" "-9 249.4 0" } 
-		KeyValue { "LastCameraPosition" "-345.318 168.2 -67.2084" } 
+		KeyValue { "EditTimeInSeconds" "2483" } 
+		KeyValue { "LastCameraAngle" "-18.9 74.2 0" } 
+		KeyValue { "LastCameraPosition" "-327.022 487.577 -34.1659" } 
 		KeyValue { "LastShaderClipboardMaterial" "textures/darkmod/door/wood/smooth_5panels01_tall" } 
+	}
+	MapEditTimings
+	{
+		TotalSecondsEdited { 2483 }
 	}
 	SelectionSets
 	{
@@ -146,24 +146,8 @@ DarkRadiant Map Information File Version 2
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
-		Node { 0 } // brush (Brush)
-		Node { 0 } // brush (Brush)
-		Node { 0 } // brush (Brush)
-		Node { 0 } // brush (Brush)
-		Node { 0 } // brush (Brush)
-		Node { 0 } // brush (Brush)
-		Node { 0 } // brush (Brush)
 		Node { 0 } // entity (func_static_3)
-		Node { 0 } // brush (Brush)
-		Node { 0 } // brush (Brush)
-		Node { 0 } // brush (Brush)
-		Node { 0 } // brush (Brush)
-		Node { 0 } // brush (Brush)
-		Node { 0 } // brush (Brush)
 		Node { 0 } // entity (func_static_1)
-		Node { 0 } // brush (Brush)
-		Node { 0 } // brush (Brush)
-		Node { 0 } // brush (Brush)
 		Node { 0 } // entity (atdm_mover_door_2)
 		Node { 0 } // brush (Brush)
 		Node { 0 } // entity (atdm_mover_door_3)
@@ -174,6 +158,7 @@ DarkRadiant Map Information File Version 2
 		Node { 0 } // entity (func_static_7)
 		Node { 0 } // entity (light_3)
 		Node { 0 } // entity (func_static_6)
+		Node { 0 } // entity (func_static_8)
 	}
 	SelectionGroups
 	{
