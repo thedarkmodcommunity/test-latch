@@ -6,13 +6,13 @@ tdm_door_latch_01
 		{
 			blend diffusemap
 			map models/darkmod/props/textures/tdm_door_latch_01_s
-				red .5
-				green .5
-				blue .4
+				red .6
+				green .6
+				blue .5
 		}
 			{
 				maskcolor				
-				map makealpha(models/darkmod/props/textures/tdm_door_latch_01_s)
+				map makealpha(models/darkmod/props/textures/tdm_door_latch_01_mask)
 			}
 			{
 				forceHighQuality
@@ -38,13 +38,13 @@ tdm_door_latch_02
 		{
 			blend diffusemap
 			map models/darkmod/props/textures/tdm_door_latch_02_s
-				red .5
-				green .5
-				blue .4
+				red .6
+				green .6
+				blue .5
 		}
 			{
 				maskcolor				
-				map makealpha(models/darkmod/props/textures/tdm_door_latch_02_s)
+				map makealpha(models/darkmod/props/textures/tdm_door_latch_02_mask)
 			}
 			{
 				forceHighQuality
