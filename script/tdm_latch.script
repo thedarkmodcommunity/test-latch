@@ -21,6 +21,11 @@ void tdm_latch::init()
 {
 	latchState = getIntKey("open");
 
+	if (latchState)
+	{
+		thread moveLatch(latchState);
+	}
+
 	//start checking whether the player is allowed to frob the latch
 	thread frobabilityLoop();
 }

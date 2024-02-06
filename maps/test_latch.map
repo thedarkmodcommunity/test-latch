@@ -2090,6 +2090,7 @@ brushDef3
 "snd_move" "metal_cabinet01_open"
 "target0" "atdm_mover_door_1"
 "translate" "10 0 0"
+"open" "1"
 }
 // entity 91
 {
@@ -2104,6 +2105,7 @@ brushDef3
 "target0" "atdm_mover_door_2"
 "target1" "atdm_mover_door_3"
 "translate" "-11 0 0"
+"open" "1"
 }
 // entity 92
 {
@@ -2118,4 +2120,6 @@ brushDef3
 "target0" "atdm_mover_door_5"
 "target1" "atdm_mover_door_4"
 "translate" "12 0 0"
+"open" "0"
+"snd_move" "frob_lever_metal_small_01"
 }
