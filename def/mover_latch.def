@@ -1,4 +1,4 @@
-entityDef atdm:latch
+entityDef atdm:mover_latch
 {
 	"inherit"         "func_mover" 
 
