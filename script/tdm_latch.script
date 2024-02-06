@@ -1,4 +1,4 @@
-#define TRACE_LENGTH    128
+#define TRACE_LENGTH    136
 #define	LATCH_TOLERANCE	90
 
 object tdm_latch
