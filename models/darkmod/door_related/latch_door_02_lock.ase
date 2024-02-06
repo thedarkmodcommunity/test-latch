@@ -10,8 +10,44 @@
 	*SCENE_AMBIENT_STATIC 0.0000	0.0000	0.0000
 }
 *MATERIAL_LIST {
-	*MATERIAL_COUNT 1
+	*MATERIAL_COUNT 2
 	*MATERIAL 0 {
+		*MATERIAL_NAME "textures/common/collision"
+		*MATERIAL_CLASS "Standard"
+		*MATERIAL_AMBIENT 0.0000	0.0000	0.0000
+		*MATERIAL_DIFFUSE 0.8000	0.8000	0.8000	1.0000
+		*MATERIAL_SPECULAR 1.0000	1.0000	1.0000
+		*MATERIAL_SHINE 2.5000
+		*MATERIAL_SHINESTRENGTH 0.5000
+		*MATERIAL_TRANSPARENCY 0.0000
+		*MATERIAL_WIRESIZE 1.0000
+		*MATERIAL_SHADING Blinn
+		*MATERIAL_XP_FALLOFF 0.0000
+		*MATERIAL_SELFILLUM 0.0000
+		*MATERIAL_FALLOFF In
+		*MATERIAL_XP_TYPE Filter
+		*MAP_DIFFUSE {
+			*MAP_NAME "textures/common/collision"
+			*MAP_CLASS "Bitmap"
+			*MAP_SUBNO 1
+			*MAP_AMOUNT 1.0000
+			*BITMAP "//base/textures/common/collision"
+			*MAP_TYPE Screen
+			*UVW_U_OFFSET 0.0000
+			*UVW_V_OFFSET 0.0000
+			*UVW_U_TILING 1.0000
+			*UVW_V_TILING 1.0000
+			*UVW_ANGLE 0.0000
+			*UVW_BLUR 1.0000
+			*UVW_BLUR_OFFSET 0.0000
+			*UVW_NOISE_AMT 1.0000
+			*UVW_NOISE_SIZE 1.0000
+			*UVW_NOISE_LEVEL 1
+			*UVW_NOISE_PHASE 0.0000
+			*BITMAP_FILTER Pyramidal
+		}
+	}
+	*MATERIAL 1 {
 		*MATERIAL_NAME "tdm_door_latch_02"
 		*MATERIAL_CLASS "Standard"
 		*MATERIAL_AMBIENT 0.0000	0.0000	0.0000
@@ -47,6 +83,77 @@
 			*BITMAP_FILTER Pyramidal
 		}
 	}
+}
+*GEOMOBJECT {
+	*NODE_NAME "moorcollision"
+	*NODE_TM {
+		*NODE_NAME "moorcollision"
+		*INHERIT_POS 0 0 0
+		*INHERIT_ROT 0 0 0
+		*INHERIT_SCL 0 0 0
+		*TM_ROW0 1.0000	0.0000	0.0000
+		*TM_ROW1 0.0000	1.0000	0.0000
+		*TM_ROW2 0.0000	0.0000	1.0000
+		*TM_ROW3 0.0000	0.0000	0.0000
+		*TM_POS 0.0000	0.0000	0.0000
+		*TM_ROTAXIS 0.0000	0.0000	0.0000
+		*TM_ROTANGLE 0.0000
+		*TM_SCALE 1.0000	1.0000	1.0000
+		*TM_SCALEAXIS 0.0000	0.0000	0.0000
+		*TM_SCALEAXISANG 0.0000
+	}
+	*MESH {
+		*TIMEVALUE 0
+		*MESH_NUMVERTEX 5
+		*MESH_NUMFACES 6
+		*MESH_VERTEX_LIST {
+			*MESH_VERTEX    0	-3.5000	0.0017	-9.5000
+			*MESH_VERTEX    1	-21.0000	-1.3000	1.0000
+			*MESH_VERTEX    2	-20.5000	1.3000	1.0000
+			*MESH_VERTEX    3	13.0000	-1.3000	1.0000
+			*MESH_VERTEX    4	13.5000	1.3000	1.0000
+		}
+		*MESH_FACE_LIST {
+			*MESH_FACE    0:    A:    0 B:    1 C:    2 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 0	 *MESH_MTLID 0
+			*MESH_FACE    1:    A:    3 B:    2 C:    1 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 0	 *MESH_MTLID 0
+			*MESH_FACE    2:    A:    3 B:    0 C:    4 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 0	 *MESH_MTLID 0
+			*MESH_FACE    3:    A:    1 B:    0 C:    3 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 0	 *MESH_MTLID 0
+			*MESH_FACE    4:    A:    4 B:    0 C:    2 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 0	 *MESH_MTLID 0
+			*MESH_FACE    5:    A:    3 B:    4 C:    2 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 0	 *MESH_MTLID 0
+		}
+		*MESH_NUMTVERTEX 0
+		*MESH_NUMCVERTEX 0
+		*MESH_NORMALS {
+			*MESH_FACENORMAL 0	-0.5174	0.0995	-0.8500
+				*MESH_VERTEXNORMAL 0	-0.5174	0.0995	-0.8500
+				*MESH_VERTEXNORMAL 1	-0.5174	0.0995	-0.8500
+				*MESH_VERTEXNORMAL 2	-0.5174	0.0995	-0.8500
+			*MESH_FACENORMAL 1	0.0000	-0.0000	1.0000
+				*MESH_VERTEXNORMAL 3	0.0000	-0.0000	1.0000
+				*MESH_VERTEXNORMAL 2	0.0000	-0.0000	1.0000
+				*MESH_VERTEXNORMAL 1	0.0000	-0.0000	1.0000
+			*MESH_FACENORMAL 2	0.5284	-0.1016	-0.8429
+				*MESH_VERTEXNORMAL 3	0.5284	-0.1016	-0.8429
+				*MESH_VERTEXNORMAL 0	0.5284	-0.1016	-0.8429
+				*MESH_VERTEXNORMAL 4	0.5284	-0.1016	-0.8429
+			*MESH_FACENORMAL 3	0.0000	-0.9924	-0.1230
+				*MESH_VERTEXNORMAL 1	0.0000	-0.9924	-0.1230
+				*MESH_VERTEXNORMAL 0	0.0000	-0.9924	-0.1230
+				*MESH_VERTEXNORMAL 3	0.0000	-0.9924	-0.1230
+			*MESH_FACENORMAL 4	0.0000	0.9924	-0.1227
+				*MESH_VERTEXNORMAL 4	0.0000	0.9924	-0.1227
+				*MESH_VERTEXNORMAL 0	0.0000	0.9924	-0.1227
+				*MESH_VERTEXNORMAL 2	0.0000	0.9924	-0.1227
+			*MESH_FACENORMAL 5	0.0000	-0.0000	1.0000
+				*MESH_VERTEXNORMAL 3	0.0000	-0.0000	1.0000
+				*MESH_VERTEXNORMAL 4	0.0000	-0.0000	1.0000
+				*MESH_VERTEXNORMAL 2	0.0000	-0.0000	1.0000
+		}
+	}
+	*PROP_MOTIONBLUR 0
+	*PROP_CASTSHADOW 1
+	*PROP_RECVSHADOW 1
+	*MATERIAL_REF 0
 }
 *GEOMOBJECT {
 	*NODE_NAME "moorlatch_low.001"
@@ -146,148 +253,148 @@
 			*MESH_VERTEX   72	-2.9000	-0.6647	-0.7071
 		}
 		*MESH_FACE_LIST {
-			*MESH_FACE    0:    A:   43 B:   19 C:   42 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 0	 *MESH_MTLID 0
-			*MESH_FACE    1:    A:   42 B:   20 C:   41 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 1	 *MESH_MTLID 0
-			*MESH_FACE    2:    A:   30 B:   27 C:   25 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 2	 *MESH_MTLID 0
-			*MESH_FACE    3:    A:   29 B:   26 C:   32 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 3	 *MESH_MTLID 0
-			*MESH_FACE    4:    A:   70 B:   38 C:   37 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 4	 *MESH_MTLID 0
-			*MESH_FACE    5:    A:   59 B:   71 C:   35 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 5	 *MESH_MTLID 0
-			*MESH_FACE    6:    A:   39 B:   17 C:   38 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 6	 *MESH_MTLID 0
-			*MESH_FACE    7:    A:   67 B:   37 C:   36 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 7	 *MESH_MTLID 0
-			*MESH_FACE    8:    A:   41 B:   21 C:   40 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 8	 *MESH_MTLID 0
-			*MESH_FACE    9:    A:   37 B:   17 C:   16 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 9	 *MESH_MTLID 0
-			*MESH_FACE   10:    A:   32 B:   27 C:   33 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 10	 *MESH_MTLID 0
-			*MESH_FACE   11:    A:   26 B:   24 C:   23 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 3	 *MESH_MTLID 0
-			*MESH_FACE   12:    A:   13 B:   11 C:    5 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 11	 *MESH_MTLID 0
-			*MESH_FACE   13:    A:    8 B:    7 C:    5 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 12	 *MESH_MTLID 0
-			*MESH_FACE   14:    A:   11 B:   10 C:    5 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 13	 *MESH_MTLID 0
-			*MESH_FACE   15:    A:   10 B:    9 C:    5 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 14	 *MESH_MTLID 0
-			*MESH_FACE   16:    A:   12 B:   13 C:    5 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 15	 *MESH_MTLID 0
-			*MESH_FACE   17:    A:    7 B:    6 C:    5 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 16	 *MESH_MTLID 0
-			*MESH_FACE   18:    A:   45 B:    6 C:    7 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 17	 *MESH_MTLID 0
-			*MESH_FACE   19:    A:   18 B:   15 C:   14 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 18	 *MESH_MTLID 0
-			*MESH_FACE   20:    A:   47 B:   10 C:   48 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 19	 *MESH_MTLID 0
-			*MESH_FACE   21:    A:   27 B:   26 C:   23 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 10	 *MESH_MTLID 0
-			*MESH_FACE   22:    A:   49 B:   13 C:   50 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 20	 *MESH_MTLID 0
-			*MESH_FACE   23:    A:   19 B:   18 C:   14 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 21	 *MESH_MTLID 0
-			*MESH_FACE   24:    A:   25 B:   27 C:   23 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 2	 *MESH_MTLID 0
-			*MESH_FACE   25:    A:   49 B:   10 C:   11 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 22	 *MESH_MTLID 0
-			*MESH_FACE   26:    A:   50 B:   12 C:   51 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 23	 *MESH_MTLID 0
-			*MESH_FACE   27:    A:   22 B:   21 C:   14 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 24	 *MESH_MTLID 0
-			*MESH_FACE   28:    A:   51 B:    6 C:   44 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 25	 *MESH_MTLID 0
-			*MESH_FACE   29:    A:   29 B:   25 C:   24 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 26	 *MESH_MTLID 0
-			*MESH_FACE   30:    A:   65 B:   41 C:   40 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 27	 *MESH_MTLID 0
-			*MESH_FACE   31:    A:   20 B:   19 C:   14 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 28	 *MESH_MTLID 0
-			*MESH_FACE   32:    A:   16 B:   17 C:   14 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 29	 *MESH_MTLID 0
-			*MESH_FACE   33:    A:   21 B:   20 C:   14 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 30	 *MESH_MTLID 0
-			*MESH_FACE   34:    A:   39 B:   65 C:   40 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 31	 *MESH_MTLID 0
-			*MESH_FACE   35:    A:   63 B:   44 C:   61 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 0	 *MESH_MTLID 0
-			*MESH_FACE   36:    A:   41 B:   69 C:   42 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 1	 *MESH_MTLID 0
-			*MESH_FACE   37:    A:   36 B:   18 C:   43 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 2	 *MESH_MTLID 0
-			*MESH_FACE   38:    A:   72 B:   39 C:   38 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 3	 *MESH_MTLID 0
-			*MESH_FACE   39:    A:   24 B:   25 C:   23 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 26	 *MESH_MTLID 0
-			*MESH_FACE   40:    A:   17 B:   22 C:   14 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 4	 *MESH_MTLID 0
-			*MESH_FACE   41:    A:   59 B:   47 C:   48 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 5	 *MESH_MTLID 0
-			*MESH_FACE   42:    A:    9 B:    8 C:    5 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 6	 *MESH_MTLID 0
-			*MESH_FACE   43:    A:   39 B:   21 C:   22 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 7	 *MESH_MTLID 0
-			*MESH_FACE   44:    A:    6 B:   12 C:    5 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 8	 *MESH_MTLID 0
-			*MESH_FACE   45:    A:   71 B:   32 C:   33 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 10	 *MESH_MTLID 0
-			*MESH_FACE   46:    A:   15 B:   16 C:   14 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 9	 *MESH_MTLID 0
-			*MESH_FACE   47:    A:   66 B:   36 C:   43 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 10	 *MESH_MTLID 0
-			*MESH_FACE   48:    A:   52 B:    2 C:    4 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 11	 *MESH_MTLID 0
-			*MESH_FACE   49:    A:   69 B:   43 C:   42 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 12	 *MESH_MTLID 0
-			*MESH_FACE   50:    A:   46 B:    9 C:   47 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 13	 *MESH_MTLID 0
-			*MESH_FACE   51:    A:   72 B:   29 C:   65 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 26	 *MESH_MTLID 0
-			*MESH_FACE   52:    A:   37 B:   15 C:   36 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 14	 *MESH_MTLID 0
-			*MESH_FACE   53:    A:   45 B:    8 C:   46 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 15	 *MESH_MTLID 0
-			*MESH_FACE   54:    A:   56 B:    4 C:    3 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 16	 *MESH_MTLID 0
-			*MESH_FACE   55:    A:   61 B:   45 C:   62 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 17	 *MESH_MTLID 0
-			*MESH_FACE   56:    A:   71 B:   30 C:   72 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 2	 *MESH_MTLID 0
-			*MESH_FACE   57:    A:   72 B:   65 C:   34 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 18	 *MESH_MTLID 0
-			*MESH_FACE   58:    A:   71 B:   47 C:   35 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 19	 *MESH_MTLID 0
-			*MESH_FACE   59:    A:   55 B:    2 C:   53 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 20	 *MESH_MTLID 0
-			*MESH_FACE   60:    A:   64 B:   51 C:   63 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 21	 *MESH_MTLID 0
-			*MESH_FACE   61:    A:   54 B:    0 C:   55 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 22	 *MESH_MTLID 0
-			*MESH_FACE   62:    A:   60 B:   50 C:   64 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 23	 *MESH_MTLID 0
-			*MESH_FACE   63:    A:   54 B:   31 C:    1 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 24	 *MESH_MTLID 0
-			*MESH_FACE   64:    A:   59 B:   49 C:   60 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 25	 *MESH_MTLID 0
-			*MESH_FACE   65:    A:   65 B:   32 C:   59 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 3	 *MESH_MTLID 0
-			*MESH_FACE   66:    A:   56 B:   58 C:   57 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 26	 *MESH_MTLID 0
-			*MESH_FACE   67:    A:   62 B:   46 C:   71 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 27	 *MESH_MTLID 0
-			*MESH_FACE   68:    A:   31 B:   60 C:    1 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 28	 *MESH_MTLID 0
-			*MESH_FACE   69:    A:    4 B:   62 C:    3 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 28	 *MESH_MTLID 0
-			*MESH_FACE   70:    A:    2 B:   61 C:    4 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 28	 *MESH_MTLID 0
-			*MESH_FACE   71:    A:    0 B:   60 C:   64 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 28	 *MESH_MTLID 0
-			*MESH_FACE   72:    A:   28 B:   59 C:   31 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 29	 *MESH_MTLID 0
-			*MESH_FACE   73:    A:    2 B:   64 C:   63 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 28	 *MESH_MTLID 0
-			*MESH_FACE   74:    A:   53 B:   67 C:   66 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 30	 *MESH_MTLID 0
-			*MESH_FACE   75:    A:   55 B:   68 C:   54 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 30	 *MESH_MTLID 0
-			*MESH_FACE   76:    A:   53 B:   69 C:   55 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 30	 *MESH_MTLID 0
-			*MESH_FACE   77:    A:   52 B:   70 C:   67 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 30	 *MESH_MTLID 0
-			*MESH_FACE   78:    A:   28 B:   68 C:   65 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 30	 *MESH_MTLID 0
-			*MESH_FACE   79:    A:   58 B:   62 C:   71 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 28	 *MESH_MTLID 0
-			*MESH_FACE   80:    A:   58 B:   72 C:   57 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 31	 *MESH_MTLID 0
-			*MESH_FACE   81:    A:   57 B:   70 C:   56 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 30	 *MESH_MTLID 0
-			*MESH_FACE   82:    A:   43 B:   18 C:   19 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 0	 *MESH_MTLID 0
-			*MESH_FACE   83:    A:   42 B:   19 C:   20 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 1	 *MESH_MTLID 0
-			*MESH_FACE   84:    A:   30 B:   33 C:   27 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 2	 *MESH_MTLID 0
-			*MESH_FACE   85:    A:   29 B:   24 C:   26 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 3	 *MESH_MTLID 0
-			*MESH_FACE   86:    A:   70 B:   72 C:   38 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 4	 *MESH_MTLID 0
-			*MESH_FACE   87:    A:   39 B:   22 C:   17 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 6	 *MESH_MTLID 0
-			*MESH_FACE   88:    A:   67 B:   70 C:   37 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 7	 *MESH_MTLID 0
-			*MESH_FACE   89:    A:   41 B:   20 C:   21 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 8	 *MESH_MTLID 0
-			*MESH_FACE   90:    A:   37 B:   38 C:   17 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 9	 *MESH_MTLID 0
-			*MESH_FACE   91:    A:   32 B:   26 C:   27 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 10	 *MESH_MTLID 0
-			*MESH_FACE   92:    A:   45 B:   44 C:    6 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 17	 *MESH_MTLID 0
-			*MESH_FACE   93:    A:   47 B:    9 C:   10 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 19	 *MESH_MTLID 0
-			*MESH_FACE   94:    A:   49 B:   11 C:   13 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 20	 *MESH_MTLID 0
-			*MESH_FACE   95:    A:   49 B:   48 C:   10 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 22	 *MESH_MTLID 0
-			*MESH_FACE   96:    A:   50 B:   13 C:   12 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 23	 *MESH_MTLID 0
-			*MESH_FACE   97:    A:   51 B:   12 C:    6 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 25	 *MESH_MTLID 0
-			*MESH_FACE   98:    A:   29 B:   30 C:   25 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 26	 *MESH_MTLID 0
-			*MESH_FACE   99:    A:   65 B:   68 C:   41 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 27	 *MESH_MTLID 0
-			*MESH_FACE  100:    A:   39 B:   34 C:   65 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 31	 *MESH_MTLID 0
-			*MESH_FACE  101:    A:   63 B:   51 C:   44 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 0	 *MESH_MTLID 0
-			*MESH_FACE  102:    A:   41 B:   68 C:   69 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 1	 *MESH_MTLID 0
-			*MESH_FACE  103:    A:   36 B:   15 C:   18 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 2	 *MESH_MTLID 0
-			*MESH_FACE  104:    A:   72 B:   34 C:   39 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 3	 *MESH_MTLID 0
-			*MESH_FACE  105:    A:   59 B:   35 C:   47 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 5	 *MESH_MTLID 0
-			*MESH_FACE  106:    A:   39 B:   40 C:   21 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 7	 *MESH_MTLID 0
-			*MESH_FACE  107:    A:   71 B:   59 C:   32 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 10	 *MESH_MTLID 0
-			*MESH_FACE  108:    A:   66 B:   67 C:   36 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 10	 *MESH_MTLID 0
-			*MESH_FACE  109:    A:   52 B:   53 C:    2 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 11	 *MESH_MTLID 0
-			*MESH_FACE  110:    A:   69 B:   66 C:   43 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 12	 *MESH_MTLID 0
-			*MESH_FACE  111:    A:   46 B:    8 C:    9 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 13	 *MESH_MTLID 0
-			*MESH_FACE  112:    A:   72 B:   30 C:   29 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 26	 *MESH_MTLID 0
-			*MESH_FACE  113:    A:   37 B:   16 C:   15 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 14	 *MESH_MTLID 0
-			*MESH_FACE  114:    A:   45 B:    7 C:    8 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 15	 *MESH_MTLID 0
-			*MESH_FACE  115:    A:   56 B:   52 C:    4 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 16	 *MESH_MTLID 0
-			*MESH_FACE  116:    A:   61 B:   44 C:   45 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 17	 *MESH_MTLID 0
-			*MESH_FACE  117:    A:   71 B:   33 C:   30 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 2	 *MESH_MTLID 0
-			*MESH_FACE  118:    A:   71 B:   46 C:   47 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 19	 *MESH_MTLID 0
-			*MESH_FACE  119:    A:   55 B:    0 C:    2 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 20	 *MESH_MTLID 0
-			*MESH_FACE  120:    A:   64 B:   50 C:   51 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 21	 *MESH_MTLID 0
-			*MESH_FACE  121:    A:   54 B:    1 C:    0 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 22	 *MESH_MTLID 0
-			*MESH_FACE  122:    A:   60 B:   49 C:   50 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 23	 *MESH_MTLID 0
-			*MESH_FACE  123:    A:   54 B:   28 C:   31 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 24	 *MESH_MTLID 0
-			*MESH_FACE  124:    A:   59 B:   48 C:   49 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 25	 *MESH_MTLID 0
-			*MESH_FACE  125:    A:   65 B:   29 C:   32 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 3	 *MESH_MTLID 0
-			*MESH_FACE  126:    A:   56 B:    3 C:   58 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 26	 *MESH_MTLID 0
-			*MESH_FACE  127:    A:   62 B:   45 C:   46 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 27	 *MESH_MTLID 0
-			*MESH_FACE  128:    A:   31 B:   59 C:   60 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 28	 *MESH_MTLID 0
-			*MESH_FACE  129:    A:    4 B:   61 C:   62 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 28	 *MESH_MTLID 0
-			*MESH_FACE  130:    A:    2 B:   63 C:   61 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 28	 *MESH_MTLID 0
-			*MESH_FACE  131:    A:    0 B:    1 C:   60 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 28	 *MESH_MTLID 0
-			*MESH_FACE  132:    A:   28 B:   65 C:   59 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 29	 *MESH_MTLID 0
-			*MESH_FACE  133:    A:    2 B:    0 C:   64 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 28	 *MESH_MTLID 0
-			*MESH_FACE  134:    A:   53 B:   52 C:   67 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 30	 *MESH_MTLID 0
-			*MESH_FACE  135:    A:   55 B:   69 C:   68 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 30	 *MESH_MTLID 0
-			*MESH_FACE  136:    A:   53 B:   66 C:   69 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 30	 *MESH_MTLID 0
-			*MESH_FACE  137:    A:   52 B:   56 C:   70 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 30	 *MESH_MTLID 0
-			*MESH_FACE  138:    A:   28 B:   54 C:   68 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 30	 *MESH_MTLID 0
-			*MESH_FACE  139:    A:   58 B:    3 C:   62 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 28	 *MESH_MTLID 0
-			*MESH_FACE  140:    A:   58 B:   71 C:   72 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 31	 *MESH_MTLID 0
-			*MESH_FACE  141:    A:   57 B:   72 C:   70 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 30	 *MESH_MTLID 0
+			*MESH_FACE    0:    A:   43 B:   19 C:   42 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 0	 *MESH_MTLID 1
+			*MESH_FACE    1:    A:   42 B:   20 C:   41 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 1	 *MESH_MTLID 1
+			*MESH_FACE    2:    A:   30 B:   27 C:   25 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 2	 *MESH_MTLID 1
+			*MESH_FACE    3:    A:   29 B:   26 C:   32 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 3	 *MESH_MTLID 1
+			*MESH_FACE    4:    A:   70 B:   38 C:   37 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 4	 *MESH_MTLID 1
+			*MESH_FACE    5:    A:   59 B:   71 C:   35 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 5	 *MESH_MTLID 1
+			*MESH_FACE    6:    A:   39 B:   17 C:   38 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 6	 *MESH_MTLID 1
+			*MESH_FACE    7:    A:   67 B:   37 C:   36 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 7	 *MESH_MTLID 1
+			*MESH_FACE    8:    A:   41 B:   21 C:   40 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 8	 *MESH_MTLID 1
+			*MESH_FACE    9:    A:   37 B:   17 C:   16 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 9	 *MESH_MTLID 1
+			*MESH_FACE   10:    A:   32 B:   27 C:   33 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 10	 *MESH_MTLID 1
+			*MESH_FACE   11:    A:   26 B:   24 C:   23 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 3	 *MESH_MTLID 1
+			*MESH_FACE   12:    A:   13 B:   11 C:    5 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 11	 *MESH_MTLID 1
+			*MESH_FACE   13:    A:    8 B:    7 C:    5 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 12	 *MESH_MTLID 1
+			*MESH_FACE   14:    A:   11 B:   10 C:    5 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 13	 *MESH_MTLID 1
+			*MESH_FACE   15:    A:   10 B:    9 C:    5 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 14	 *MESH_MTLID 1
+			*MESH_FACE   16:    A:   12 B:   13 C:    5 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 15	 *MESH_MTLID 1
+			*MESH_FACE   17:    A:    7 B:    6 C:    5 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 16	 *MESH_MTLID 1
+			*MESH_FACE   18:    A:   45 B:    6 C:    7 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 17	 *MESH_MTLID 1
+			*MESH_FACE   19:    A:   18 B:   15 C:   14 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 18	 *MESH_MTLID 1
+			*MESH_FACE   20:    A:   47 B:   10 C:   48 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 19	 *MESH_MTLID 1
+			*MESH_FACE   21:    A:   27 B:   26 C:   23 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 10	 *MESH_MTLID 1
+			*MESH_FACE   22:    A:   49 B:   13 C:   50 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 20	 *MESH_MTLID 1
+			*MESH_FACE   23:    A:   19 B:   18 C:   14 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 21	 *MESH_MTLID 1
+			*MESH_FACE   24:    A:   25 B:   27 C:   23 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 2	 *MESH_MTLID 1
+			*MESH_FACE   25:    A:   49 B:   10 C:   11 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 22	 *MESH_MTLID 1
+			*MESH_FACE   26:    A:   50 B:   12 C:   51 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 23	 *MESH_MTLID 1
+			*MESH_FACE   27:    A:   22 B:   21 C:   14 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 24	 *MESH_MTLID 1
+			*MESH_FACE   28:    A:   51 B:    6 C:   44 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 25	 *MESH_MTLID 1
+			*MESH_FACE   29:    A:   29 B:   25 C:   24 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 26	 *MESH_MTLID 1
+			*MESH_FACE   30:    A:   65 B:   41 C:   40 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 27	 *MESH_MTLID 1
+			*MESH_FACE   31:    A:   20 B:   19 C:   14 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 28	 *MESH_MTLID 1
+			*MESH_FACE   32:    A:   16 B:   17 C:   14 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 29	 *MESH_MTLID 1
+			*MESH_FACE   33:    A:   21 B:   20 C:   14 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 30	 *MESH_MTLID 1
+			*MESH_FACE   34:    A:   39 B:   65 C:   40 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 31	 *MESH_MTLID 1
+			*MESH_FACE   35:    A:   63 B:   44 C:   61 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 0	 *MESH_MTLID 1
+			*MESH_FACE   36:    A:   41 B:   69 C:   42 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 1	 *MESH_MTLID 1
+			*MESH_FACE   37:    A:   36 B:   18 C:   43 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 2	 *MESH_MTLID 1
+			*MESH_FACE   38:    A:   72 B:   39 C:   38 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 3	 *MESH_MTLID 1
+			*MESH_FACE   39:    A:   24 B:   25 C:   23 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 26	 *MESH_MTLID 1
+			*MESH_FACE   40:    A:   17 B:   22 C:   14 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 4	 *MESH_MTLID 1
+			*MESH_FACE   41:    A:   59 B:   47 C:   48 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 5	 *MESH_MTLID 1
+			*MESH_FACE   42:    A:    9 B:    8 C:    5 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 6	 *MESH_MTLID 1
+			*MESH_FACE   43:    A:   39 B:   21 C:   22 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 7	 *MESH_MTLID 1
+			*MESH_FACE   44:    A:    6 B:   12 C:    5 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 8	 *MESH_MTLID 1
+			*MESH_FACE   45:    A:   71 B:   32 C:   33 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 10	 *MESH_MTLID 1
+			*MESH_FACE   46:    A:   15 B:   16 C:   14 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 9	 *MESH_MTLID 1
+			*MESH_FACE   47:    A:   66 B:   36 C:   43 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 10	 *MESH_MTLID 1
+			*MESH_FACE   48:    A:   52 B:    2 C:    4 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 11	 *MESH_MTLID 1
+			*MESH_FACE   49:    A:   69 B:   43 C:   42 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 12	 *MESH_MTLID 1
+			*MESH_FACE   50:    A:   46 B:    9 C:   47 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 13	 *MESH_MTLID 1
+			*MESH_FACE   51:    A:   72 B:   29 C:   65 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 26	 *MESH_MTLID 1
+			*MESH_FACE   52:    A:   37 B:   15 C:   36 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 14	 *MESH_MTLID 1
+			*MESH_FACE   53:    A:   45 B:    8 C:   46 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 15	 *MESH_MTLID 1
+			*MESH_FACE   54:    A:   56 B:    4 C:    3 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 16	 *MESH_MTLID 1
+			*MESH_FACE   55:    A:   61 B:   45 C:   62 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 17	 *MESH_MTLID 1
+			*MESH_FACE   56:    A:   71 B:   30 C:   72 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 2	 *MESH_MTLID 1
+			*MESH_FACE   57:    A:   72 B:   65 C:   34 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 18	 *MESH_MTLID 1
+			*MESH_FACE   58:    A:   71 B:   47 C:   35 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 19	 *MESH_MTLID 1
+			*MESH_FACE   59:    A:   55 B:    2 C:   53 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 20	 *MESH_MTLID 1
+			*MESH_FACE   60:    A:   64 B:   51 C:   63 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 21	 *MESH_MTLID 1
+			*MESH_FACE   61:    A:   54 B:    0 C:   55 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 22	 *MESH_MTLID 1
+			*MESH_FACE   62:    A:   60 B:   50 C:   64 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 23	 *MESH_MTLID 1
+			*MESH_FACE   63:    A:   54 B:   31 C:    1 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 24	 *MESH_MTLID 1
+			*MESH_FACE   64:    A:   59 B:   49 C:   60 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 25	 *MESH_MTLID 1
+			*MESH_FACE   65:    A:   65 B:   32 C:   59 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 3	 *MESH_MTLID 1
+			*MESH_FACE   66:    A:   56 B:   58 C:   57 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 26	 *MESH_MTLID 1
+			*MESH_FACE   67:    A:   62 B:   46 C:   71 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 27	 *MESH_MTLID 1
+			*MESH_FACE   68:    A:   31 B:   60 C:    1 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 28	 *MESH_MTLID 1
+			*MESH_FACE   69:    A:    4 B:   62 C:    3 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 28	 *MESH_MTLID 1
+			*MESH_FACE   70:    A:    2 B:   61 C:    4 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 28	 *MESH_MTLID 1
+			*MESH_FACE   71:    A:    0 B:   60 C:   64 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 28	 *MESH_MTLID 1
+			*MESH_FACE   72:    A:   28 B:   59 C:   31 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 29	 *MESH_MTLID 1
+			*MESH_FACE   73:    A:    2 B:   64 C:   63 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 28	 *MESH_MTLID 1
+			*MESH_FACE   74:    A:   53 B:   67 C:   66 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 30	 *MESH_MTLID 1
+			*MESH_FACE   75:    A:   55 B:   68 C:   54 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 30	 *MESH_MTLID 1
+			*MESH_FACE   76:    A:   53 B:   69 C:   55 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 30	 *MESH_MTLID 1
+			*MESH_FACE   77:    A:   52 B:   70 C:   67 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 30	 *MESH_MTLID 1
+			*MESH_FACE   78:    A:   28 B:   68 C:   65 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 30	 *MESH_MTLID 1
+			*MESH_FACE   79:    A:   58 B:   62 C:   71 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 28	 *MESH_MTLID 1
+			*MESH_FACE   80:    A:   58 B:   72 C:   57 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 31	 *MESH_MTLID 1
+			*MESH_FACE   81:    A:   57 B:   70 C:   56 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 30	 *MESH_MTLID 1
+			*MESH_FACE   82:    A:   43 B:   18 C:   19 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 0	 *MESH_MTLID 1
+			*MESH_FACE   83:    A:   42 B:   19 C:   20 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 1	 *MESH_MTLID 1
+			*MESH_FACE   84:    A:   30 B:   33 C:   27 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 2	 *MESH_MTLID 1
+			*MESH_FACE   85:    A:   29 B:   24 C:   26 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 3	 *MESH_MTLID 1
+			*MESH_FACE   86:    A:   70 B:   72 C:   38 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 4	 *MESH_MTLID 1
+			*MESH_FACE   87:    A:   39 B:   22 C:   17 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 6	 *MESH_MTLID 1
+			*MESH_FACE   88:    A:   67 B:   70 C:   37 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 7	 *MESH_MTLID 1
+			*MESH_FACE   89:    A:   41 B:   20 C:   21 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 8	 *MESH_MTLID 1
+			*MESH_FACE   90:    A:   37 B:   38 C:   17 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 9	 *MESH_MTLID 1
+			*MESH_FACE   91:    A:   32 B:   26 C:   27 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 10	 *MESH_MTLID 1
+			*MESH_FACE   92:    A:   45 B:   44 C:    6 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 17	 *MESH_MTLID 1
+			*MESH_FACE   93:    A:   47 B:    9 C:   10 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 19	 *MESH_MTLID 1
+			*MESH_FACE   94:    A:   49 B:   11 C:   13 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 20	 *MESH_MTLID 1
+			*MESH_FACE   95:    A:   49 B:   48 C:   10 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 22	 *MESH_MTLID 1
+			*MESH_FACE   96:    A:   50 B:   13 C:   12 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 23	 *MESH_MTLID 1
+			*MESH_FACE   97:    A:   51 B:   12 C:    6 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 25	 *MESH_MTLID 1
+			*MESH_FACE   98:    A:   29 B:   30 C:   25 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 26	 *MESH_MTLID 1
+			*MESH_FACE   99:    A:   65 B:   68 C:   41 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 27	 *MESH_MTLID 1
+			*MESH_FACE  100:    A:   39 B:   34 C:   65 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 31	 *MESH_MTLID 1
+			*MESH_FACE  101:    A:   63 B:   51 C:   44 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 0	 *MESH_MTLID 1
+			*MESH_FACE  102:    A:   41 B:   68 C:   69 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 1	 *MESH_MTLID 1
+			*MESH_FACE  103:    A:   36 B:   15 C:   18 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 2	 *MESH_MTLID 1
+			*MESH_FACE  104:    A:   72 B:   34 C:   39 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 3	 *MESH_MTLID 1
+			*MESH_FACE  105:    A:   59 B:   35 C:   47 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 5	 *MESH_MTLID 1
+			*MESH_FACE  106:    A:   39 B:   40 C:   21 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 7	 *MESH_MTLID 1
+			*MESH_FACE  107:    A:   71 B:   59 C:   32 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 10	 *MESH_MTLID 1
+			*MESH_FACE  108:    A:   66 B:   67 C:   36 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 10	 *MESH_MTLID 1
+			*MESH_FACE  109:    A:   52 B:   53 C:    2 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 11	 *MESH_MTLID 1
+			*MESH_FACE  110:    A:   69 B:   66 C:   43 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 12	 *MESH_MTLID 1
+			*MESH_FACE  111:    A:   46 B:    8 C:    9 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 13	 *MESH_MTLID 1
+			*MESH_FACE  112:    A:   72 B:   30 C:   29 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 26	 *MESH_MTLID 1
+			*MESH_FACE  113:    A:   37 B:   16 C:   15 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 14	 *MESH_MTLID 1
+			*MESH_FACE  114:    A:   45 B:    7 C:    8 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 15	 *MESH_MTLID 1
+			*MESH_FACE  115:    A:   56 B:   52 C:    4 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 16	 *MESH_MTLID 1
+			*MESH_FACE  116:    A:   61 B:   44 C:   45 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 17	 *MESH_MTLID 1
+			*MESH_FACE  117:    A:   71 B:   33 C:   30 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 2	 *MESH_MTLID 1
+			*MESH_FACE  118:    A:   71 B:   46 C:   47 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 19	 *MESH_MTLID 1
+			*MESH_FACE  119:    A:   55 B:    0 C:    2 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 20	 *MESH_MTLID 1
+			*MESH_FACE  120:    A:   64 B:   50 C:   51 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 21	 *MESH_MTLID 1
+			*MESH_FACE  121:    A:   54 B:    1 C:    0 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 22	 *MESH_MTLID 1
+			*MESH_FACE  122:    A:   60 B:   49 C:   50 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 23	 *MESH_MTLID 1
+			*MESH_FACE  123:    A:   54 B:   28 C:   31 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 24	 *MESH_MTLID 1
+			*MESH_FACE  124:    A:   59 B:   48 C:   49 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 25	 *MESH_MTLID 1
+			*MESH_FACE  125:    A:   65 B:   29 C:   32 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 3	 *MESH_MTLID 1
+			*MESH_FACE  126:    A:   56 B:    3 C:   58 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 26	 *MESH_MTLID 1
+			*MESH_FACE  127:    A:   62 B:   45 C:   46 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 27	 *MESH_MTLID 1
+			*MESH_FACE  128:    A:   31 B:   59 C:   60 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 28	 *MESH_MTLID 1
+			*MESH_FACE  129:    A:    4 B:   61 C:   62 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 28	 *MESH_MTLID 1
+			*MESH_FACE  130:    A:    2 B:   63 C:   61 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 28	 *MESH_MTLID 1
+			*MESH_FACE  131:    A:    0 B:    1 C:   60 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 28	 *MESH_MTLID 1
+			*MESH_FACE  132:    A:   28 B:   65 C:   59 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 29	 *MESH_MTLID 1
+			*MESH_FACE  133:    A:    2 B:    0 C:   64 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 28	 *MESH_MTLID 1
+			*MESH_FACE  134:    A:   53 B:   52 C:   67 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 30	 *MESH_MTLID 1
+			*MESH_FACE  135:    A:   55 B:   69 C:   68 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 30	 *MESH_MTLID 1
+			*MESH_FACE  136:    A:   53 B:   66 C:   69 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 30	 *MESH_MTLID 1
+			*MESH_FACE  137:    A:   52 B:   56 C:   70 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 30	 *MESH_MTLID 1
+			*MESH_FACE  138:    A:   28 B:   54 C:   68 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 30	 *MESH_MTLID 1
+			*MESH_FACE  139:    A:   58 B:    3 C:   62 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 28	 *MESH_MTLID 1
+			*MESH_FACE  140:    A:   58 B:   71 C:   72 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 31	 *MESH_MTLID 1
+			*MESH_FACE  141:    A:   57 B:   72 C:   70 AB:    0 BC:    0 CA:    0	 *MESH_SMOOTHING 30	 *MESH_MTLID 1
 		}
 		*MESH_NUMTVERTEX 182
 		*MESH_TVERTLIST {
@@ -787,7 +894,7 @@
 				*MESH_VERTEXNORMAL 14	0.1612	-0.3777	-0.9118
 			*MESH_FACENORMAL 41	0.0007	0.3827	-0.9239
 				*MESH_VERTEXNORMAL 59	0.0003	0.3883	-0.9215
-				*MESH_VERTEXNORMAL 47	0.0003	0.3883	-0.9215
+				*MESH_VERTEXNORMAL 47	0.0003	0.3882	-0.9216
 				*MESH_VERTEXNORMAL 48	0.0003	0.3883	-0.9215
 			*MESH_FACENORMAL 42	-0.1944	-0.3754	-0.9063
 				*MESH_VERTEXNORMAL 9	-0.1944	-0.3754	-0.9063
@@ -828,7 +935,7 @@
 			*MESH_FACENORMAL 51	0.9982	0.0003	-0.0606
 				*MESH_VERTEXNORMAL 72	0.9982	0.0003	-0.0606
 				*MESH_VERTEXNORMAL 29	0.9999	0.0000	0.0159
-				*MESH_VERTEXNORMAL 65	0.9982	-0.0000	-0.0607
+				*MESH_VERTEXNORMAL 65	0.9982	0.0003	-0.0606
 			*MESH_FACENORMAL 52	0.6186	-0.7259	0.3007
 				*MESH_VERTEXNORMAL 37	0.6186	-0.7259	0.3007
 				*MESH_VERTEXNORMAL 15	0.6186	-0.7259	0.3007
@@ -880,7 +987,7 @@
 			*MESH_FACENORMAL 64	0.0000	0.9191	-0.3939
 				*MESH_VERTEXNORMAL 59	0.0003	0.9215	-0.3883
 				*MESH_VERTEXNORMAL 49	0.0003	0.9216	-0.3882
-				*MESH_VERTEXNORMAL 60	0.0003	0.9215	-0.3883
+				*MESH_VERTEXNORMAL 60	0.0003	0.9215	-0.3884
 			*MESH_FACENORMAL 65	0.0000	0.9984	-0.0558
 				*MESH_VERTEXNORMAL 65	0.0000	0.9984	-0.0558
 				*MESH_VERTEXNORMAL 32	0.0000	0.9999	0.0148
@@ -1044,7 +1151,7 @@
 			*MESH_FACENORMAL 105	-0.0000	0.3939	-0.9191
 				*MESH_VERTEXNORMAL 59	0.0003	0.3883	-0.9215
 				*MESH_VERTEXNORMAL 35	0.0003	0.3883	-0.9215
-				*MESH_VERTEXNORMAL 47	0.0003	0.3883	-0.9215
+				*MESH_VERTEXNORMAL 47	0.0003	0.3882	-0.9216
 			*MESH_FACENORMAL 106	0.6186	0.3007	-0.7259
 				*MESH_VERTEXNORMAL 39	0.6186	0.3007	-0.7259
 				*MESH_VERTEXNORMAL 40	0.6186	0.3007	-0.7259
@@ -1194,5 +1301,5 @@
 	*PROP_MOTIONBLUR 0
 	*PROP_CASTSHADOW 1
 	*PROP_RECVSHADOW 1
-	*MATERIAL_REF 0
+	*MATERIAL_REF 1
 }
