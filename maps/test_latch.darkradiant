@@ -1,15 +1,18 @@
 DarkRadiant Map Information File Version 2
 {
-	MapProperties
-	{
-		KeyValue { "EditTimeInSeconds" "3961" } 
-		KeyValue { "LastCameraAngle" "-4.1 90.2 0" } 
-		KeyValue { "LastCameraPosition" "153.844 498.912 -66.6503" } 
-		KeyValue { "LastShaderClipboardMaterial" "textures/darkmod/_proto/proto_metal" } 
-	}
 	MapEditTimings
 	{
-		TotalSecondsEdited { 3961 }
+		TotalSecondsEdited { 4055 }
+	}
+	SelectionSets
+	{
+	}
+	MapProperties
+	{
+		KeyValue { "EditTimeInSeconds" "4055" } 
+		KeyValue { "LastCameraAngle" "-15.5 280.4 0" } 
+		KeyValue { "LastCameraPosition" "-363.055 161.228 -58.2293" } 
+		KeyValue { "LastShaderClipboardMaterial" "textures/darkmod/_proto/proto_metal" } 
 	}
 	SelectionGroups
 	{
@@ -160,6 +163,7 @@ DarkRadiant Map Information File Version 2
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
 		Node { 0 } // entity (ambient_world)
 		Node { 0 } // entity (Objectives)
 		Node { 0 } // entity (CompassEasy)
@@ -272,8 +276,7 @@ DarkRadiant Map Information File Version 2
 		Node { 0 } // entity (func_static_12)
 		Node { 0 } // entity (func_static_13)
 		Node { 0 } // entity (light_2)
-	}
-	SelectionSets
-	{
+		Node { 0 } // entity (atdm_playertools_health_potion_2)
+		Node { 0 } // entity (atdm_playertools_health_potion_1)
 	}
 }

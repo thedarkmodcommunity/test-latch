@@ -1967,6 +1967,7 @@ brushDef3
 "target0" "atdm_mover_door_2"
 "target1" "atdm_mover_door_3"
 "translate" "-11 0 0"
+"snd_move" "frob_lever_metal_small_01"
 }
 // entity 82
 {

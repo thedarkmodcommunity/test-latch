@@ -211,6 +211,8 @@ void tdm_latch::moveLatch()
 	moveToPos( getVectorKey("origin") + latchState * getVectorKey("translate") );
 	rotateOnce( (2*latchState - 1) * getVectorKey("rotate") );
 
+	startSound( "snd_move", SND_CHANNEL_ANY, false);
+
 	sys.wait( getFloatKey("move_time") );
 
 	if (latchState)
