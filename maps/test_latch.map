@@ -91,12 +91,12 @@ brushDef3
 {
 brushDef3
 {
-( 0 1 0 -832 ) ( ( 0.003905999939888716 0 -0.1249919980764389 ) ( 0 0.003905999939888716 -0.4999679923057556 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
-( 1 0 0 -64 ) ( ( 0.003905999939888716 0 -1.750087976455688 ) ( 0 0.003905999939888716 -0.4999679923057556 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
-( 0 -1 0 -192 ) ( ( 0.003905999939888716 0 0.1249919980764389 ) ( 0 0.003905999939888716 -0.4999679923057556 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
-( 0 0 1 -640 ) ( ( 0 0.003905999939888716 0.1249919980764389 ) ( -0.003905999939888716 0 1.750087976455688 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
-( 0 0 -1 -160 ) ( ( 0 -0.003905999939888716 0.1249919980764389 ) ( 0.003905999939888716 0 -1.750087976455688 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
-( -1 0 0 32 ) ( ( 0.003905999939888716 0 1.750087976455688 ) ( 0 0.003905999939888716 -0.4999679923057556 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( 0 1 0 -832 ) ( ( 0.003905999939888716 0 3.499775946140278 ) ( 0 0.003905999939888716 -0.4999679923057727 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( 1 0 0 -992 ) ( ( 0.003905999939888716 0 -1.750087976455688 ) ( 0 0.003905999939888716 -0.4999679923057556 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( 0 -1 0 -192 ) ( ( 0.003905999939888716 0 -3.499775946140295 ) ( 0 0.003905999939888716 -0.4999679923057442 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( 0 0 1 -640 ) ( ( 0 0.003905999939888716 -3.499775946140289 ) ( -0.003905999939888716 0 1.750087976455688 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( 0 0 -1 -160 ) ( ( 0 -0.003905999939888716 -3.499775946140289 ) ( 0.003905999939888716 0 -1.750087976455688 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( -1 0 0 960 ) ( ( 0.003905999939888716 0 1.750087976455688 ) ( 0 0.003905999939888716 -0.4999679923057556 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
 }
 }
 // primitive 8
@@ -108,7 +108,7 @@ brushDef3
 ( 0 -1 0 832 ) ( ( 0.003905999939888716 0 0.1249919980764389 ) ( 0 0.003905999939888716 -0.4999679923057556 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
 ( -1 0 0 -768 ) ( ( 0.003905999939888716 0 1.750087976455688 ) ( 0 0.003905999939888716 -0.4999679923057556 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
 ( 0 0 -1 -128 ) ( ( 0 -0.003905999939888716 0.1249919980764389 ) ( 0.003905999939888716 0 -1.750087976455688 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
-( 1 0 0 -64 ) ( ( 0.003905999939888716 0 -1.750087976455688 ) ( 0 0.003905999939888716 -0.4999679923057556 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( 1 0 0 -992 ) ( ( 0.003905999939888716 0 -1.750087976455688 ) ( 0 0.003905999939888716 -0.4999679923057556 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
 }
 }
 // primitive 9
@@ -119,7 +119,7 @@ brushDef3
 ( 0 0 1 -640 ) ( ( 0 0.003905999939888716 0.1249919980764389 ) ( -0.003905999939888716 0 1.750087976455688 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
 ( -1 0 0 -768 ) ( ( 0.003905999939888716 0 1.750087976455688 ) ( 0 0.003905999939888716 -0.4999679923057556 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
 ( 0 -1 0 -192 ) ( ( 0.003905999939888716 0 0.1249919980764389 ) ( 0 0.003905999939888716 -0.4999679923057556 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
-( 1 0 0 -32 ) ( ( 0.003905999939888716 0 -1.750087976455688 ) ( 0 0.003905999939888716 -0.4999679923057556 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( 1 0 0 -960 ) ( ( 0.003905999939888716 0 -1.750087976455688 ) ( 0 0.003905999939888716 -0.4999679923057556 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
 ( 0 1 0 -864 ) ( ( 0.003905999939888716 0 -0.1249919980764389 ) ( 0 0.003905999939888716 -0.4999679923057556 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
 }
 }
@@ -128,7 +128,7 @@ brushDef3
 brushDef3
 {
 ( 0 1 0 -832 ) ( ( 0.003905999939888716 0 -0.1249919980764389 ) ( 0 0.003905999939888716 -0.4999679923057556 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
-( 1 0 0 -32 ) ( ( 0.003905999939888716 0 -1.750087976455688 ) ( 0 0.003905999939888716 -0.4999679923057556 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( 1 0 0 -960 ) ( ( 0.003905999939888716 0 -1.750087976455688 ) ( 0 0.003905999939888716 -0.4999679923057556 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
 ( 0 -1 0 -192 ) ( ( 0.003905999939888716 0 0.09374400228261948 ) ( 0 0.003905999939888716 -0.4999679923057556 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
 ( -1 0 0 -768 ) ( ( 0.003905999939888716 0 1.750087976455688 ) ( 0 0.003905999939888716 -0.4999679923057556 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
 ( 0 0 -1 -160 ) ( ( 0 -0.003905999939888716 0.1249919980764389 ) ( 0.003905999939888716 0 -1.750087976455688 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
@@ -228,7 +228,7 @@ brushDef3
 ( 0 -1 0 -224 ) ( ( 0.003905999939888716 0 0.1249919980764389 ) ( 0 0.003905999939888716 -0.4999679923057556 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
 ( -1 0 0 -768 ) ( ( 0.003905999939888716 0 -2.374647855758667 ) ( 0 0.003905999939888716 -0.4999679923057556 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
 ( 0 0 -1 -128 ) ( ( 0 -0.003905999939888716 0.1249919980764389 ) ( 0.003905999939888716 0 2.374648094177246 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
-( 1 0 0 -64 ) ( ( 0.003905999939888716 0 2.374647855758667 ) ( 0 0.003905999939888716 -0.4999679923057556 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( 1 0 0 -992 ) ( ( 0.003905999939888716 0 2.374647855758667 ) ( 0 0.003905999939888716 -0.4999679923057556 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
 }
 }
 // primitive 19
@@ -313,6 +313,138 @@ brushDef3
 ( 0 0 -1 -128 ) ( ( 0 -0.003905999939888716 0.1249919980764389 ) ( -0.003905999939888716 0 4.499743938446045 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
 ( -1 0 0 -208 ) ( ( -0.003905999939888716 0 -4.124743938446045 ) ( 0 0.003905999939888716 -0.4999679923057556 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
 ( 0 -1 0 128 ) ( ( -0.003905999939888716 0 -0.1249919980764389 ) ( 0 0.003905999939888716 -0.4999679923057556 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+}
+}
+// primitive 26
+{
+brushDef3
+{
+( 0 0 1 -32 ) ( ( 0 -0.003905999939888717 -0.7187079899012928 ) ( -0.003905999939888716 0 -1.359286978840803 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( -1 0 0 8 ) ( ( -0.003905999939888716 0 1.359286978840865 ) ( 0 0.003905999939888717 -0.4999679923057644 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( 0 -1 0 540 ) ( ( -0.003905999939888717 0 -0.8593329899013052 ) ( 0 0.003905999939888714 -0.4999679923057566 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( 0 0 -1 -128 ) ( ( 0 0.003905999939888716 -0.7187079899012985 ) ( 0.003905999939888716 0 1.359286978840804 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( 1 0 0 -96 ) ( ( -0.003905999939888716 0 -1.359286978840856 ) ( 0 0.003905999939888716 -0.4999679923057556 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( 0 1 0 -548 ) ( ( -0.003905999939888716 0 0.6562079899013042 ) ( 0 0.003905999939888713 -0.4999679923057566 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+}
+}
+// primitive 27
+{
+brushDef3
+{
+( 0 0 1 -192 ) ( ( 0 -0.003905999939888716 -0.6562079899013042 ) ( -0.003905999939888716 0 -1.859287979081273 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( -1 0 0 0 ) ( ( -0.003905999939888716 0 1.890535978600386 ) ( 0 0.003905999939888717 -0.4999679923057563 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( 0 -1 0 320 ) ( ( -0.003905999939888716 0 -0.6562079899013047 ) ( 0 0.003905999939888716 -0.4999679923057561 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( 0 0 -1 -128 ) ( ( 0 0.003905999939888716 -0.6562079899013042 ) ( 0.003905999939888716 0 1.890535978600383 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( 1 0 0 -8 ) ( ( -0.003905999939888716 0 -1.515535978600379 ) ( 0 0.003905999939888716 -0.4999679923057561 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( 0 1 0 -540 ) ( ( -0.003905999939888716 0 0.6562079899013058 ) ( 0 0.003905999939888717 -0.4999679923057561 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+}
+}
+// primitive 28
+{
+brushDef3
+{
+( 0 0 1 -32 ) ( ( 0 -0.003905999939888716 -0.6249599866569042 ) ( -0.003905999939888716 0 -1.374911978840828 ) ) "textures/darkmod/_proto/proto" 0 0 0
+( -1 0 0 192 ) ( ( -0.003905999939888716 0 1.374911978840907 ) ( 0 0.003905999939888717 -0.4999679923057678 ) ) "textures/darkmod/_proto/proto" 0 0 0
+( 0 -1 0 536 ) ( ( -0.003905999939888716 0 -0.6249599866569113 ) ( 0 0.003905999939888716 -0.4999679923057556 ) ) "textures/darkmod/_proto/proto" 0 0 0
+( 0 0 -1 -128 ) ( ( 0 0.003905999939888716 -0.6249599866569042 ) ( 0.003905999939888716 0 1.374911978840828 ) ) "textures/darkmod/_proto/proto" 0 0 0
+( 1 0 0 -208 ) ( ( -0.003905999939888716 0 -1.374911978840871 ) ( 0 0.003905999939888717 -0.4999679923057627 ) ) "textures/darkmod/_proto/proto" 0 0 0
+( 0 1 0 -552 ) ( ( -0.003905999939888716 0 0.6249599866569076 ) ( 0 0.003905999939888716 -0.4999679923057556 ) ) "textures/darkmod/_proto/proto" 0 0 0
+}
+}
+// primitive 29
+{
+brushDef3
+{
+( 0 0 1 -192 ) ( ( 0 -0.003905999939888716 -0.6562079899013042 ) ( -0.003905999939888716 0 -1.859287979081273 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( -1 0 0 296 ) ( ( -0.003905999939888716 0 1.640535978600387 ) ( 0 0.003905999939888717 -0.4999679923057563 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( 0 -1 0 320 ) ( ( -0.003905999939888716 0 -0.6562079899013042 ) ( 0 0.003905999939888716 -0.4999679923057627 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( 0 0 -1 -128 ) ( ( 0 0.003905999939888716 -0.6562079899013042 ) ( 0.003905999939888716 0 1.890535978600383 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( 1 0 0 -304 ) ( ( -0.003905999939888716 0 -1.890535978600386 ) ( 0 0.003905999939888716 -0.4999679923057561 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( 0 1 0 -540 ) ( ( -0.003905999939888716 0 0.656207989901368 ) ( 0 0.003905999939888717 -0.499967992305763 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+}
+}
+// primitive 30
+{
+brushDef3
+{
+( 0 0 1 -32 ) ( ( 0 -0.003905999939888716 -0.656207989901306 ) ( -0.003905999939888716 0 -1.374911978840856 ) ) "textures/darkmod/_proto/proto" 0 0 0
+( -1 0 0 112 ) ( ( -0.003905999939888716 0 1.374911978840828 ) ( 0 0.003905999939888716 -0.4999679923057556 ) ) "textures/darkmod/_proto/proto" 0 0 0
+( 0 -1 0 536 ) ( ( -0.003905999939888714 0 -0.6562079899013029 ) ( 0 0.003905999939888716 -0.4999679923057556 ) ) "textures/darkmod/_proto/proto" 0 0 0
+( 0 0 -1 16 ) ( ( 0 0.003905999939888717 -0.6562079899012865 ) ( 0.003905999939888716 0 1.374911978840796 ) ) "textures/darkmod/_proto/proto" 0 0 0
+( 1 0 0 -192 ) ( ( -0.003905999939888716 0 -1.374911978840828 ) ( 0 0.003905999939888716 -0.4999679923057556 ) ) "textures/darkmod/_proto/proto" 0 0 0
+( 0 1 0 -552 ) ( ( -0.003905999939888719 0 0.6562079899013038 ) ( 0 0.003905999939888716 -0.4999679923057556 ) ) "textures/darkmod/_proto/proto" 0 0 0
+}
+}
+// primitive 31
+{
+brushDef3
+{
+( 0 0 1 -32 ) ( ( 0 -0.003905999939888716 0.03129202499982453 ) ( -0.003905999939888716 0 -1.359286978840883 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( -1 0 0 208 ) ( ( -0.003905999939888716 0 1.359286978840865 ) ( 0 0.003905999939888717 -0.4999679923057644 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( 0 -1 0 540 ) ( ( -0.003905999939888717 0 -0.1093329750001466 ) ( 0 0.003905999939888714 -0.4999679923057561 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( 0 0 -1 -128 ) ( ( 0 0.003905999939888716 0.03129202499988493 ) ( 0.003905999939888716 0 1.359286978840748 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( 1 0 0 -296 ) ( ( -0.003905999939888716 0 -1.359286978840856 ) ( 0 0.003905999939888716 -0.4999679923057556 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( 0 1 0 -548 ) ( ( -0.003905999939888714 0 -0.09379202499985517 ) ( 0 0.003905999939888713 -0.499967992305756 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+}
+}
+// primitive 32
+{
+brushDef3
+{
+( 0 0 1 -32 ) ( ( 0 -0.003905999939888716 -0.6874559856951237 ) ( -0.003905999939888716 0 -1.374911978840828 ) ) "textures/darkmod/_proto/proto" 0 0 0
+( -1 0 0 96 ) ( ( -0.003905999939888716 0 1.374911978840907 ) ( 0 0.003905999939888717 -0.4999679923057678 ) ) "textures/darkmod/_proto/proto" 0 0 0
+( 0 -1 0 536 ) ( ( -0.003905999939888716 0 -0.6874559856951326 ) ( 0 0.003905999939888716 -0.4999679923057565 ) ) "textures/darkmod/_proto/proto" 0 0 0
+( 0 0 -1 -128 ) ( ( 0 0.003905999939888716 -0.6874559856951237 ) ( 0.003905999939888716 0 1.374911978840828 ) ) "textures/darkmod/_proto/proto" 0 0 0
+( 1 0 0 -112 ) ( ( -0.003905999939888716 0 -1.374911978840871 ) ( 0 0.003905999939888717 -0.4999679923057627 ) ) "textures/darkmod/_proto/proto" 0 0 0
+( 0 1 0 -552 ) ( ( -0.003905999939888716 0 0.6874559856951303 ) ( 0 0.003905999939888716 -0.4999679923057576 ) ) "textures/darkmod/_proto/proto" 0 0 0
+}
+}
+// primitive 33
+{
+brushDef3
+{
+( 0 0 1 -16 ) ( ( -0.03906249941792339 0 42.5781243655365 ) ( 0 -0.03906249941792339 11.87499982304882 ) ) "textures/common/nodraw" 0 0 0
+( 0 -1 0 538 ) ( ( 0.0390624994179234 0 -11.87499982304872 ) ( 0 0.0390624994179234 -4.440892098500626e-16 ) ) "textures/editor/visportal" 0 0 0
+( -1 0 0 112 ) ( ( 0.03906249941792339 0 42.5781243655365 ) ( 0 0.0390624994179234 0 ) ) "textures/common/nodraw" 0 0 0
+( 0 0 -1 -128 ) ( ( -0.03906249941792339 0 42.5781243655365 ) ( 0 -0.0390624994179234 -11.71874982304871 ) ) "textures/common/nodraw" 0 0 0
+( 0 1 0 -546 ) ( ( 0.03906249941792341 0 11.87499982304872 ) ( 0 0.03906249941792341 -8.881784197001252e-16 ) ) "textures/common/nodraw" 0 0 0
+( 1 0 0 -192 ) ( ( 0.03906249941792339 0 -42.57812436553627 ) ( 0 0.0390624994179234 0 ) ) "textures/common/nodraw" 0 0 0
+}
+}
+// primitive 34
+{
+brushDef3
+{
+( 0 0 1 -192 ) ( ( 0 -0.003905999939888716 0.03129202499980188 ) ( -0.003905999939888716 0 -1.359286978840929 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( -1 0 0 8 ) ( ( -0.003905999939888716 0 1.359286978840868 ) ( 0 0.003905999939888718 0.1249919980764166 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( 0 -1 0 540 ) ( ( -0.003905999939888717 0 -0.1093329750001466 ) ( 0 0.003905999939888712 0.1249919980764371 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( 0 0 -1 32 ) ( ( 0 0.003905999939888716 0.03129202499988448 ) ( 0.003905999939888716 0 1.359286978840689 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( 1 0 0 -296 ) ( ( -0.003905999939888716 0 -1.359286978840828 ) ( 0 0.003905999939888717 0.1249919980764389 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( 0 1 0 -548 ) ( ( -0.003905999939888714 0 -0.09379202499985495 ) ( 0 0.003905999939888711 0.1249919980764369 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+}
+}
+// primitive 35
+{
+brushDef3
+{
+( 0 0 1 -200 ) ( ( -0.003905999939888717 0 -0.1093329750001466 ) ( 0 0.003905999939888712 0.1249919980764371 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( 0 1 0 -540 ) ( ( 0.003905999939888717 0 -0.1093329750001465 ) ( 0 -0.003905999939888712 -1.374911978840828 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( 1 0 0 -296 ) ( ( -0.003905999939888717 0 -0.1093329750001466 ) ( 0 0.003905999939888712 0.1249919980764371 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( 0 0 -1 192 ) ( ( 0 0.003905999939888717 -0.1093329750001466 ) ( 0.003905999939888712 0 -2.7341999579221 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( 0 -1 0 320 ) ( ( -0.003905999939888717 0 -0.1093329750001466 ) ( 0 0.003905999939888712 0.1249919980764371 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( -1 0 0 8 ) ( ( -0.003905999939888717 0 -0.1093329750001466 ) ( 0 0.003905999939888712 0.1249919980764371 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+}
+}
+// primitive 36
+{
+brushDef3
+{
+( 0 0 1 -192 ) ( ( -0.03906249941792339 0 25.31249962281436 ) ( 0 -0.03906249941792339 11.87499982304871 ) ) "textures/common/nodraw" 0 0 0
+( 0 -1 0 320 ) ( ( 0.0390624994179234 0 -11.87499982304872 ) ( 0 0.0390624994179234 -1.221245327087672e-15 ) ) "textures/editor/visportal" 0 0 0
+( -1 0 0 8 ) ( ( 0.03906249941792339 0 25.3124996228143 ) ( 0 0.0390624994179234 0 ) ) "textures/common/nodraw" 0 0 0
+( 0 0 -1 -128 ) ( ( -0.03906249941792339 0 25.3124996228144 ) ( 0 -0.03906249941792338 -11.87499982304873 ) ) "textures/common/nodraw" 0 0 0
+( 0 1 0 -328 ) ( ( 0.0390624994179234 0 11.87499982304871 ) ( 0 0.0390624994179234 -1.77635683940025e-15 ) ) "textures/common/nodraw" 0 0 0
+( 1 0 0 -296 ) ( ( 0.03906249941792339 0 -25.31249962281447 ) ( 0 0.0390624994179234 0 ) ) "textures/common/nodraw" 0 0 0
 }
 }
 }
@@ -1443,28 +1575,14 @@ brushDef3
 "_color" "1 1 1"
 "falloff" "0"
 "light_center" "0 0 0"
-"light_radius" "224 600 600"
+"light_radius" "328 264 600"
 "nodiffuse" "0"
 "noshadows" "0"
 "nospecular" "0"
-"origin" "-348 -62 256"
+"origin" "-344 360 256"
 "rotation" "0 -1 0 1 0 0 0 0 1"
 }
 // entity 71
-{
-"classname" "light"
-"name" "light_2"
-"_color" "1 1 1"
-"falloff" "0"
-"light_center" "0 0 0"
-"light_radius" "232 600 600"
-"nodiffuse" "0"
-"noshadows" "0"
-"nospecular" "0"
-"origin" "-352 736 256"
-"rotation" "0 -1 0 1 0 0 0 0 1"
-}
-// entity 72
 {
 "classname" "atdm:mover_door"
 "name" "atdm_mover_door_1"
@@ -1700,18 +1818,19 @@ brushDef3
 }
 }
 }
-// entity 73
+// entity 72
 {
 "classname" "func_static"
 "name" "func_static_3"
 "model" "models/darkmod/door_related/latch_door_01_plateA.ase"
 "origin" "-312 536 -48"
 }
-// entity 74
+// entity 73
 {
 "classname" "atdm:latch"
 "name" "func_static_1"
 "frob_action_script" "frobResponse"
+"frob_distance" "100"
 "latch_normal" "0 -90 0"
 "model" "models/darkmod/door_related/latch_door_01_lock.ase"
 "move_time" ".5"
@@ -1721,9 +1840,8 @@ brushDef3
 "snd_move" "metal_cabinet01_open"
 "target0" "atdm_mover_door_1"
 "translate" "10 0 0"
-"frob_distance" "100"
 }
-// entity 75
+// entity 74
 {
 "classname" "atdm:mover_door"
 "name" "atdm_mover_door_2"
@@ -1749,7 +1867,7 @@ brushDef3
 }
 }
 }
-// entity 76
+// entity 75
 {
 "classname" "atdm:mover_door"
 "name" "atdm_mover_door_3"
@@ -1775,7 +1893,7 @@ brushDef3
 }
 }
 }
-// entity 77
+// entity 76
 {
 "classname" "func_static"
 "name" "func_static_2"
@@ -1784,7 +1902,7 @@ brushDef3
 "origin" "-368 136 -66"
 "rotation" "-1 0 0 0 -1 0 0 0 1"
 }
-// entity 78
+// entity 77
 {
 "classname" "func_static"
 "name" "func_static_4"
@@ -1793,7 +1911,7 @@ brushDef3
 "origin" "-349 136 -66"
 "rotation" "-1 0 0 0 -1 0 0 0 1"
 }
-// entity 79
+// entity 78
 {
 "classname" "func_static"
 "name" "func_static_5"
@@ -1802,7 +1920,7 @@ brushDef3
 "origin" "-343 136 -66"
 "rotation" "-1 0 0 0 -1 0 0 0 1"
 }
-// entity 80
+// entity 79
 {
 "classname" "func_static"
 "name" "func_static_7"
@@ -1811,38 +1929,154 @@ brushDef3
 "origin" "-355 136 -66"
 "rotation" "-1 0 0 0 -1 0 0 0 1"
 }
-// entity 81
+// entity 80
 {
 "classname" "light"
 "name" "light_3"
 "_color" "1 1 1"
 "falloff" "0"
 "light_center" "0 0 0"
-"light_radius" "224 600 600"
+"light_radius" "200 248 312"
 "nodiffuse" "0"
 "noshadows" "0"
 "nospecular" "0"
-"origin" "-348 338 256"
+"origin" "168 384 116"
 "rotation" "0 -1 0 1 0 0 0 0 1"
 }
-// entity 82
+// entity 81
 {
 "classname" "atdm:latch"
 "name" "func_static_6"
 "bind" "atdm_mover_door_2"
 "model" "models/darkmod/door_related/latch_door_02_lock.ase"
+"move_time" "0.5"
 "origin" "-353 138 -66"
 "rotation" "1 0 0 0 1 0 0 0 1"
 "target0" "atdm_mover_door_2"
 "target1" "atdm_mover_door_3"
 "translate" "-10 0 0"
-"move_time" "0.5"
 }
-// entity 83
+// entity 82
 {
 "classname" "func_static"
 "name" "func_static_8"
 "bind" "atdm_mover_door_1"
 "model" "models/darkmod/door_related/latch_door_01_plateB.ase"
 "origin" "-325 536 -48"
+}
+// entity 83
+{
+"classname" "atdm:mover_door"
+"name" "atdm_mover_door_4"
+"lock_picktype" "-"
+"lock_pins" "0"
+"locked" "1"
+"model" "atdm_mover_door_4"
+"origin" "112 538 -128"
+"rotate" "0 -90 0"
+"snd_close" "chest_wood_close"
+"snd_open" "chest_wood_open"
+"used_by" "-"
+// primitive 0
+{
+brushDef3
+{
+( 0 0 1 -144 ) ( ( -0.25 0 199 ) ( 0 -0.02500000037252903 3.800000116229143 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
+( 0 -1 0 -2 ) ( ( 0.02500000037252903 0 61.20000083744532 ) ( 0 0.006944444496184589 0.1111111119389534 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
+( -1 0 0 0 ) ( ( 0.25 0 199 ) ( 0 0.006944444496184587 0.1111111119389534 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
+( 0 0 -1 0 ) ( ( -0.25 0 199 ) ( 0 -0.02500000037252903 253.1999970227553 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
+( 0 1 0 -2 ) ( ( 0.02500000037252903 0 3.800000116229045 ) ( 0 0.006944444496184589 0.1111111119389534 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
+( 1 0 0 -40 ) ( ( 0.25 0 -134.0000000000018 ) ( 0 0.006944444496184587 0.1111111119389534 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
+}
+}
+}
+// entity 84
+{
+"classname" "atdm:mover_door"
+"name" "atdm_mover_door_5"
+"lock_picktype" "-"
+"lock_pins" "0"
+"locked" "1"
+"model" "atdm_mover_door_5"
+"origin" "192 538 -128"
+"rotate" "0 90 0"
+"snd_close" "chest_wood_close"
+"snd_open" "chest_wood_open"
+"used_by" "-"
+// primitive 0
+{
+brushDef3
+{
+( 0 0 1 -144 ) ( ( -0.25 0 199 ) ( 0 -0.02500000037252903 4.800000116229185 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
+( 0 -1 0 -2 ) ( ( 0.02500000037252903 0 60.20000083744543 ) ( 0 0.006944444496184589 0.1111111119389534 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
+( -1 0 0 -40 ) ( ( 0.25 0 199 ) ( 0 0.006944444496184587 0.1111111119389534 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
+( 0 0 -1 0 ) ( ( -0.25 0 199 ) ( 0 -0.02500000037252903 252.1999970227553 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
+( 0 1 0 -2 ) ( ( 0.02500000037252903 0 4.800000116229065 ) ( 0 0.006944444496184589 0.1111111119389534 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
+( 1 0 0 0 ) ( ( 0.25 0 -134.0000000000018 ) ( 0 0.006944444496184587 0.1111111119389534 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
+}
+}
+}
+// entity 85
+{
+"classname" "func_static"
+"name" "func_static_9"
+"bind" "atdm_mover_door_4"
+"model" "models/darkmod/door_related/latch_door_02_bracket.ase"
+"origin" "143 536 -66"
+"rotation" "1 0 0 0 1 0 0 0 1"
+}
+// entity 86
+{
+"classname" "func_static"
+"name" "func_static_10"
+"bind" "atdm_mover_door_5"
+"model" "models/darkmod/door_related/latch_door_02_bracket.ase"
+"origin" "170 536 -66"
+"rotation" "1 0 0 0 1 0 0 0 1"
+}
+// entity 87
+{
+"classname" "func_static"
+"name" "func_static_11"
+"bind" "atdm_mover_door_5"
+"model" "models/darkmod/door_related/latch_door_02_bracket.ase"
+"origin" "155 536 -66"
+"rotation" "1 0 0 0 1 0 0 0 1"
+}
+// entity 88
+{
+"classname" "func_static"
+"name" "func_static_12"
+"bind" "atdm_mover_door_4"
+"model" "models/darkmod/door_related/latch_door_02_bracket.ase"
+"origin" "149 536 -66"
+"rotation" "1 0 0 0 1 0 0 0 1"
+}
+// entity 89
+{
+"classname" "atdm:latch"
+"name" "func_static_13"
+"bind" "atdm_mover_door_5"
+"model" "models/darkmod/door_related/latch_door_02_lock.ase"
+"move_time" "0.5"
+"origin" "153 534 -66"
+"rotation" "-1 0 0 0 -1 0 0 0 1"
+"target0" "atdm_mover_door_5"
+"target1" "atdm_mover_door_4"
+"translate" "12 0 0"
+"latch_normal" "0 -90 0"
+}
+// entity 90
+{
+"classname" "light"
+"name" "light_2"
+"_color" "1 1 1"
+"falloff" "0"
+"light_center" "0 0 0"
+"light_radius" "200 248 312"
+"nodiffuse" "0"
+"noshadows" "0"
+"nospecular" "0"
+"origin" "168 672 116"
+"rotation" "0 -1 0 1 0 0 0 0 1"
 }

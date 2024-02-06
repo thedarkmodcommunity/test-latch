@@ -1,22 +1,20 @@
 DarkRadiant Map Information File Version 2
 {
-	MapEditTimings
-	{
-		TotalSecondsEdited { 3078 }
-	}
-	SelectionSets
-	{
-	}
 	MapProperties
 	{
-		KeyValue { "EditTimeInSeconds" "3078" } 
-		KeyValue { "LastCameraAngle" "-2.3 275.2 0" } 
-		KeyValue { "LastCameraPosition" "-357.223 184.081 -50.6505" } 
-		KeyValue { "LastShaderClipboardMaterial" "textures/darkmod/wood/boards/rough_wood_brown_ns" } 
+		KeyValue { "EditTimeInSeconds" "3961" } 
+		KeyValue { "LastCameraAngle" "-4.1 90.2 0" } 
+		KeyValue { "LastCameraPosition" "153.844 498.912 -66.6503" } 
+		KeyValue { "LastShaderClipboardMaterial" "textures/darkmod/_proto/proto_metal" } 
+	}
+	MapEditTimings
+	{
+		TotalSecondsEdited { 3961 }
 	}
 	SelectionGroups
 	{
 		SelectionGroup 2 { "" }
+		SelectionGroup 3 { "" }
 	}
 	SelectionGroupNodeMapping
 	{
@@ -26,6 +24,13 @@ DarkRadiant Map Information File Version 2
 		Node { ( 0 3 ) ( 2 ) } // brush (Brush)
 		Node { ( 0 4 ) ( 2 ) } // brush (Brush)
 		Node { ( 0 5 ) ( 2 ) } // brush (Brush)
+		Node { ( 0 19 ) ( 3 ) } // brush (Brush)
+		Node { ( 0 20 ) ( 3 ) } // brush (Brush)
+		Node { ( 0 21 ) ( 3 ) } // brush (Brush)
+		Node { ( 0 22 ) ( 3 ) } // brush (Brush)
+		Node { ( 0 23 ) ( 3 ) } // brush (Brush)
+		Node { ( 0 24 ) ( 3 ) } // brush (Brush)
+		Node { ( 0 25 ) ( 3 ) } // brush (Brush)
 		Node { ( 1 ) ( 2 ) } // entity (ambient_world)
 		Node { ( 2 ) ( 2 ) } // entity (Objectives)
 		Node { ( 3 ) ( 2 ) } // entity (CompassEasy)
@@ -94,6 +99,13 @@ DarkRadiant Map Information File Version 2
 		Node { ( 66 ) ( 2 ) } // entity (VineArrowsHard)
 		Node { ( 67 ) ( 2 ) } // entity (VineArrowsExpert)
 		Node { ( 68 ) ( 2 ) } // entity (atdm_location_settings_1)
+		Node { ( 74 ) ( 3 ) } // entity (atdm_mover_door_2)
+		Node { ( 75 ) ( 3 ) } // entity (atdm_mover_door_3)
+		Node { ( 76 ) ( 3 ) } // entity (func_static_2)
+		Node { ( 77 ) ( 3 ) } // entity (func_static_4)
+		Node { ( 78 ) ( 3 ) } // entity (func_static_5)
+		Node { ( 79 ) ( 3 ) } // entity (func_static_7)
+		Node { ( 81 ) ( 3 ) } // entity (func_static_6)
 	}
 	Layers
 	{
@@ -111,6 +123,17 @@ DarkRadiant Map Information File Version 2
 	NodeToLayerMapping
 	{
 		Node { 0 } // entity (world)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
@@ -207,7 +230,6 @@ DarkRadiant Map Information File Version 2
 		Node { 0 } // entity (atdm_location_settings_1)
 		Node { 0 } // entity (info_player_start_1)
 		Node { 0 } // entity (light_1)
-		Node { 0 } // entity (light_2)
 		Node { 0 } // entity (atdm_mover_door_1)
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
@@ -240,5 +262,18 @@ DarkRadiant Map Information File Version 2
 		Node { 0 } // entity (light_3)
 		Node { 0 } // entity (func_static_6)
 		Node { 0 } // entity (func_static_8)
+		Node { 0 } // entity (atdm_mover_door_4)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // entity (atdm_mover_door_5)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // entity (func_static_9)
+		Node { 0 } // entity (func_static_10)
+		Node { 0 } // entity (func_static_11)
+		Node { 0 } // entity (func_static_12)
+		Node { 0 } // entity (func_static_13)
+		Node { 0 } // entity (light_2)
+	}
+	SelectionSets
+	{
 	}
 }

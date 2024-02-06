@@ -44,7 +44,7 @@ void tdm_latch::frobabilityLoop()
 
 		// TODO this was split up to add debug - condense later
 		float frobable = checkTolerance() || checkObstruction();
-		sys.println("Frobable: " + frobable);
+		sys.println( self.getName() + " Frobable: " + frobable);
 		
 		if ( areDoorsOpen() )
 		{
@@ -175,10 +175,18 @@ boolean tdm_latch::checkObstruction()
 boolean tdm_latch::checkTolerance()
 {
 	vector LatchNormal = getVectorKey( "latch_normal" );
-	vector AngToPlayer = sys.VecToAngles( $player1.getOrigin() - getOrigin() );
+
+	sys.println("latch_normal " + LatchNormal);
+
+	vector AngToPlayer = sys.VecToAngles( $player1.getOrigin() - getWorldOrigin() );
+
+	sys.println("AngToPlayer " + AngToPlayer);
 
 	//check whether the player is standing within the latch tolerance
-	return ( sys.vecLength( anglemod180(AngToPlayer - LatchNormal)  ) < LATCH_TOLERANCE );
+	float length = sys.vecLength( anglemod180(AngToPlayer - LatchNormal)  );
+	sys.println("vector length " + length);
+
+	return ( length < LATCH_TOLERANCE );
 }
 
 
