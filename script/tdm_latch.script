@@ -12,7 +12,7 @@ object tdm_latch
 	boolean checkTolerance();
 	boolean checkObstruction();
 	void frobResponse();
-	void moveLatch();
+	void moveLatch(float latchState);
 
 	float latchState;	//1 = open, 0 = closed
 	//entity door;		//door entity
@@ -58,6 +58,11 @@ void tdm_latch::frobabilityLoop()
 		// Set the door frobability
 		if ( latchState )
 		{
+			while ( isMoving() )
+			{
+				sys.wait( 0.1 );
+			}
+			
 			// always frobable when latch is open
 			setDoorsFrobable( 1 );
 		}
@@ -153,20 +158,20 @@ boolean tdm_latch::checkObstruction()
 
 	if( TraceResult == 1 )
 	{
-		sys.println("trace result = 1");
+		//sys.println("trace result = 1");
 		return true;    //clear line
 	}
 
 
 	else if( sys.getTraceEntity().getBindMaster() == self )
 	{
-		sys.println("trace has hit something that's bound to the latch");
+		//sys.println("trace has hit something that's bound to the latch");
 		return true;    //trace has hit something that's bound to the latch
 	}
 
 	else
 	{
-		sys.println("line is obstructed by something else");
+		//sys.println("line is obstructed by something else");
 		return false;    //line is obstructed by something else
 	}
 
@@ -176,15 +181,16 @@ boolean tdm_latch::checkTolerance()
 {
 	vector LatchNormal = getVectorKey( "latch_normal" );
 
-	sys.println("latch_normal " + LatchNormal);
+	//sys.println("latch_normal " + LatchNormal);
 
 	vector AngToPlayer = sys.VecToAngles( $player1.getOrigin() - getWorldOrigin() );
 
-	sys.println("AngToPlayer " + AngToPlayer);
+	//sys.println("AngToPlayer " + AngToPlayer);
 
 	//check whether the player is standing within the latch tolerance
 	float length = sys.vecLength( anglemod180(AngToPlayer - LatchNormal)  );
-	sys.println("vector length " + length);
+
+	//sys.println("vector length " + length);
 
 	return ( length < LATCH_TOLERANCE );
 }
@@ -197,16 +203,14 @@ void tdm_latch::frobResponse()
 
 	latchState = !latchState;
 
-	thread moveLatch();
-
-	setDoorsFrobable( latchState );
-	setDoorsAINotHandle( !latchState );
+	thread moveLatch(latchState);
 
 	//door.setKey( "ai_should_not_handle", !latchState );
 }
 
-void tdm_latch::moveLatch()
+void tdm_latch::moveLatch(float latchState)
 {
+
 	time( getFloatKey("move_time") );
 	moveToPos( getVectorKey("origin") + latchState * getVectorKey("translate") );
 	rotateOnce( (2*latchState - 1) * getVectorKey("rotate") );
@@ -223,4 +227,7 @@ void tdm_latch::moveLatch()
 	{
 		lockDoors( 1 );
 	}
+
+	setDoorsFrobable( latchState );
+	setDoorsAINotHandle( !latchState );
 }
