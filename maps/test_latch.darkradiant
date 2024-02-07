@@ -2,14 +2,14 @@ DarkRadiant Map Information File Version 2
 {
 	MapProperties
 	{
-		KeyValue { "EditTimeInSeconds" "6192" } 
-		KeyValue { "LastCameraAngle" "-9.4 264.6 0" } 
-		KeyValue { "LastCameraPosition" "631.824 -11.7033 -35.6198" } 
-		KeyValue { "LastShaderClipboardMaterial" "textures/darkmod/door/wood/5panels_01_worn" } 
+		KeyValue { "EditTimeInSeconds" "7303" } 
+		KeyValue { "LastCameraAngle" "-45 191.6 0" } 
+		KeyValue { "LastCameraPosition" "698.021 399.502 67.6718" } 
+		KeyValue { "LastShaderClipboardMaterial" "textures/darkmod/_proto/proto_metal" } 
 	}
 	MapEditTimings
 	{
-		TotalSecondsEdited { 6192 }
+		TotalSecondsEdited { 7303 }
 	}
 	Layers
 	{
@@ -27,6 +27,13 @@ DarkRadiant Map Information File Version 2
 	NodeToLayerMapping
 	{
 		Node { 0 } // entity (world)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
@@ -208,6 +215,16 @@ DarkRadiant Map Information File Version 2
 		Node { 0 } // entity (atdm_latch_door_01_2)
 		Node { 0 } // entity (func_static_17)
 		Node { 0 } // entity (func_static_18)
+		Node { 0 } // entity (overhead_latch)
+		Node { 0 } // entity (func_static_19)
+		Node { 0 } // entity (atdm_mover_door_8)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // entity (func_static_20)
+		Node { 0 } // entity (func_static_21)
+		Node { 0 } // entity (atdm_mover_door_9)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // entity (underneath_latch)
+		Node { 0 } // entity (func_static_22)
 	}
 	SelectionGroups
 	{

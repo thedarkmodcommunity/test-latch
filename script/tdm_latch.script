@@ -46,6 +46,8 @@ void tdm_latch::frobabilityLoop()
 
 		// TODO this was split up to add debug - condense later
 		float frobable = checkTolerance() || checkObstruction();
+
+		sys.println( self.getName() + ": Frobable: " + frobable );
 		
 		if ( areDoorsOpen() )
 		{
@@ -209,6 +211,9 @@ boolean tdm_latch::checkTolerance()
 
 	//check whether the player is standing within the latch tolerance
 	float length = sys.vecLength( anglemod180(AngToPlayer - LatchNormal)  );
+
+	sys.println( self.getName() + ": length: " + length );
+
 	return ( length < LATCH_TOLERANCE );
 }
 
