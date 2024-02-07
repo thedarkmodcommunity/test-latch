@@ -2,14 +2,14 @@ DarkRadiant Map Information File Version 2
 {
 	MapProperties
 	{
-		KeyValue { "EditTimeInSeconds" "4900" } 
-		KeyValue { "LastCameraAngle" "-3.7 265.4 0" } 
-		KeyValue { "LastCameraPosition" "-360.125 257.506 -21.4758" } 
-		KeyValue { "LastShaderClipboardMaterial" "textures/darkmod/door/wood/smooth_5panels01_tall" } 
+		KeyValue { "EditTimeInSeconds" "6192" } 
+		KeyValue { "LastCameraAngle" "-9.4 264.6 0" } 
+		KeyValue { "LastCameraPosition" "631.824 -11.7033 -35.6198" } 
+		KeyValue { "LastShaderClipboardMaterial" "textures/darkmod/door/wood/5panels_01_worn" } 
 	}
 	MapEditTimings
 	{
-		TotalSecondsEdited { 4900 }
+		TotalSecondsEdited { 6192 }
 	}
 	Layers
 	{
@@ -27,6 +27,20 @@ DarkRadiant Map Information File Version 2
 	NodeToLayerMapping
 	{
 		Node { 0 } // entity (world)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
@@ -181,6 +195,19 @@ DarkRadiant Map Information File Version 2
 		Node { 0 } // entity (func_static_13)
 		Node { 0 } // entity (atdm_latch_door_02_1)
 		Node { 0 } // entity (atdm_latch_door_01_1)
+		Node { 0 } // entity (atdm_latch_door_02_2)
+		Node { 0 } // entity (atdm_mover_door_7)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // entity (func_static_15)
+		Node { 0 } // entity (func_static_16)
+		Node { 0 } // entity (func_static_14)
+		Node { 0 } // entity (light_4)
+		Node { 0 } // entity (light_5)
+		Node { 0 } // entity (atdm_mover_door_6)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // entity (atdm_latch_door_01_2)
+		Node { 0 } // entity (func_static_17)
+		Node { 0 } // entity (func_static_18)
 	}
 	SelectionGroups
 	{
