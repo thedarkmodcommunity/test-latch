@@ -1577,8 +1577,8 @@ brushDef3
 {
 "classname" "info_player_start"
 "name" "info_player_start_1"
-"angle" "180.000000"
-"origin" "-88 320 -128"
+"angle" "90.000000"
+"origin" "-352 408 -128"
 }
 // entity 70
 {
@@ -1601,7 +1601,6 @@ brushDef3
 "frob_distance" "120"
 "lock_picktype" "-"
 "lock_pins" "0"
-"locked" "1"
 "model" "atdm_mover_door_1"
 "move_time" "2"
 "open_on_unlock" "0"
@@ -1845,7 +1844,7 @@ brushDef3
 "lock_pins" "0"
 "locked" "1"
 "model" "atdm_mover_door_2"
-"origin" "-392 134 -128"
+"origin" "-392 136 -128"
 "rotate" "0 90 0"
 "snd_close" "chest_wood_close"
 "snd_lock" "silence"
@@ -1853,16 +1852,17 @@ brushDef3
 "snd_open" "chest_wood_open"
 "snd_unlock" "silence"
 "used_by" "-"
+"open" "1"
 // primitive 0
 {
 brushDef3
 {
-( 0 0 1 -144 ) ( ( 0.25 0 31 ) ( 0 0.02500000037252903 9.800000190734863 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
-( 0 1 0 -2 ) ( ( 0.02500000037252903 0 55.20000076293945 ) ( 0 0.006944444496184587 0.1111111119389534 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
-( 1 0 0 -40 ) ( ( 0.25 0 31 ) ( 0 0.006944444496184587 0.1111111119389534 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
+( 0 0 1 -144 ) ( ( 0 -0.02500000037252903 55.20000076293942 ) ( 0.006944444496184587 0 -0.9444444514811039 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
+( 0 1 0 0 ) ( ( 0.02500000037252903 0 55.20000076293945 ) ( 0 0.006944444496184587 0.1111111119389534 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
+( 1 0 0 -40 ) ( ( 0.02500000037252903 0 60.60000084340572 ) ( 0 0.006944444496184587 0.1111111119389533 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
 ( 0 0 -1 0 ) ( ( 0.25 0 31 ) ( 0 0.02500000037252903 247.1999969482422 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
-( 0 -1 0 -2 ) ( ( 0.02500000037252903 0 9.800000190734863 ) ( 0 0.006944444496184587 0.1111111119389534 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
-( -1 0 0 0 ) ( ( 0.25 0 34 ) ( 0 0.006944444496184587 0.1111111119389534 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
+( 0 -1 0 -2 ) ( ( 0.02500000037252903 0 9.825000191107391 ) ( 0 0.006944444496184588 0.1111111119389534 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
+( -1 0 0 0 ) ( ( 0.02500000037252903 0 68.40000095963478 ) ( 0 0.006944444496184587 0.1111111119389533 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
 }
 }
 }
@@ -1874,7 +1874,7 @@ brushDef3
 "lock_pins" "0"
 "locked" "1"
 "model" "atdm_mover_door_3"
-"origin" "-312 134 -128"
+"origin" "-312 136 -128"
 "rotate" "0 -90 0"
 "snd_close" "chest_wood_close"
 "snd_lock" "silence"
@@ -1886,12 +1886,12 @@ brushDef3
 {
 brushDef3
 {
-( 0 0 1 -144 ) ( ( 0.25 0 31 ) ( 0 0.02500000037252903 8.800000190734863 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
-( 0 1 0 -2 ) ( ( 0.02500000037252903 0 56.20000076293945 ) ( 0 0.006944444496184587 0.1111111119389534 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
-( 1 0 0 0 ) ( ( 0.25 0 31 ) ( 0 0.006944444496184587 0.1111111119389534 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
-( 0 0 -1 0 ) ( ( 0.25 0 31 ) ( 0 0.02500000037252903 248.1999969482422 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
-( 0 -1 0 -2 ) ( ( 0.02500000037252903 0 8.800000190734863 ) ( 0 0.006944444496184587 0.1111111119389534 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
-( -1 0 0 -40 ) ( ( 0.25 0 34 ) ( 0 0.006944444496184587 0.1111111119389534 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
+( 0 0 1 -144 ) ( ( 0 -0.02500000037252903 56.2000007629394 ) ( 0.006944444496184587 0 -0.9444444514811039 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
+( 0 1 0 0 ) ( ( 0.02500000037252903 0 56.20000076293945 ) ( 0 0.006944444496184587 0.1111111119389534 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
+( 1 0 0 0 ) ( ( 0.02500000037252903 0 60.60000082850453 ) ( 0 0.006944444496184587 0.1111111119389533 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
+( 0 0 -1 0 ) ( ( 0 0.02500000037252903 56.2000007629394 ) ( -0.006944444496184587 0 1.944444458931684 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
+( 0 -1 0 -2 ) ( ( 0.02500000037252903 0 8.800000190734863 ) ( 0 0.006944444496184588 0.1111111119389534 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
+( -1 0 0 -40 ) ( ( 0.02500000037252903 0 68.40000094473361 ) ( 0 0.006944444496184587 0.1111111119389533 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
 }
 }
 }
@@ -1968,6 +1968,7 @@ brushDef3
 "snd_open" "chest_wood_open"
 "snd_unlock" "silence"
 "used_by" "-"
+"open" "1"
 // primitive 0
 {
 brushDef3
@@ -2121,25 +2122,25 @@ brushDef3
 {
 "classname" "atdm:latch_door_02"
 "name" "atdm_latch_door_02_1"
-"origin" "-353 138 -66"
-"rotation" "1 0 0 0 1 0 0 0 1"
+"bind" "atdm_mover_door_2"
 "latch_normal" "0 90 0"
 "move_time" ".35"
+"origin" "-353 138 -66"
+"rotation" "1 0 0 0 1 0 0 0 1"
 "snd_move" "metal_cabinet01_open"
-"translate" "-11 0 0"
 "target0" "atdm_mover_door_3"
 "target1" "atdm_mover_door_2"
-"bind" "atdm_mover_door_2"
+"translate" "-11 0 0"
 }
 // entity 94
 {
 "classname" "atdm:latch_door_01"
 "name" "atdm_latch_door_01_1"
-"origin" "-312 534 -48"
-"rotation" "1 0 0 0 1 0 0 0 1"
 "latch_normal" "0 -90 0"
 "move_time" ".3"
+"origin" "-312 534 -48"
+"rotation" "1 0 0 0 1 0 0 0 1"
 "snd_move" "metal_cabinet01_open"
-"translate" "10 0 0"
 "target0" "atdm_mover_door_1"
+"translate" "10 0 0"
 }

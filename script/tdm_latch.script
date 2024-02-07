@@ -6,6 +6,7 @@ object tdm_latch
 	void init();
 	void frobabilityLoop();
 	boolean areDoorsOpen();
+	boolean areDoorsLocked();
 	void setDoorsFrobable(float frobable);
 	void setDoorsAINotHandle(float value);
 	void lockDoors(float lock);
@@ -19,10 +20,10 @@ object tdm_latch
 
 void tdm_latch::init()
 {
-	latchState = getIntKey("open");
 
-	if (latchState)
+	if ( areDoorsOpen() || !areDoorsLocked() )
 	{
+		latchState = 1;
 		thread moveLatch(latchState);
 	}
 
@@ -87,6 +88,22 @@ boolean tdm_latch::areDoorsOpen()
 		if( e.getKey("spawnclass") == "CFrobDoor" )
 		{
 			if ( e.IsOpen() )
+				return true;
+		}
+	}
+	return false;
+}
+
+boolean tdm_latch::areDoorsLocked()
+{
+	float i;
+
+	for(i = 0; i < numTargets(); i++)
+	{
+		entity e = getTarget(i);
+
+		if( e.getIntKey("locked") )
+		{
 				return true;
 		}
 	}
