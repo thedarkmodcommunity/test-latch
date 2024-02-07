@@ -1842,7 +1842,6 @@ brushDef3
 "name" "atdm_mover_door_2"
 "lock_picktype" "-"
 "lock_pins" "0"
-"locked" "1"
 "model" "atdm_mover_door_2"
 "origin" "-392 136 -128"
 "rotate" "0 90 0"
@@ -1852,17 +1851,16 @@ brushDef3
 "snd_open" "chest_wood_open"
 "snd_unlock" "silence"
 "used_by" "-"
-"open" "1"
 // primitive 0
 {
 brushDef3
 {
-( 0 0 1 -144 ) ( ( 0 -0.02500000037252903 55.20000076293942 ) ( 0.006944444496184587 0 -0.9444444514811039 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
+( 0 0 1 -144 ) ( ( 0 -0.02500000037252903 55.20000076293945 ) ( 0.006944444496184587 0 -0.944444477558136 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
 ( 0 1 0 0 ) ( ( 0.02500000037252903 0 55.20000076293945 ) ( 0 0.006944444496184587 0.1111111119389534 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
-( 1 0 0 -40 ) ( ( 0.02500000037252903 0 60.60000084340572 ) ( 0 0.006944444496184587 0.1111111119389533 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
+( 1 0 0 -40 ) ( ( 0.02500000037252903 0 60.60000228881836 ) ( 0 0.006944444496184587 0.1111111119389534 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
 ( 0 0 -1 0 ) ( ( 0.25 0 31 ) ( 0 0.02500000037252903 247.1999969482422 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
-( 0 -1 0 -2 ) ( ( 0.02500000037252903 0 9.825000191107391 ) ( 0 0.006944444496184588 0.1111111119389534 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
-( -1 0 0 0 ) ( ( 0.02500000037252903 0 68.40000095963478 ) ( 0 0.006944444496184587 0.1111111119389533 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
+( 0 -1 0 -2 ) ( ( 0.02500000037252903 0 9.824999809265137 ) ( 0 0.006944444496184587 0.1111111119389534 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
+( -1 0 0 0 ) ( ( 0.02500000037252903 0 68.40000152587891 ) ( 0 0.006944444496184587 0.1111111119389534 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
 }
 }
 }
@@ -1872,7 +1870,6 @@ brushDef3
 "name" "atdm_mover_door_3"
 "lock_picktype" "-"
 "lock_pins" "0"
-"locked" "1"
 "model" "atdm_mover_door_3"
 "origin" "-312 136 -128"
 "rotate" "0 -90 0"
@@ -1886,12 +1883,12 @@ brushDef3
 {
 brushDef3
 {
-( 0 0 1 -144 ) ( ( 0 -0.02500000037252903 56.2000007629394 ) ( 0.006944444496184587 0 -0.9444444514811039 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
+( 0 0 1 -144 ) ( ( 0 -0.02500000037252903 56.20000076293945 ) ( 0.006944444496184587 0 -0.944444477558136 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
 ( 0 1 0 0 ) ( ( 0.02500000037252903 0 56.20000076293945 ) ( 0 0.006944444496184587 0.1111111119389534 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
-( 1 0 0 0 ) ( ( 0.02500000037252903 0 60.60000082850453 ) ( 0 0.006944444496184587 0.1111111119389533 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
-( 0 0 -1 0 ) ( ( 0 0.02500000037252903 56.2000007629394 ) ( -0.006944444496184587 0 1.944444458931684 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
-( 0 -1 0 -2 ) ( ( 0.02500000037252903 0 8.800000190734863 ) ( 0 0.006944444496184588 0.1111111119389534 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
-( -1 0 0 -40 ) ( ( 0.02500000037252903 0 68.40000094473361 ) ( 0 0.006944444496184587 0.1111111119389533 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
+( 1 0 0 0 ) ( ( 0.02500000037252903 0 60.60000228881836 ) ( 0 0.006944444496184587 0.1111111119389534 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
+( 0 0 -1 0 ) ( ( 0 0.02500000037252903 56.20000076293945 ) ( -0.006944444496184587 0 1.944444417953491 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
+( 0 -1 0 -2 ) ( ( 0.02500000037252903 0 8.800000190734863 ) ( 0 0.006944444496184587 0.1111111119389534 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
+( -1 0 0 -40 ) ( ( 0.02500000037252903 0 68.40000152587891 ) ( 0 0.006944444496184587 0.1111111119389534 ) ) "textures/darkmod/door/wood/smooth_5panels01_tall" 0 0 0
 }
 }
 }
@@ -1961,6 +1958,7 @@ brushDef3
 "lock_pins" "0"
 "locked" "1"
 "model" "atdm_mover_door_4"
+"open" "1"
 "origin" "112 538 -128"
 "rotate" "0 -90 0"
 "snd_close" "chest_wood_close"
@@ -1968,7 +1966,6 @@ brushDef3
 "snd_open" "chest_wood_open"
 "snd_unlock" "silence"
 "used_by" "-"
-"open" "1"
 // primitive 0
 {
 brushDef3

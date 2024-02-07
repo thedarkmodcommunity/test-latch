@@ -154,11 +154,20 @@ void tdm_latch::lockDoors(float lock)
 		{
 			if (lock)
 			{
-				e.Lock();
+				// being defensive here - only lock if unlocked
+				if ( !e.IsLocked() )
+				{
+					e.Lock();
+				}
 			}
 			else
 			{
-				e.Unlock();
+				// If you unlock the door when it's already unlocked, the door will open
+				// if 'open doors on unlock' is enabled in the game settings.
+				if ( e.IsLocked() )
+				{
+					e.Unlock();
+				}
 			}
 		}
 	}
