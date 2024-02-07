@@ -1,0 +1,45 @@
+entityDef atdm:mover_latch
+{
+	"inherit"         "func_mover" 
+
+	"trace_radius"    "4 4 4"
+	"latch_normal"    "0 90 0"
+	"move_time"       "1"
+	"translate"       "10 0 0"
+	"rotate"          "0 0 0"
+	"open"            "0"
+
+	"frob_bias"       "3"
+
+	"scriptobject"          "tdm_latch"
+	"frob_action_script"    "frobResponse"
+}
+
+atdm:latch_door_01
+{
+
+    "editor_usage"			"A simple latch in the style of The Empire. Functional if a bit unimaginative. Target door(s) to use as toggle lock"
+
+	"inherit"				"atdm:mover_latch"
+	"model" 				"models/darkmod/door_related/latch_door_01_lock.ase"
+
+	"editor_setKeyValue latch_normal"	"0 90 0"
+	"editor_setKeyValue snd_move"		"metal_cabinet01_open"
+	"editor_setKeyValue move_time"		".3"
+	"editor_setKeyValue translate"		"10 0 0"
+}
+
+atdm:latch_door_02
+{
+
+    "editor_usage"		"An ornate latch in the style of distant lands colonized by The Empire. Well suited to double doors. Target door(s) to use as toggle lock"
+
+	"inherit"			"atdm:mover_latch"
+	"model" 			"models/darkmod/door_related/latch_door_02_lock.ase"
+
+	"editor_setKeyValue latch_normal"	"0 90 0"
+	"editor_setKeyValue snd_move"		"metal_cabinet01_open"
+	"editor_setKeyValue move_time"		".35"
+	"editor_setKeyValue translate"		"-11 0 0"
+
+}
