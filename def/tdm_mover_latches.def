@@ -18,7 +18,7 @@ entityDef atdm:mover_latch
 	"editor_var trace_radius"		""
 	"editor_float move_time"		""
 	"editor_float frob_bias"		""
-	"editor_var rotate"				""
+	"editor_var rotate"			""
 }
 
 atdm:latch_door_01
@@ -33,11 +33,6 @@ atdm:latch_door_01
 	"snd_move"			"metal_cabinet01_open"
 	"move_time"			".3"
 	"translate"			"10 0 0"
-
-	"editor_setKeyValue latch_normal"	"0 90 0"
-	"editor_setKeyValue snd_move"		"metal_cabinet01_open"
-	"editor_setKeyValue move_time"		".3"
-	"editor_setKeyValue translate"		"10 0 0"
 }
 
 atdm:latch_door_01_small
@@ -52,11 +47,6 @@ atdm:latch_door_01_small
 	"snd_move"			"metal_cabinet01_open"
 	"move_time"			".3"
 	"translate"			"5 0 0"
-
-	"editor_setKeyValue latch_normal"	"0 90 0"
-	"editor_setKeyValue snd_move"		"metal_cabinet01_open"
-	"editor_setKeyValue move_time"		".3"
-	"editor_setKeyValue translate"		"5 0 0"
 }
 
 atdm:latch_door_02
@@ -72,11 +62,6 @@ atdm:latch_door_02
 	"move_time"			".25"
 	"translate"			"-11 0 0"
 
-	"editor_setKeyValue latch_normal"	"0 -90 0"
-	"editor_setKeyValue snd_move"		"metal_cabinet01_open"
-	"editor_setKeyValue move_time"		".25"
-	"editor_setKeyValue translate"		"-11 0 0"
-
 }
 
 atdm:latch_door_02_small
@@ -91,11 +76,5 @@ atdm:latch_door_02_small
 	"snd_move"			"metal_cabinet01_open"
 	"move_time"			".25"
 	"translate"			"-5 0 0"
-
-
-	"editor_setKeyValue latch_normal"	"0 -90 0"
-	"editor_setKeyValue snd_move"		"metal_cabinet01_open"
-	"editor_setKeyValue move_time"		".25"
-	"editor_setKeyValue translate"		"-5 0 0"
 
 }
