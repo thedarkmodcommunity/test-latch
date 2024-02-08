@@ -47,9 +47,15 @@ void tdm_latch::frobabilityLoop()
 		//player either has to be on the right side of the door or be able to reach through to the latch for it to be frobable
 
 		// TODO this was split up to add debug - condense later
-		float frobable = checkTolerance() || checkObstruction();
+		float frobable = 0;
+		float tolerance = checkTolerance(); //|| checkObstruction();
 
-		sys.println( self.getName() + ": Frobable: " + frobable );
+		if ( tolerance )
+		{
+			frobable = 1;
+		}
+
+		sys.println( self.getName() + ": frobable: " + frobable );
 		
 		if ( areDoorsOpen() )
 		{
@@ -190,17 +196,20 @@ boolean tdm_latch::checkObstruction()
 
 	if( TraceResult == 1 )
 	{
+		sys.println("checkObstruction(): true: clear line");
 		return true;    //clear line
 	}
 
 
 	else if( sys.getTraceEntity().getBindMaster() == self )
 	{
+		sys.println("checkObstruction(): true: trace has hit something that's bound to the latch");
 		return true;    //trace has hit something that's bound to the latch
 	}
 
 	else
 	{
+		sys.println("checkObstruction(): false: line is obstructed by something else");
 		return false;    //line is obstructed by something else
 	}
 
@@ -224,7 +233,7 @@ boolean tdm_latch::checkTolerance()
 	//check whether the player is standing within the latch tolerance
 	float length = sys.vecLength( anglemod180(AngToPlayer - LatchNormal)  );
 
-	//sys.println( self.getName() + ": length: " + length );
+	sys.println( self.getName() + ": length: " + length );
 
 	return ( length < LATCH_TOLERANCE );
 }

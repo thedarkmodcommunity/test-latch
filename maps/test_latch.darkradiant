@@ -2,9 +2,9 @@ DarkRadiant Map Information File Version 2
 {
 	MapProperties
 	{
-		KeyValue { "EditTimeInSeconds" "8162" } 
-		KeyValue { "LastCameraAngle" "-7 83.4 0" } 
-		KeyValue { "LastCameraPosition" "151.405 516.536 -58.6002" } 
+		KeyValue { "EditTimeInSeconds" "8296" } 
+		KeyValue { "LastCameraAngle" "-30 161 0" } 
+		KeyValue { "LastCameraPosition" "-767.667 367.697 -30.1292" } 
 		KeyValue { "LastShaderClipboardMaterial" "textures/darkmod/_proto/proto" } 
 	}
 	SelectionSets
@@ -12,7 +12,7 @@ DarkRadiant Map Information File Version 2
 	}
 	MapEditTimings
 	{
-		TotalSecondsEdited { 8162 }
+		TotalSecondsEdited { 8296 }
 	}
 	Layers
 	{
@@ -236,7 +236,7 @@ DarkRadiant Map Information File Version 2
 		Node { 0 } // brush (Brush)
 		Node { 0 } // entity (underneath_latch)
 		Node { 0 } // entity (func_static_22)
-		Node { 0 } // entity (atdm_latch_door_01_3)
+		Node { 0 } // entity (eastwest_latch)
 		Node { 0 } // entity (atdm_mover_door_10)
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)

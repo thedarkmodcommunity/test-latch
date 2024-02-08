@@ -1925,8 +1925,8 @@ brushDef3
 {
 "classname" "info_player_start"
 "name" "info_player_start_1"
-"angle" "90.000000"
-"origin" "152 456 -128"
+"angle" "180.000000"
+"origin" "-680 352 -128"
 }
 // entity 70
 {
@@ -2750,7 +2750,7 @@ brushDef3
 // entity 114
 {
 "classname" "atdm:latch_door_01"
-"name" "atdm_latch_door_01_3"
+"name" "eastwest_latch"
 "latch_normal" "90 0 0"
 "move_time" ".3"
 "origin" "-818 396 -48"
