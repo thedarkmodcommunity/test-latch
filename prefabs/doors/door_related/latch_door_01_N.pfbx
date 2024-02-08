@@ -8,9 +8,9 @@
   </selectionGroups>
   <selectionSets/>
   <properties>
-    <property key="EditTimeInSeconds" value="8681"/>
-    <property key="LastCameraAngle" value="-48 113.9 0"/>
-    <property key="LastCameraPosition" value="-621.247 420.027 35.4513"/>
+    <property key="EditTimeInSeconds" value="9715"/>
+    <property key="LastCameraAngle" value="-47.7 112.7 0"/>
+    <property key="LastCameraPosition" value="-628.455 439.574 11.409"/>
     <property key="LastShaderClipboardMaterial" value="textures/darkmod/_proto/proto_metal"/>
   </properties>
   <entity number="0">
@@ -18,11 +18,8 @@
     <keyValues>
       <keyValue key="classname" value="atdm:latch_door_01"/>
       <keyValue key="name" value="atdm_latch_door_01_N_lock"/>
-      <keyValue key="latch_normal" value="0 90 0"/>
-      <keyValue key="move_time" value=".3"/>
       <keyValue key="origin" value="-637 486 -48"/>
       <keyValue key="rotation" value="1 0 0 0 1 0 0 0 1"/>
-      <keyValue key="snd_move" value="metal_cabinet01_open"/>
       <keyValue key="translate" value="10 0 0"/>
     </keyValues>
     <layers>
