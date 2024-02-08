@@ -26,8 +26,13 @@ atdm:latch_door_01
 
     "editor_usage"			"A simple latch in the style of The Empire. Functional if a bit unimaginative. Target door(s) to use as a toggle lock. Use latch_normal to specify the interaction angle for the latch"
 
-	"inherit"				"atdm:mover_latch"
-	"model" 				"models/darkmod/door_related/latch_door_01_lock.ase"
+	"inherit"			"atdm:mover_latch"
+	"model" 			"models/darkmod/door_related/latch_door_01_lock.ase"
+
+	"latch_normal"	"0 90 0"
+	"snd_move"			"metal_cabinet01_open"
+	"move_time"			".3"
+	"translate"			"10 0 0"
 
 	"editor_setKeyValue latch_normal"	"0 90 0"
 	"editor_setKeyValue snd_move"		"metal_cabinet01_open"
@@ -40,8 +45,13 @@ atdm:latch_door_01_small
 
     "editor_usage"			"A simple latch in the style of The Empire, but smaller in stature. Functional if a bit unimaginative. Target door(s) to use as a toggle lock. Place latch in closed position. Use latch_normal to specify the interaction angle for the latch."
 
-	"inherit"				"atdm:mover_latch"
-	"model" 				"models/darkmod/door_related/latch_door_01_small_lock.ase"
+	"inherit"			"atdm:mover_latch"
+	"model" 			"models/darkmod/door_related/latch_door_01_small_lock.ase"
+
+	"latch_normal"			"0 90 0"
+	"snd_move"			"metal_cabinet01_open"
+	"move_time"			".3"
+	"translate"			"5 0 0"
 
 	"editor_setKeyValue latch_normal"	"0 90 0"
 	"editor_setKeyValue snd_move"		"metal_cabinet01_open"
@@ -57,6 +67,11 @@ atdm:latch_door_02
 	"inherit"			"atdm:mover_latch"
 	"model" 			"models/darkmod/door_related/latch_door_02_lock.ase"
 
+	"elatch_normal"			"0 -90 0"
+	"snd_move"			"metal_cabinet01_open"
+	"move_time"			".25"
+	"translate"			"-11 0 0"
+
 	"editor_setKeyValue latch_normal"	"0 -90 0"
 	"editor_setKeyValue snd_move"		"metal_cabinet01_open"
 	"editor_setKeyValue move_time"		".25"
@@ -71,6 +86,12 @@ atdm:latch_door_02_small
 
 	"inherit"			"atdm:mover_latch"
 	"model" 			"models/darkmod/door_related/latch_door_02_small_lock.ase"
+
+	"latch_normal"			"0 -90 0"
+	"snd_move"			"metal_cabinet01_open"
+	"move_time"			".25"
+	"translate"			"-5 0 0"
+
 
 	"editor_setKeyValue latch_normal"	"0 -90 0"
 	"editor_setKeyValue snd_move"		"metal_cabinet01_open"
