@@ -70,7 +70,7 @@ atdm:latch_door_02_small
     "editor_usage"			"An ornate latch in the style of distant lands colonized by The Empire. Well suited to single doors or small openings. Target door(s) to use as a toggle lock. Place latch in closed position. Use latch_normal to specify the interaction angle for the latch."
 
 	"inherit"			"atdm:mover_latch"
-	"model" 			"models/darkmod/door_related/latch_door_02_lock.ase"
+	"model" 			"models/darkmod/door_related/latch_door_02_small_lock.ase"
 
 	"editor_setKeyValue latch_normal"	"0 -90 0"
 	"editor_setKeyValue snd_move"		"metal_cabinet01_open"
