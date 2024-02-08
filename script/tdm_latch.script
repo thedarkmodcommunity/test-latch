@@ -14,6 +14,8 @@ object tdm_latch
 	boolean checkObstruction();
 	void frobResponse();
 	void moveLatch(float latchState);
+	void rotateLatch();
+	void translateLatch();
 
 	float latchState;	//1 = open, 0 = closed
 };
@@ -207,12 +209,22 @@ boolean tdm_latch::checkObstruction()
 boolean tdm_latch::checkTolerance()
 {
 	vector LatchNormal = getVectorKey( "latch_normal" );
+
+	vector subtract = $player1.getOrigin() - getWorldOrigin();
+	//sys.println( "substract: " + subtract );
+
 	vector AngToPlayer = sys.VecToAngles( $player1.getOrigin() - getWorldOrigin() );
+
+	//sys.println( "player origin: " + $player1.getOrigin() );
+	//sys.println( self.getName() + " origin: " + getWorldOrigin() );
+
+
+	sys.println( self.getName() + ": AngToPlayer: " + AngToPlayer );
 
 	//check whether the player is standing within the latch tolerance
 	float length = sys.vecLength( anglemod180(AngToPlayer - LatchNormal)  );
 
-	sys.println( self.getName() + ": length: " + length );
+	//sys.println( self.getName() + ": length: " + length );
 
 	return ( length < LATCH_TOLERANCE );
 }
@@ -231,10 +243,32 @@ void tdm_latch::frobResponse()
 void tdm_latch::moveLatch(float latchState)
 {
 	time( getFloatKey("move_time") );
-	moveToPos( getVectorKey("origin") + latchState * getVectorKey("translate") );
-	rotateOnce( (2*latchState - 1) * getVectorKey("rotate") );
 
-	startSound( "snd_move", SND_CHANNEL_ANY, false);
+	// if latch is opening, rotate then translate.  Reverse if latch is closing.
+	if ( latchState )
+	{
+		rotateLatch();
+
+		while ( isRotating() )
+		{
+			sys.wait( 0.2 );
+		}
+
+		translateLatch();
+	}
+	else
+	{
+		translateLatch();
+
+		while ( isMoving() )
+		{
+			sys.wait( 0.2 );
+		}
+
+		rotateLatch();
+	}
+
+	//startSound( "snd_move", SND_CHANNEL_ANY, false);
 
 	sys.wait( getFloatKey("move_time") );
 
@@ -249,4 +283,14 @@ void tdm_latch::moveLatch(float latchState)
 
 	setDoorsFrobable( latchState );
 	setDoorsAINotHandle( !latchState );
+}
+
+void tdm_latch::rotateLatch()
+{
+	rotateOnce( (2*latchState - 1) * getVectorKey("rotate") );
+}
+
+void tdm_latch::translateLatch()
+{
+	moveToPos( getVectorKey("origin") + latchState * getVectorKey("translate") );
 }

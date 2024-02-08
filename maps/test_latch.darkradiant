@@ -2,14 +2,17 @@ DarkRadiant Map Information File Version 2
 {
 	MapProperties
 	{
-		KeyValue { "EditTimeInSeconds" "7303" } 
-		KeyValue { "LastCameraAngle" "-45 191.6 0" } 
-		KeyValue { "LastCameraPosition" "698.021 399.502 67.6718" } 
-		KeyValue { "LastShaderClipboardMaterial" "textures/darkmod/_proto/proto_metal" } 
+		KeyValue { "EditTimeInSeconds" "8162" } 
+		KeyValue { "LastCameraAngle" "-7 83.4 0" } 
+		KeyValue { "LastCameraPosition" "151.405 516.536 -58.6002" } 
+		KeyValue { "LastShaderClipboardMaterial" "textures/darkmod/_proto/proto" } 
+	}
+	SelectionSets
+	{
 	}
 	MapEditTimings
 	{
-		TotalSecondsEdited { 7303 }
+		TotalSecondsEdited { 8162 }
 	}
 	Layers
 	{
@@ -27,6 +30,14 @@ DarkRadiant Map Information File Version 2
 	NodeToLayerMapping
 	{
 		Node { 0 } // entity (world)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
@@ -225,6 +236,29 @@ DarkRadiant Map Information File Version 2
 		Node { 0 } // brush (Brush)
 		Node { 0 } // entity (underneath_latch)
 		Node { 0 } // entity (func_static_22)
+		Node { 0 } // entity (atdm_latch_door_01_3)
+		Node { 0 } // entity (atdm_mover_door_10)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // entity (func_static_23)
+		Node { 0 } // entity (func_static_24)
+		Node { 0 } // entity (light_6)
 	}
 	SelectionGroups
 	{
@@ -306,8 +340,5 @@ DarkRadiant Map Information File Version 2
 		Node { ( 66 ) ( 2 ) } // entity (VineArrowsHard)
 		Node { ( 67 ) ( 2 ) } // entity (VineArrowsExpert)
 		Node { ( 68 ) ( 2 ) } // entity (atdm_location_settings_1)
-	}
-	SelectionSets
-	{
 	}
 }
