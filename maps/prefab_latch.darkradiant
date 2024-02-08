@@ -1,15 +1,15 @@
 DarkRadiant Map Information File Version 2
 {
-	MapEditTimings
-	{
-		TotalSecondsEdited { 10918 }
-	}
 	MapProperties
 	{
-		KeyValue { "EditTimeInSeconds" "10918" } 
-		KeyValue { "LastCameraAngle" "-26.8 182.3 0" } 
-		KeyValue { "LastCameraPosition" "123.931 385.398 213.239" } 
+		KeyValue { "EditTimeInSeconds" "11230" } 
+		KeyValue { "LastCameraAngle" "10.9 350.7 0" } 
+		KeyValue { "LastCameraPosition" "217.41 445.47 -59.75" } 
 		KeyValue { "LastShaderClipboardMaterial" "textures/darkmod/_proto/proto_metal" } 
+	}
+	MapEditTimings
+	{
+		TotalSecondsEdited { 11230 }
 	}
 	SelectionGroups
 	{
@@ -332,6 +332,22 @@ DarkRadiant Map Information File Version 2
 		Node { 0 } // entity (atdm_3panel_104x56_8)
 		Node { 0 } // entity (atdm_latch_door_01_E_lock1)
 		Node { 0 } // entity (atdm_latch_door_01_E_plateA1)
+		Node { 0 } // entity (atdm_mover_door_4)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // entity (atdm_mover_door_5)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // entity (atdm_mover_door_6)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // entity (atdm_mover_door_7)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // entity (atdm_mover_door_8)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // entity (atdm_mover_door_9)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // entity (atdm_mover_door_14)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // entity (atdm_mover_door_15)
+		Node { 0 } // brush (Brush)
 	}
 	SelectionSets
 	{
