@@ -59,7 +59,7 @@ atdm:latch_door_02
 
 	"elatch_normal"			"0 -90 0"
 	"snd_move"			"metal_cabinet01_open"
-	"move_time"			".25"
+	"move_time"			".35"
 	"translate"			"-11 0 0"
 
 }
