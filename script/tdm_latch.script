@@ -277,8 +277,6 @@ void tdm_latch::moveLatch(float latchState)
 		rotateLatch();
 	}
 
-	//startSound( "snd_move", SND_CHANNEL_ANY, false);
-
 	sys.wait( getFloatKey("move_time") );
 
 	if (latchState)
@@ -296,10 +294,12 @@ void tdm_latch::moveLatch(float latchState)
 
 void tdm_latch::rotateLatch()
 {
+	startSound( "snd_rotate", SND_CHANNEL_ANY, false);
 	rotateOnce( (2*latchState - 1) * getVectorKey("rotate") );
 }
 
 void tdm_latch::translateLatch()
 {
+	startSound( "snd_translate", SND_CHANNEL_ANY, false);
 	moveToPos( getVectorKey("origin") + latchState * getVectorKey("translate") );
 }
