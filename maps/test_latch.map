@@ -2057,8 +2057,8 @@ brushDef3
 {
 "classname" "info_player_start"
 "name" "info_player_start_1"
-"angle" "90.000000"
-"origin" "-360 432 -128"
+"angle" "-0.000000"
+"origin" "608 432 -16"
 }
 // entity 70
 {

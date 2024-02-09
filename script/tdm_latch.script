@@ -9,9 +9,9 @@ object tdm_latch
 	boolean areDoorsLocked();
 	void setDoorsFrobable(float frobable);
 	void setDoorsAINotHandle(float value);
-	void lockDoors(float lock);
-	boolean checkTolerance();
-	boolean checkObstruction();
+	void lockDoors();
+	void unlockDoors();
+	void setDoorsLockState(float lock);
 	void frobResponse();
 	void moveLatch(float latchState);
 	void rotateLatch();
@@ -42,24 +42,13 @@ void tdm_latch::frobabilityLoop()
 	{
 		sys.wait(0.2);
 
-		if( sys.vecLength($player1.getEyePos() - latchPos ) > TRACE_LENGTH )
+		if ( ( sys.vecLength($player1.getEyePos() - latchPos ) > TRACE_LENGTH ) )
 			continue;    //skip if the player is too far away
-
-		//player either has to be on the right side of the door or be able to reach through to the latch for it to be frobable
-
-		//float tolerance = checkTolerance(); //|| checkObstruction();
-
-		//if ( tolerance )
-		//{
-		//	frobable = 1;
-		//}
 
 		// if player is in same location as the latch, make it frobable
 		float frobable = ( getLocation() == $player1.getLocation() );
-
-		sys.println( self.getName() + ": frobable: " + frobable );
 		
-		if ( areDoorsOpen() )
+		if ( areDoorsOpen() && latchState )
 		{
 			setFrobable( 0 );
 		}
@@ -67,6 +56,8 @@ void tdm_latch::frobabilityLoop()
 		{
 			setFrobable( frobable );
 		}
+
+		sys.println( self.getName() + ": frobable: " + isFrobable() );
 
 		// Set the door frobability
 		if ( latchState )
@@ -152,9 +143,19 @@ void tdm_latch::setDoorsAINotHandle(float value)
 	}
 }
 
+void tdm_latch::lockDoors()
+{
+	setDoorsLockState(1);
+}
+
+void tdm_latch::unlockDoors()
+{
+	setDoorsLockState(0);
+}
+
 // 1: lock doors
 // 0: unlock doors
-void tdm_latch::lockDoors(float lock)
+void tdm_latch::setDoorsLockState(float lock)
 {
 	float i;
 
@@ -185,62 +186,6 @@ void tdm_latch::lockDoors(float lock)
 	}
 }
 
-boolean tdm_latch::checkObstruction()
-{
-	vector TraceDir     = sys.vecNormalize( $player1.getViewAngles() );
-	vector TraceRadius  = getVectorKey("trace_radius");    //as a vector
-	vector TraceStart   = $player1.getEyePos();
-	vector TraceEnd     = TraceStart + TraceDir * TRACE_LENGTH;
-
-	//check whether there is a clear line from the player's eyes to the latch
-	float TraceResult    = sys.trace( TraceStart, TraceEnd, -TraceRadius, TraceRadius, CONTENTS_SOLID, self );
-
-
-	if( TraceResult == 1 )
-	{
-		sys.println("checkObstruction(): true: clear line");
-		return true;    //clear line
-	}
-
-
-	else if( sys.getTraceEntity().getBindMaster() == self )
-	{
-		sys.println("checkObstruction(): true: trace has hit something that's bound to the latch");
-		return true;    //trace has hit something that's bound to the latch
-	}
-
-	else
-	{
-		sys.println("checkObstruction(): false: line is obstructed by something else");
-		return false;    //line is obstructed by something else
-	}
-
-}
-
-boolean tdm_latch::checkTolerance()
-{
-	vector LatchNormal = getVectorKey( "latch_normal" );
-
-	vector subtract = $player1.getOrigin() - getWorldOrigin();
-	//sys.println( "substract: " + subtract );
-
-	vector AngToPlayer = sys.VecToAngles( $player1.getOrigin() - getWorldOrigin() );
-
-	//sys.println( "player origin: " + $player1.getOrigin() );
-	//sys.println( self.getName() + " origin: " + getWorldOrigin() );
-
-
-	sys.println( self.getName() + ": AngToPlayer: " + AngToPlayer );
-
-	//check whether the player is standing within the latch tolerance
-	float length = sys.vecLength( anglemod180(AngToPlayer - LatchNormal)  );
-
-	sys.println( self.getName() + ": length: " + length );
-
-	return ( length < LATCH_TOLERANCE );
-}
-
-
 void tdm_latch::frobResponse()
 {
 	if( isMoving() || isRotating() )
@@ -258,6 +203,12 @@ void tdm_latch::moveLatch(float latchState)
 	// if latch is opening, rotate then translate.  Reverse if latch is closing.
 	if ( latchState )
 	{
+		// immediately set the latch to unfrobable instead of relying on the loop to 
+		// prevent player from moving it and locking the door in open position
+		setFrobable(0);
+
+		sys.println("Frobable after frob: " + isFrobable());
+
 		rotateLatch();
 
 		while ( isRotating() )
@@ -283,11 +234,11 @@ void tdm_latch::moveLatch(float latchState)
 
 	if (latchState)
 	{
-		lockDoors( 0 );
+		unlockDoors();
 	}
 	else
 	{
-		lockDoors( 1 );
+		lockDoors();
 	}
 
 	setDoorsFrobable( latchState );
