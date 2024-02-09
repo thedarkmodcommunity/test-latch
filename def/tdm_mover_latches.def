@@ -2,8 +2,7 @@ entityDef atdm:mover_latch
 {
 	"inherit"         "func_mover" 
 
-	"trace_radius"    	"4 4 4"
-	"latch_normal"    	"0 90 0"
+
 	"move_time"       	"1"
 	"translate"       	"10 0 0"
 	"rotate"          	"0 0 0"
@@ -14,10 +13,8 @@ entityDef atdm:mover_latch
 	"scriptobject"          "tdm_latch"
 	"frob_action_script"    "frobResponse"
 	
-	"editor_var latch_normal"		"Sets the direction from which the latch will be frobable. Must be set to prevent interaction with the latch from the incorrect side of the door. If frobable from the south, set to 0 90 0.  If from the north, set to 0 -90 0, etc."
 	"editor_var translate"			"Sets the distance and direction the latch will move upon interaction"
 	"editor_var rotate"				"Sets the distance and direction the latch will rotate upon interaction"
-	"editor_var trace_radius"		""
 	"editor_float move_time"		"The duration in seconds of the rotate and translate movement phases."
 	"editor_float frob_bias"		""
 
@@ -31,7 +28,6 @@ atdm:latch_door_01
 	"inherit"			"atdm:mover_latch"
 	"model" 			"models/darkmod/door_related/latch_door_01_lock.ase"
 
-	"latch_normal"			"0 90 0"
 	"snd_translate"		"lockpick_pick_wrong"
 	"move_time"			".3"
 	"translate"			"10 0 0"
@@ -45,7 +41,6 @@ atdm:latch_door_01_small
 	"inherit"			"atdm:mover_latch"
 	"model" 			"models/darkmod/door_related/latch_door_01_small_lock.ase"
 
-	"latch_normal"			"0 90 0"
 	"snd_translate"		"lockpick_pick_wrong"
 	"move_time"			".3"
 	"translate"			"5 0 0"
@@ -59,7 +54,6 @@ atdm:latch_door_02
 	"inherit"			"atdm:mover_latch"
 	"model" 			"models/darkmod/door_related/latch_door_02_lock.ase"
 
-	"latch_normal"			"0 -90 0"
 	"move_time"			".35"
 	"translate"			"11 0 0"
 	"rotate"          	"0 0 -180"
@@ -76,7 +70,6 @@ atdm:latch_door_02_small
 	"inherit"			"atdm:mover_latch"
 	"model" 			"models/darkmod/door_related/latch_door_02_small_lock.ase"
 
-	"latch_normal"			"0 -90 0"
 	"move_time"			".25"
 	"translate"			"5 0 0"
 	"rotate"          	"0 0 -180"
