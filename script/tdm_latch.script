@@ -13,11 +13,11 @@ object tdm_latch
 	void unlockDoors();
 	void setDoorsLockState(float lock);
 	void frobResponse();
-	void moveLatch(float latchState);
+	void moveLatch(float latchOpen);
 	void rotateLatch();
 	void translateLatch();
 
-	float latchState;	//1 = open, 0 = closed
+	float latchOpen;	//1 = open, 0 = closed
 };
 
 void tdm_latch::init()
@@ -25,8 +25,8 @@ void tdm_latch::init()
 
 	if ( areDoorsOpen() || !areDoorsLocked() )
 	{
-		latchState = 1;
-		thread moveLatch(latchState);
+		latchOpen = 1;
+		thread moveLatch(latchOpen);
 	}
 
 	//start checking whether the player is allowed to frob the latch
@@ -48,7 +48,9 @@ void tdm_latch::frobabilityLoop()
 		// if player is in same location as the latch, make it frobable
 		float frobable = ( getLocation() == $player1.getLocation() );
 		
-		if ( areDoorsOpen() && latchState )
+		// We don't want the latch to be frobable if the door is open so you can't close the door on it.
+		// But only do this if the doors are open and the latch is open to prevent the latch from being stuck closed with the doors open
+		if ( areDoorsOpen() && latchOpen )
 		{
 			setFrobable( 0 );
 		}
@@ -60,7 +62,7 @@ void tdm_latch::frobabilityLoop()
 		sys.println( self.getName() + ": frobable: " + isFrobable() );
 
 		// Set the door frobability
-		if ( latchState )
+		if ( latchOpen )
 		{
 			// If the latch is opening, wait until it's
 			// done before changing frobability
@@ -191,17 +193,17 @@ void tdm_latch::frobResponse()
 	if( isMoving() || isRotating() )
 		return;
 
-	latchState = !latchState;
+	latchOpen = !latchOpen;
 
-	thread moveLatch(latchState);
+	thread moveLatch(latchOpen);
 }
 
-void tdm_latch::moveLatch(float latchState)
+void tdm_latch::moveLatch(float latchOpen)
 {
 	time( getFloatKey("move_time") );
 
 	// if latch is opening, rotate then translate.  Reverse if latch is closing.
-	if ( latchState )
+	if ( latchOpen )
 	{
 		// immediately set the latch to unfrobable instead of relying on the loop to 
 		// prevent player from moving it and locking the door in open position
@@ -232,7 +234,7 @@ void tdm_latch::moveLatch(float latchState)
 
 	sys.wait( getFloatKey("move_time") );
 
-	if (latchState)
+	if (latchOpen)
 	{
 		unlockDoors();
 	}
@@ -241,18 +243,18 @@ void tdm_latch::moveLatch(float latchState)
 		lockDoors();
 	}
 
-	setDoorsFrobable( latchState );
-	setDoorsAINotHandle( !latchState );
+	setDoorsFrobable( latchOpen );
+	setDoorsAINotHandle( !latchOpen );
 }
 
 void tdm_latch::rotateLatch()
 {
 	startSound( "snd_rotate", SND_CHANNEL_ANY, false);
-	rotateOnce( (2*latchState - 1) * getVectorKey("rotate") );
+	rotateOnce( (2*latchOpen - 1) * getVectorKey("rotate") );
 }
 
 void tdm_latch::translateLatch()
 {
 	startSound( "snd_translate", SND_CHANNEL_ANY, false);
-	moveToPos( getVectorKey("origin") + latchState * getVectorKey("translate") );
+	moveToPos( getVectorKey("origin") + latchOpen * getVectorKey("translate") );
 }
