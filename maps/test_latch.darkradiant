@@ -2,14 +2,17 @@ DarkRadiant Map Information File Version 2
 {
 	MapProperties
 	{
-		KeyValue { "EditTimeInSeconds" "8900" } 
-		KeyValue { "LastCameraAngle" "-9.8 354.2 0" } 
-		KeyValue { "LastCameraPosition" "-797.334 342.269 -18.0002" } 
+		KeyValue { "EditTimeInSeconds" "9157" } 
+		KeyValue { "LastCameraAngle" "-26.6 110.2 0" } 
+		KeyValue { "LastCameraPosition" "714.082 181.805 99.4296" } 
 		KeyValue { "LastShaderClipboardMaterial" "textures/darkmod/_proto/proto" } 
+	}
+	SelectionSets
+	{
 	}
 	MapEditTimings
 	{
-		TotalSecondsEdited { 8900 }
+		TotalSecondsEdited { 9157 }
 	}
 	SelectionGroups
 	{
@@ -108,6 +111,10 @@ DarkRadiant Map Information File Version 2
 	NodeToLayerMapping
 	{
 		Node { 0 } // entity (world)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
@@ -366,8 +373,14 @@ DarkRadiant Map Information File Version 2
 		Node { 0 } // entity (func_static_25)
 		Node { 0 } // entity (func_static_26)
 		Node { 0 } // entity (eastwest_latch1)
-	}
-	SelectionSets
-	{
+		Node { 0 } // entity (info_locationSeparator_1)
+		Node { 0 } // entity (location_latch_frobable)
+		Node { 0 } // entity (location_latch_frobable1)
+		Node { 0 } // entity (info_locationSeparator_2)
+		Node { 0 } // entity (info_locationSeparator_3)
+		Node { 0 } // entity (info_locationSeparator_4)
+		Node { 0 } // entity (location_trapdoor_underneath_frobable)
+		Node { 0 } // entity (info_locationSeparator_5)
+		Node { 0 } // entity (info_locationSeparator_6)
 	}
 }

@@ -41,19 +41,21 @@ void tdm_latch::frobabilityLoop()
 	while(1)
 	{
 		sys.wait(0.2);
+
 		if( sys.vecLength($player1.getEyePos() - latchPos ) > TRACE_LENGTH )
 			continue;    //skip if the player is too far away
 
 		//player either has to be on the right side of the door or be able to reach through to the latch for it to be frobable
 
-		// TODO this was split up to add debug - condense later
-		float frobable = 0;
-		float tolerance = checkTolerance(); //|| checkObstruction();
+		//float tolerance = checkTolerance(); //|| checkObstruction();
 
-		if ( tolerance )
-		{
-			frobable = 1;
-		}
+		//if ( tolerance )
+		//{
+		//	frobable = 1;
+		//}
+
+		// if player is in same location as the latch, make it frobable
+		float frobable = ( getLocation() == $player1.getLocation() );
 
 		sys.println( self.getName() + ": frobable: " + frobable );
 		
