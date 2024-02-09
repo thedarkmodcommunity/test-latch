@@ -2,14 +2,14 @@ DarkRadiant Map Information File Version 2
 {
 	MapProperties
 	{
-		KeyValue { "EditTimeInSeconds" "11297" } 
-		KeyValue { "LastCameraAngle" "-7.1 194.5 0" } 
-		KeyValue { "LastCameraPosition" "81.3195 472.817 -53.9938" } 
+		KeyValue { "EditTimeInSeconds" "12520" } 
+		KeyValue { "LastCameraAngle" "-8.8 102 0" } 
+		KeyValue { "LastCameraPosition" "-310.022 349.58 17.7388" } 
 		KeyValue { "LastShaderClipboardMaterial" "textures/darkmod/_proto/proto_metal" } 
 	}
 	MapEditTimings
 	{
-		TotalSecondsEdited { 11297 }
+		TotalSecondsEdited { 12520 }
 	}
 	SelectionGroups
 	{
@@ -330,7 +330,7 @@ DarkRadiant Map Information File Version 2
 		Node { 0 } // entity (light_2)
 		Node { 0 } // entity (atdm_latch_door_01_E_plateB1)
 		Node { 0 } // entity (atdm_3panel_104x56_8)
-		Node { 0 } // entity (atdm_latch_door_01_E_lock1)
+		Node { 0 } // entity (atdm_latch_door_01_E_lock)
 		Node { 0 } // entity (atdm_latch_door_01_E_plateA1)
 		Node { 0 } // entity (atdm_mover_door_4)
 		Node { 0 } // brush (Brush)
@@ -348,6 +348,11 @@ DarkRadiant Map Information File Version 2
 		Node { 0 } // brush (Brush)
 		Node { 0 } // entity (atdm_mover_door_15)
 		Node { 0 } // brush (Brush)
+		Node { 0 } // entity (light_3)
+		Node { 0 } // entity (atdm_latch_door_02_N_lock2)
+		Node { 0 } // entity (atdm_latch_door_02_N_bracketD1)
+		Node { 0 } // entity (atdm_latch_door_02_N_bracketC1)
+		Node { 0 } // entity (atdm_latch_door_02_N_bracketA1)
 	}
 	SelectionSets
 	{
