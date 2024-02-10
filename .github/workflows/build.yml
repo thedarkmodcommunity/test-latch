@@ -31,5 +31,5 @@ jobs:
       - name: Archive .pk4 file
         uses: actions/upload-artifact@v4
         with:
-          name: .pk4 file
+          name: tdm-latch.pk4
           path: tdm-latch.pk4
