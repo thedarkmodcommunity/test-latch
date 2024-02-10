@@ -18,6 +18,7 @@ entityDef atdm:mover_latch
 	"editor_var rotate"				"Sets the distance and direction the latch will rotate upon interaction"
 	"editor_float move_time"		"The duration in seconds of the rotate and translate movement phases."
 	"editor_float frob_bias"		""
+	"editor_float location_aware"	"If set, the latch will only be frobable if the latch and the player are in the same location. If set to 0 the location system will not be used in frobability checks."
 
 }
 
