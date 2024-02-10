@@ -81,7 +81,7 @@ void tdm_latch::frobabilityLoop()
 			setFrobable( frobable );
 		}
 
-		sys.println( self.getName() + ": frobable: " + isFrobable() );
+		//sys.println( self.getName() + ": frobable: " + isFrobable() );
 
 		// Set the door frobability
 		if ( latchOpen )
@@ -179,6 +179,7 @@ void tdm_latch::setDoorsAINotHandle(float value)
 
 		if( e.getKey("spawnclass") == "CFrobDoor" )
 		{
+			//sys.println( "setting ai_should_not_handle to: " + value );
 			e.setKey( "ai_should_not_handle", value );
 		}
 	}
@@ -229,6 +230,8 @@ void tdm_latch::setDoorsLockState(float lock)
 
 void tdm_latch::frobResponse()
 {
+	sys.waitForThread(moveThreadNumber);
+	
 	if( isMoving() || isRotating() )
 	{
 		sys.println("latch is moving, ignoring frob request.");
@@ -252,8 +255,6 @@ void tdm_latch::moveLatch(float latchOpen)
 		// immediately set the latch to unfrobable instead of relying on the loop to 
 		// prevent player from moving it and locking the door in open position
 		setFrobable(0);
-
-		sys.println("Frobable after frob: " + isFrobable());
 
 		rotateLatch();
 
@@ -285,17 +286,17 @@ void tdm_latch::moveLatch(float latchOpen)
 	{
 		unlockDoors();
 		setDoorsFrobable( latchOpen );
-
-		// This will delay the frob loop because it waits until this thread finishes.
-		// It allows the latch to open and the door to start opening if auto-open on unlock is enabled.
-		// By the time the frob loop resumes, the latch should be unfrobable because the doors are opening
-		sys.wait(2);
 	}
 	else
 	{
 		lockDoors();
 	}
-	
+
+	// This will delay the frob loop because it waits until this thread finishes.
+	// It allows the latch to open and the door to start opening if auto-open on unlock is enabled.
+	// By the time the frob loop resumes, the latch should be unfrobable because the doors are opening
+	sys.wait(2);
+
 	setDoorsAINotHandle( !latchOpen );
 }
 
