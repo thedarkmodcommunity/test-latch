@@ -9,6 +9,7 @@ entityDef atdm:mover_latch
 	"frob_bias"       	"3"
 	"snd_rotate"		"silence"
 	"snd_translate"		"silence"
+	"location_aware"    "1"
 
 	"scriptobject"          "tdm_latch"
 	"frob_action_script"    "frobResponse"
