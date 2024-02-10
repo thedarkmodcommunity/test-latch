@@ -2057,8 +2057,8 @@ brushDef3
 {
 "classname" "info_player_start"
 "name" "info_player_start_1"
-"angle" "-0.000000"
-"origin" "608 432 -16"
+"angle" "-90.000000"
+"origin" "157 131 -128"
 }
 // entity 70
 {
@@ -2633,10 +2633,9 @@ brushDef3
 "latch_normal" "0 90 0"
 "move_time" ".35"
 "origin" "173 -50 -69"
-"rotation" "1 0 0 0 1 0 0 0 1"
+"rotation" "1 0 0 0 -1 1.11022e-16 0 -1.11022e-16 -1"
 "snd_move" "metal_cabinet01_open"
 "target0" "atdm_mover_door_7"
-"target1" "atdm_mover_door_6"
 "translate" "-10 0 0"
 }
 // entity 96
