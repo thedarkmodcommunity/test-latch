@@ -41,4 +41,4 @@ jobs:
           token: ${{ secrets.RELEASE_TOKEN }}
           prefix: v
           artifacts: tdm-latch-artifact
-          files: tdm-latch.pk4
+          #files: tdm-latch.pk4
