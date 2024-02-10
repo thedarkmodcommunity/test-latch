@@ -25,9 +25,15 @@ object tdm_latch
 void tdm_latch::init()
 {
 
+	// Move the latch into the open position on map start if its doors are open or unlocked
 	if ( areDoorsOpen() || !areDoorsLocked() )
 	{
 		thread moveLatch();
+	}
+	else
+	{
+		// the latches remain closed, but ensure the AI can't use the doors
+		setDoorsAINotHandle( 1 );
 	}
 
 	//start checking whether the player is allowed to frob the latch
