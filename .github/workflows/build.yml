@@ -25,13 +25,13 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      - name: Run a one-line script
+      - name: Create .pk4 file
         run: ./zip.sh
 
       - name: Archive .pk4 file
         uses: actions/upload-artifact@v4
         with:
-          name: tdm-latch-artifact
+          name: tdm-latch.pk4
           path: tdm-latch.pk4
 
       #- name: Run ReleaseMe
