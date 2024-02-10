@@ -2,14 +2,17 @@ DarkRadiant Map Information File Version 2
 {
 	MapEditTimings
 	{
-		TotalSecondsEdited { 12532 }
+		TotalSecondsEdited { 14663 }
 	}
 	MapProperties
 	{
-		KeyValue { "EditTimeInSeconds" "12532" } 
-		KeyValue { "LastCameraAngle" "-25.6 9.4 0" } 
-		KeyValue { "LastCameraPosition" "222.132 434.386 -42.1933" } 
+		KeyValue { "EditTimeInSeconds" "14663" } 
+		KeyValue { "LastCameraAngle" "-17.4 276.4 0" } 
+		KeyValue { "LastCameraPosition" "149.656 382.492 -53.8785" } 
 		KeyValue { "LastShaderClipboardMaterial" "textures/darkmod/_proto/proto_metal" } 
+	}
+	SelectionSets
+	{
 	}
 	SelectionGroups
 	{
@@ -108,6 +111,7 @@ DarkRadiant Map Information File Version 2
 	NodeToLayerMapping
 	{
 		Node { 0 } // entity (world)
+		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
@@ -319,19 +323,14 @@ DarkRadiant Map Information File Version 2
 		Node { 0 } // entity (atdm_latch_door_02_N_bracketC)
 		Node { 0 } // entity (atdm_latch_door_02_N_lock1)
 		Node { 0 } // entity (atdm_latch_door_02_N_lock)
-		Node { 0 } // entity (atdm_latch_door_02_S_bracketC)
-		Node { 0 } // entity (atdm_latch_door_02_S_bracketB)
-		Node { 0 } // entity (atdm_latch_door_02_S_bracketA)
-		Node { 0 } // entity (atdm_latch_door_02_S_bracketD)
-		Node { 0 } // entity (atdm_latch_door_02_S_lock)
 		Node { 0 } // entity (atdm_3panel_104x56_2)
 		Node { 0 } // entity (atdm_3panel_104x56_4)
 		Node { 0 } // entity (atdm_3panel_104x56_6)
 		Node { 0 } // entity (light_2)
-		Node { 0 } // entity (atdm_latch_door_01_E_plateB1)
+		Node { 0 } // entity (atdm_latch_door_01_E_plateB)
 		Node { 0 } // entity (atdm_3panel_104x56_8)
 		Node { 0 } // entity (atdm_latch_door_01_E_lock)
-		Node { 0 } // entity (atdm_latch_door_01_E_plateA1)
+		Node { 0 } // entity (atdm_latch_door_01_E_plateA)
 		Node { 0 } // entity (atdm_mover_door_4)
 		Node { 0 } // brush (Brush)
 		Node { 0 } // entity (atdm_mover_door_5)
@@ -349,12 +348,48 @@ DarkRadiant Map Information File Version 2
 		Node { 0 } // entity (atdm_mover_door_15)
 		Node { 0 } // brush (Brush)
 		Node { 0 } // entity (light_3)
-		Node { 0 } // entity (atdm_latch_door_02_N_lock2)
-		Node { 0 } // entity (atdm_latch_door_02_N_bracketD1)
-		Node { 0 } // entity (atdm_latch_door_02_N_bracketC1)
-		Node { 0 } // entity (atdm_latch_door_02_N_bracketA1)
-	}
-	SelectionSets
-	{
+		Node { 0 } // entity (atdm_latch_door_02_small_N_lock)
+		Node { 0 } // entity (atdm_latch_door_02_small_N_bracketC)
+		Node { 0 } // entity (atdm_latch_door_02_small_N_bracketB)
+		Node { 0 } // entity (atdm_latch_door_02_small_N_bracketA)
+		Node { 0 } // entity (atdm_latch_door_02_E_lock)
+		Node { 0 } // entity (atdm_latch_door_02_E_bracketA)
+		Node { 0 } // entity (atdm_latch_door_02_E_bracketB)
+		Node { 0 } // entity (atdm_latch_door_02_E_bracketD)
+		Node { 0 } // entity (atdm_latch_door_02_E_bracketC)
+		Node { 0 } // entity (atdm_latch_door_02_S_lock)
+		Node { 0 } // entity (atdm_latch_door_02_S_bracketA)
+		Node { 0 } // entity (atdm_latch_door_02_S_bracketD)
+		Node { 0 } // entity (atdm_latch_door_02_S_bracketB)
+		Node { 0 } // entity (atdm_latch_door_02_S_bracketC)
+		Node { 0 } // entity (atdm_latch_door_02_W_bracketA)
+		Node { 0 } // entity (atdm_latch_door_02_W_bracketD)
+		Node { 0 } // entity (atdm_latch_door_02_W_bracketB)
+		Node { 0 } // entity (atdm_latch_door_02_W_lock)
+		Node { 0 } // entity (atdm_latch_door_02_W_bracketC)
+		Node { 0 } // entity (atdm_latch_door_02_small_E_lock)
+		Node { 0 } // entity (atdm_latch_door_02_small_E_bracketB)
+		Node { 0 } // entity (atdm_latch_door_02_small_E_bracketA)
+		Node { 0 } // entity (atdm_latch_door_02_small_E_bracketC)
+		Node { 0 } // entity (atdm_latch_door_02_small_S_lock)
+		Node { 0 } // entity (atdm_latch_door_02_small_S_bracketB)
+		Node { 0 } // entity (atdm_latch_door_02_small_S_bracketA)
+		Node { 0 } // entity (atdm_latch_door_02_small_S_bracketC)
+		Node { 0 } // entity (atdm_latch_door_02_small_W_lock)
+		Node { 0 } // entity (atdm_latch_door_02_small_W_bracketA)
+		Node { 0 } // entity (atdm_latch_door_02_small_W_bracketB)
+		Node { 0 } // entity (atdm_latch_door_02_small_W_bracketC)
+		Node { 0 } // entity (atdm_latch_door_01_small_N_plateB)
+		Node { 0 } // entity (atdm_latch_door_01_small_N_plateA)
+		Node { 0 } // entity (atdm_latch_door_01_small_N_lock)
+		Node { 0 } // entity (atdm_latch_door_01_small_E_lock)
+		Node { 0 } // entity (atdm_latch_door_01_small_E_plateB)
+		Node { 0 } // entity (atdm_latch_door_01_small_E_plateA)
+		Node { 0 } // entity (atdm_latch_door_01_small_S_lock)
+		Node { 0 } // entity (atdm_latch_door_01_small_S_plateB)
+		Node { 0 } // entity (atdm_latch_door_01_small_S_plateA)
+		Node { 0 } // entity (atdm_latch_door_01_small_W_lock)
+		Node { 0 } // entity (atdm_latch_door_01_small_W_plateA)
+		Node { 0 } // entity (atdm_latch_door_01_small_W_plateB)
 	}
 }

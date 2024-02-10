@@ -495,6 +495,18 @@ brushDef3
 ( -1 0 0 256 ) ( ( 0.00390625 0 0 ) ( 0 0.00390625 0 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
 }
 }
+// primitive 41
+{
+brushDef3
+{
+( 0 0 1 24 ) ( ( 0.00390625 0 -0.34375 ) ( 0 0.00390625 0 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( 0 1 0 -552 ) ( ( 0.00390625 0 1.4210854715202e-14 ) ( 0 0.003906250000000001 -1.332267629550188e-15 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( 1 0 0 -264 ) ( ( 0.00390625 0 -0.3437499999999858 ) ( 0 0.00390625 4.440892098500626e-16 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( 0 0 -1 -129 ) ( ( 0.00390625 0 -0.34375 ) ( 0 0.00390625 0 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( 0 -1 0 496 ) ( ( 0.003906250000000014 0 -2.275957200481571e-14 ) ( 0 0.003906250000000001 -1.582067810090848e-15 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( -1 0 0 256 ) ( ( 0.00390625 0 0.34375 ) ( 0 0.00390625 0 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+}
+}
 }
 // entity 1
 {
@@ -2417,10 +2429,8 @@ brushDef3
 {
 "classname" "atdm:latch_door_01"
 "name" "atdm_latch_door_01_W_lock"
-"latch_normal" "90 0 0"
 "origin" "66 471 -48"
 "rotation" "0 1 0 -1 0 0 0 0 1"
-"target0" "atdm_3panel_104x56_4"
 "translate" "0 10 0"
 }
 // entity 98
@@ -2435,7 +2445,6 @@ brushDef3
 {
 "classname" "func_static"
 "name" "atdm_latch_door_01_W_plateB"
-"bind" "atdm_mover_door_13"
 "model" "models/darkmod/door_related/latch_door_01_plateB.ase"
 "origin" "64 458 -48"
 "rotation" "0 1 0 -1 0 0 0 0 1"
@@ -2679,17 +2688,13 @@ brushDef3
 {
 "classname" "atdm:latch_door_01"
 "name" "atdm_latch_door_01_N_lock"
-"latch_normal" "0 -90 0"
 "origin" "191 550 -48"
 "rotation" "1 0 0 0 1 0 0 0 1"
-"target0" "atdm_3panel_104x56_6"
-"translate" "10 0 0"
 }
 // entity 102
 {
 "classname" "func_static"
 "name" "atdm_latch_door_01_N_plateB"
-"bind" "atdm_mover_door_13"
 "model" "models/darkmod/door_related/latch_door_01_plateB.ase"
 "origin" "178 552 -48"
 "rotation" "1 0 0 0 1 0 0 0 1"
@@ -2706,10 +2711,8 @@ brushDef3
 {
 "classname" "atdm:latch_door_01"
 "name" "atdm_latch_door_01_S_lock"
-"latch_normal" "0 90 0"
 "origin" "152 354 -48"
 "rotation" "-1 0 0 0 -1 0 0 0 1"
-"target0" "atdm_3panel_104x56_2"
 "translate" "-10 0 0"
 }
 // entity 105
@@ -2724,7 +2727,6 @@ brushDef3
 {
 "classname" "func_static"
 "name" "atdm_latch_door_01_S_plateB"
-"bind" "atdm_mover_door_13"
 "model" "models/darkmod/door_related/latch_door_01_plateB.ase"
 "origin" "165 352 -48"
 "rotation" "-1 0 0 0 -1 0 0 0 1"
@@ -2778,47 +2780,6 @@ brushDef3
 }
 // entity 113
 {
-"classname" "func_static"
-"name" "atdm_latch_door_02_S_bracketC"
-"model" "models/darkmod/door_related/latch_door_02_bracket.ase"
-"origin" "-539 377 -66"
-"rotation" "-1 0 0 0 -1 0 0 0 1"
-}
-// entity 114
-{
-"classname" "func_static"
-"name" "atdm_latch_door_02_S_bracketB"
-"model" "models/darkmod/door_related/latch_door_02_bracket.ase"
-"origin" "-533 377 -66"
-"rotation" "-1 0 0 0 -1 0 0 0 1"
-}
-// entity 115
-{
-"classname" "func_static"
-"name" "atdm_latch_door_02_S_bracketA"
-"model" "models/darkmod/door_related/latch_door_02_bracket.ase"
-"origin" "-527 377 -66"
-"rotation" "-1 0 0 0 -1 0 0 0 1"
-}
-// entity 116
-{
-"classname" "func_static"
-"name" "atdm_latch_door_02_S_bracketD"
-"model" "models/darkmod/door_related/latch_door_02_bracket.ase"
-"origin" "-553 377 -66"
-"rotation" "-1 0 0 0 -1 0 0 0 1"
-}
-// entity 117
-{
-"classname" "atdm:latch_door_02"
-"name" "atdm_latch_door_02_S_lock"
-"latch_normal" "0 90 0"
-"origin" "-544 379 -66"
-"rotation" "-1 0 0 0 -1 0 0 0 1"
-"translate" "-11 0 0"
-}
-// entity 118
-{
 "classname" "atdm:3panel_104x56"
 "name" "atdm_3panel_104x56_2"
 "lock_picktype" "-"
@@ -2830,7 +2791,7 @@ brushDef3
 "rotation" "-1 0 0 0 -1 0 0 0 1"
 "used_by" "-"
 }
-// entity 119
+// entity 114
 {
 "classname" "atdm:3panel_104x56"
 "name" "atdm_3panel_104x56_4"
@@ -2843,7 +2804,7 @@ brushDef3
 "rotation" "0 1 0 -1 0 0 0 0 1"
 "used_by" "-"
 }
-// entity 120
+// entity 115
 {
 "classname" "atdm:3panel_104x56"
 "name" "atdm_3panel_104x56_6"
@@ -2856,7 +2817,7 @@ brushDef3
 "rotation" "1 0 0 0 1 0 0 0 1"
 "used_by" "-"
 }
-// entity 121
+// entity 116
 {
 "classname" "light"
 "name" "light_2"
@@ -2870,16 +2831,15 @@ brushDef3
 "origin" "160 448 96"
 "rotation" "0 -1 0 1 0 0 0 0 1"
 }
-// entity 122
+// entity 117
 {
 "classname" "func_static"
-"name" "atdm_latch_door_01_E_plateB1"
-"bind" "atdm_mover_door_13"
+"name" "atdm_latch_door_01_E_plateB"
 "model" "models/darkmod/door_related/latch_door_01_plateB.ase"
 "origin" "256 446 -48"
 "rotation" "0 -1 0 1 0 0 0 0 1"
 }
-// entity 123
+// entity 118
 {
 "classname" "atdm:3panel_104x56"
 "name" "atdm_3panel_104x56_8"
@@ -2892,26 +2852,23 @@ brushDef3
 "rotation" "0 -1 0 1 0 0 0 0 1"
 "used_by" "-"
 }
-// entity 124
+// entity 119
 {
 "classname" "atdm:latch_door_01"
 "name" "atdm_latch_door_01_E_lock"
-"latch_normal" "-45 0 0"
 "origin" "254 433 -48"
 "rotation" "0 -1 0 1 0 0 0 0 1"
-"target0" "atdm_3panel_104x56_8"
 "translate" "0 -10 0"
-"location_aware" "0"
 }
-// entity 125
+// entity 120
 {
 "classname" "func_static"
-"name" "atdm_latch_door_01_E_plateA1"
+"name" "atdm_latch_door_01_E_plateA"
 "model" "models/darkmod/door_related/latch_door_01_plateA.ase"
 "origin" "256 433 -48"
 "rotation" "0 -1 0 1 0 0 0 0 1"
 }
-// entity 126
+// entity 121
 {
 "classname" "atdm:mover_door"
 "name" "atdm_mover_door_4"
@@ -2940,7 +2897,7 @@ brushDef3
 }
 }
 }
-// entity 127
+// entity 122
 {
 "classname" "atdm:mover_door"
 "name" "atdm_mover_door_5"
@@ -2969,7 +2926,7 @@ brushDef3
 }
 }
 }
-// entity 128
+// entity 123
 {
 "classname" "atdm:mover_door"
 "name" "atdm_mover_door_6"
@@ -2998,7 +2955,7 @@ brushDef3
 }
 }
 }
-// entity 129
+// entity 124
 {
 "classname" "atdm:mover_door"
 "name" "atdm_mover_door_7"
@@ -3027,7 +2984,7 @@ brushDef3
 }
 }
 }
-// entity 130
+// entity 125
 {
 "classname" "atdm:mover_door"
 "name" "atdm_mover_door_8"
@@ -3056,7 +3013,7 @@ brushDef3
 }
 }
 }
-// entity 131
+// entity 126
 {
 "classname" "atdm:mover_door"
 "name" "atdm_mover_door_9"
@@ -3085,7 +3042,7 @@ brushDef3
 }
 }
 }
-// entity 132
+// entity 127
 {
 "classname" "atdm:mover_door"
 "name" "atdm_mover_door_14"
@@ -3114,7 +3071,7 @@ brushDef3
 }
 }
 }
-// entity 133
+// entity 128
 {
 "classname" "atdm:mover_door"
 "name" "atdm_mover_door_15"
@@ -3143,7 +3100,7 @@ brushDef3
 }
 }
 }
-// entity 134
+// entity 129
 {
 "classname" "light"
 "name" "light_3"
@@ -3157,34 +3114,345 @@ brushDef3
 "origin" "192 64 96"
 "rotation" "0 -1 0 1 0 0 0 0 1"
 }
-// entity 135
+// entity 130
 {
 "classname" "atdm:latch_door_02_small"
-"name" "atdm_latch_door_02_N_lock2"
+"name" "atdm_latch_door_02_small_N_lock"
 "origin" "197 135 -39"
 "rotation" "1 0 0 0 1 0 0 0 1"
 }
-// entity 136
+// entity 131
 {
 "classname" "func_static"
-"name" "atdm_latch_door_02_N_bracketD1"
+"name" "atdm_latch_door_02_small_N_bracketC"
 "model" "models/darkmod/door_related/latch_door_02_small_bracket.ase"
 "origin" "201 136 -39"
 "rotation" "1 0 0 0 1 0 0 0 1"
 }
-// entity 137
+// entity 132
 {
 "classname" "func_static"
-"name" "atdm_latch_door_02_N_bracketC1"
+"name" "atdm_latch_door_02_small_N_bracketB"
 "model" "models/darkmod/door_related/latch_door_02_small_bracket.ase"
 "origin" "194 136 -39"
 "rotation" "1 0 0 0 1 0 0 0 1"
 }
-// entity 138
+// entity 133
 {
 "classname" "func_static"
-"name" "atdm_latch_door_02_N_bracketA1"
+"name" "atdm_latch_door_02_small_N_bracketA"
 "model" "models/darkmod/door_related/latch_door_02_small_bracket.ase"
 "origin" "189 136 -39"
 "rotation" "1 0 0 0 1 0 0 0 1"
+}
+// entity 134
+{
+"classname" "atdm:latch_door_02"
+"name" "atdm_latch_door_02_E_lock"
+"origin" "254 62 -66"
+"rotation" "0 -1 0 1 0 0 0 0 1"
+"translate" "0 -11 0"
+}
+// entity 135
+{
+"classname" "func_static"
+"name" "atdm_latch_door_02_E_bracketA"
+"model" "models/darkmod/door_related/latch_door_02_bracket.ase"
+"origin" "256 79 -66"
+"rotation" "0 -1 0 1 0 0 0 0 1"
+}
+// entity 136
+{
+"classname" "func_static"
+"name" "atdm_latch_door_02_E_bracketB"
+"model" "models/darkmod/door_related/latch_door_02_bracket.ase"
+"origin" "256 73 -66"
+"rotation" "0 -1 0 1 0 0 0 0 1"
+}
+// entity 137
+{
+"classname" "func_static"
+"name" "atdm_latch_door_02_E_bracketD"
+"model" "models/darkmod/door_related/latch_door_02_bracket.ase"
+"origin" "256 53 -66"
+"rotation" "0 -1 0 1 0 0 0 0 1"
+}
+// entity 138
+{
+"classname" "func_static"
+"name" "atdm_latch_door_02_E_bracketC"
+"model" "models/darkmod/door_related/latch_door_02_bracket.ase"
+"origin" "256 67 -66"
+"rotation" "0 -1 0 1 0 0 0 0 1"
+}
+// entity 139
+{
+"classname" "atdm:latch_door_02"
+"name" "atdm_latch_door_02_S_lock"
+"origin" "190 -6 -66"
+"rotation" "-1 0 0 0 -1 0 0 0 1"
+"translate" "-11 0 0"
+}
+// entity 140
+{
+"classname" "func_static"
+"name" "atdm_latch_door_02_S_bracketA"
+"model" "models/darkmod/door_related/latch_door_02_bracket.ase"
+"origin" "207 -8 -66"
+"rotation" "-1 0 0 0 -1 0 0 0 1"
+}
+// entity 141
+{
+"classname" "func_static"
+"name" "atdm_latch_door_02_S_bracketD"
+"model" "models/darkmod/door_related/latch_door_02_bracket.ase"
+"origin" "181 -8 -66"
+"rotation" "-1 0 0 0 -1 0 0 0 1"
+}
+// entity 142
+{
+"classname" "func_static"
+"name" "atdm_latch_door_02_S_bracketB"
+"model" "models/darkmod/door_related/latch_door_02_bracket.ase"
+"origin" "201 -8 -66"
+"rotation" "-1 0 0 0 -1 0 0 0 1"
+}
+// entity 143
+{
+"classname" "func_static"
+"name" "atdm_latch_door_02_S_bracketC"
+"model" "models/darkmod/door_related/latch_door_02_bracket.ase"
+"origin" "195 -8 -66"
+"rotation" "-1 0 0 0 -1 0 0 0 1"
+}
+// entity 144
+{
+"classname" "func_static"
+"name" "atdm_latch_door_02_W_bracketA"
+"model" "models/darkmod/door_related/latch_door_02_bracket.ase"
+"origin" "124 49 -66"
+"rotation" "0 1 0 -1 0 0 0 0 1"
+}
+// entity 145
+{
+"classname" "func_static"
+"name" "atdm_latch_door_02_W_bracketD"
+"model" "models/darkmod/door_related/latch_door_02_bracket.ase"
+"origin" "124 75 -66"
+"rotation" "0 1 0 -1 0 0 0 0 1"
+}
+// entity 146
+{
+"classname" "func_static"
+"name" "atdm_latch_door_02_W_bracketB"
+"model" "models/darkmod/door_related/latch_door_02_bracket.ase"
+"origin" "124 55 -66"
+"rotation" "0 1 0 -1 0 0 0 0 1"
+}
+// entity 147
+{
+"classname" "atdm:latch_door_02"
+"name" "atdm_latch_door_02_W_lock"
+"origin" "126 66 -66"
+"rotation" "0 1 0 -1 0 0 0 0 1"
+"translate" "0 11 0"
+}
+// entity 148
+{
+"classname" "func_static"
+"name" "atdm_latch_door_02_W_bracketC"
+"model" "models/darkmod/door_related/latch_door_02_bracket.ase"
+"origin" "124 61 -66"
+"rotation" "0 1 0 -1 0 0 0 0 1"
+}
+// entity 149
+{
+"classname" "atdm:latch_door_02_small"
+"name" "atdm_latch_door_02_small_E_lock"
+"origin" "255 59 -39"
+"rotation" "0 -1 0 1 0 0 0 0 1"
+"translate" "0 -5 0"
+}
+// entity 150
+{
+"classname" "func_static"
+"name" "atdm_latch_door_02_small_E_bracketB"
+"model" "models/darkmod/door_related/latch_door_02_small_bracket.ase"
+"origin" "256 62 -39"
+"rotation" "0 -1 0 1 0 0 0 0 1"
+}
+// entity 151
+{
+"classname" "func_static"
+"name" "atdm_latch_door_02_small_E_bracketA"
+"model" "models/darkmod/door_related/latch_door_02_small_bracket.ase"
+"origin" "256 67 -39"
+"rotation" "0 -1 0 1 0 0 0 0 1"
+}
+// entity 152
+{
+"classname" "func_static"
+"name" "atdm_latch_door_02_small_E_bracketC"
+"model" "models/darkmod/door_related/latch_door_02_small_bracket.ase"
+"origin" "256 55 -39"
+"rotation" "0 -1 0 1 0 0 0 0 1"
+}
+// entity 153
+{
+"classname" "atdm:latch_door_02_small"
+"name" "atdm_latch_door_02_small_S_lock"
+"origin" "191 -3 -39"
+"rotation" "-1 0 0 0 -1 0 0 0 1"
+"translate" "-5 0 0"
+}
+// entity 154
+{
+"classname" "func_static"
+"name" "atdm_latch_door_02_small_S_bracketB"
+"model" "models/darkmod/door_related/latch_door_02_small_bracket.ase"
+"origin" "194 -4 -39"
+"rotation" "-1 0 0 0 -1 0 0 0 1"
+}
+// entity 155
+{
+"classname" "func_static"
+"name" "atdm_latch_door_02_small_S_bracketA"
+"model" "models/darkmod/door_related/latch_door_02_small_bracket.ase"
+"origin" "199 -4 -39"
+"rotation" "-1 0 0 0 -1 0 0 0 1"
+}
+// entity 156
+{
+"classname" "func_static"
+"name" "atdm_latch_door_02_small_S_bracketC"
+"model" "models/darkmod/door_related/latch_door_02_small_bracket.ase"
+"origin" "187 -4 -39"
+"rotation" "-1 0 0 0 -1 0 0 0 1"
+}
+// entity 157
+{
+"classname" "atdm:latch_door_02_small"
+"name" "atdm_latch_door_02_small_W_lock"
+"origin" "125 65 -39"
+"rotation" "0 1 0 -1 0 0 0 0 1"
+"translate" "0 5 0"
+}
+// entity 158
+{
+"classname" "func_static"
+"name" "atdm_latch_door_02_small_W_bracketA"
+"model" "models/darkmod/door_related/latch_door_02_small_bracket.ase"
+"origin" "124 57 -39"
+"rotation" "0 1 0 -1 0 0 0 0 1"
+}
+// entity 159
+{
+"classname" "func_static"
+"name" "atdm_latch_door_02_small_W_bracketB"
+"model" "models/darkmod/door_related/latch_door_02_small_bracket.ase"
+"origin" "124 62 -39"
+"rotation" "0 1 0 -1 0 0 0 0 1"
+}
+// entity 160
+{
+"classname" "func_static"
+"name" "atdm_latch_door_02_small_W_bracketC"
+"model" "models/darkmod/door_related/latch_door_02_small_bracket.ase"
+"origin" "124 69 -39"
+"rotation" "0 1 0 -1 0 0 0 0 1"
+}
+// entity 161
+{
+"classname" "func_static"
+"name" "atdm_latch_door_01_small_N_plateB"
+"model" "models/darkmod/door_related/latch_door_01_small_plateB.ase"
+"origin" "181 551 -64"
+"rotation" "1 0 0 0 1 0 0 0 1"
+}
+// entity 162
+{
+"classname" "func_static"
+"name" "atdm_latch_door_01_small_N_plateA"
+"model" "models/darkmod/door_related/latch_door_01_small_plateA.ase"
+"origin" "187.5 551 -64"
+"rotation" "1 0 0 0 1 0 0 0 1"
+}
+// entity 163
+{
+"classname" "atdm:latch_door_01_small"
+"name" "atdm_latch_door_01_small_N_lock"
+"origin" "187.5 550 -64"
+"rotation" "1 0 0 0 1 0 0 0 1"
+}
+// entity 164
+{
+"classname" "atdm:latch_door_01_small"
+"name" "atdm_latch_door_01_small_E_lock"
+"origin" "248 437 -64"
+"rotation" "0 -1 0 1 0 0 0 0 1"
+"translate" "0 -5 0"
+}
+// entity 165
+{
+"classname" "func_static"
+"name" "atdm_latch_door_01_small_E_plateB"
+"model" "models/darkmod/door_related/latch_door_01_small_plateB.ase"
+"origin" "249 443.5 -64"
+"rotation" "0 -1 0 1 0 0 0 0 1"
+}
+// entity 166
+{
+"classname" "func_static"
+"name" "atdm_latch_door_01_small_E_plateA"
+"model" "models/darkmod/door_related/latch_door_01_small_plateA.ase"
+"origin" "249 437 -64"
+"rotation" "0 -1 0 1 0 0 0 0 1"
+}
+// entity 167
+{
+"classname" "atdm:latch_door_01_small"
+"name" "atdm_latch_door_01_small_S_lock"
+"origin" "148.5 354 -64"
+"rotation" "-1 0 0 0 -1 0 0 0 1"
+"translate" "-5 0 0"
+}
+// entity 168
+{
+"classname" "func_static"
+"name" "atdm_latch_door_01_small_S_plateB"
+"model" "models/darkmod/door_related/latch_door_01_small_plateB.ase"
+"origin" "155 353 -64"
+"rotation" "-1 0 0 0 -1 0 0 0 1"
+}
+// entity 169
+{
+"classname" "func_static"
+"name" "atdm_latch_door_01_small_S_plateA"
+"model" "models/darkmod/door_related/latch_door_01_small_plateA.ase"
+"origin" "148.5 353 -64"
+"rotation" "-1 0 0 0 -1 0 0 0 1"
+}
+// entity 170
+{
+"classname" "atdm:latch_door_01_small"
+"name" "atdm_latch_door_01_small_W_lock"
+"origin" "72 467 -64"
+"rotation" "0 1 0 -1 0 0 0 0 1"
+"translate" "0 5 0"
+}
+// entity 171
+{
+"classname" "func_static"
+"name" "atdm_latch_door_01_small_W_plateA"
+"model" "models/darkmod/door_related/latch_door_01_small_plateA.ase"
+"origin" "71 467 -64"
+"rotation" "0 1 0 -1 0 0 0 0 1"
+}
+// entity 172
+{
+"classname" "func_static"
+"name" "atdm_latch_door_01_small_W_plateB"
+"model" "models/darkmod/door_related/latch_door_01_small_plateB.ase"
+"origin" "71 460.5 -64"
+"rotation" "0 1 0 -1 0 0 0 0 1"
 }
