@@ -28,8 +28,16 @@ jobs:
       - name: Run a one-line script
         run: ./zip.sh
 
-      - name: Archive .pk4 file
-        uses: actions/upload-artifact@v4
+     # - name: Archive .pk4 file
+     #   uses: actions/upload-artifact@v4
+     #   with:
+      #    name: tdm-latch.pk4
+     #     path: tdm-latch.pk4
+
+      - name: Run ReleaseMe
+        id: release
+        uses:  dev-build-deploy/release-me@v0.15.2
         with:
-          name: tdm-latch.pk4
-          path: tdm-latch.pk4
+          token: ${{ secrets.RELEASE_TOKEN }}
+          prefix: v
+          files: tdm-latch.pk4              # Uploads the local file as a GitHub Release Asset
