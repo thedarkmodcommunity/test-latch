@@ -29,7 +29,7 @@ jobs:
         run: ./zip.sh
 
       - name: Archive .pk4 file
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v3
         with:
           name: tdm-latch-artifact
           path: tdm-latch.pk4
@@ -40,5 +40,5 @@ jobs:
         with:
           token: ${{ secrets.RELEASE_TOKEN }}
           prefix: v
-          #artifacts: tdm-latch-artifact
+          artifacts: tdm-latch-artifact
           files: tdm-latch.pk4
