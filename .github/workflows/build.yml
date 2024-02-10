@@ -31,7 +31,7 @@ jobs:
       - name: Archive .pk4 file
         uses: actions/upload-artifact@v4
         with:
-          name: tdm-latch.pk4
+          name: tdm-latch-artifact
           path: tdm-latch.pk4
 
       - name: Run ReleaseMe
@@ -40,5 +40,5 @@ jobs:
         with:
           token: ${{ secrets.RELEASE_TOKEN }}
           prefix: v
-          artifacts: |
-            tdm-latch.pk4.zip
+          artifacts: tdm-latch-artifact
+          files: tdm-latch.pk4
