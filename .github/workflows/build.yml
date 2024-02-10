@@ -40,4 +40,5 @@ jobs:
         with:
           token: ${{ secrets.RELEASE_TOKEN }}
           prefix: v
-          files: tdm-latch.pk4              # Uploads the local file as a GitHub Release Asset
+          artifacts: |
+            tdm-latch.pk4
