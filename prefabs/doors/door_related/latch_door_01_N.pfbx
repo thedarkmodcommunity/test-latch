@@ -8,9 +8,9 @@
   </selectionGroups>
   <selectionSets/>
   <properties>
-    <property key="EditTimeInSeconds" value="9715"/>
-    <property key="LastCameraAngle" value="-47.7 112.7 0"/>
-    <property key="LastCameraPosition" value="-628.455 439.574 11.409"/>
+    <property key="EditTimeInSeconds" value="12842"/>
+    <property key="LastCameraAngle" value="-35.7 65.8 0"/>
+    <property key="LastCameraPosition" value="143.033 463.472 22.0488"/>
     <property key="LastShaderClipboardMaterial" value="textures/darkmod/_proto/proto_metal"/>
   </properties>
   <entity number="0">
@@ -18,7 +18,7 @@
     <keyValues>
       <keyValue key="classname" value="atdm:latch_door_01"/>
       <keyValue key="name" value="atdm_latch_door_01_N_lock"/>
-      <keyValue key="origin" value="-637 486 -48"/>
+      <keyValue key="origin" value="191 550 -48"/>
       <keyValue key="rotation" value="1 0 0 0 1 0 0 0 1"/>
       <keyValue key="translate" value="10 0 0"/>
     </keyValues>
@@ -33,9 +33,8 @@
     <keyValues>
       <keyValue key="classname" value="func_static"/>
       <keyValue key="name" value="atdm_latch_door_01_N_plateB"/>
-      <keyValue key="bind" value="atdm_mover_door_13"/>
       <keyValue key="model" value="models/darkmod/door_related/latch_door_01_plateB.ase"/>
-      <keyValue key="origin" value="-650 488 -48"/>
+      <keyValue key="origin" value="178 552 -48"/>
       <keyValue key="rotation" value="1 0 0 0 1 0 0 0 1"/>
     </keyValues>
     <layers>
@@ -50,7 +49,7 @@
       <keyValue key="classname" value="func_static"/>
       <keyValue key="name" value="atdm_latch_door_01_N_plateA"/>
       <keyValue key="model" value="models/darkmod/door_related/latch_door_01_plateA.ase"/>
-      <keyValue key="origin" value="-637 488 -48"/>
+      <keyValue key="origin" value="191 552 -48"/>
       <keyValue key="rotation" value="1 0 0 0 1 0 0 0 1"/>
     </keyValues>
     <layers>
