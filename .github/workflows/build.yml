@@ -32,7 +32,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: tdm-latch-artifact
-          path: tdm-latch.zip
+          path: README.md
 
       - name: Run ReleaseMe
         id: release
@@ -41,4 +41,4 @@ jobs:
           token: ${{ secrets.RELEASE_TOKEN }}
           prefix: v
           #artifacts: tdm-latch-artifact
-          files: tdm-latch.zip
+          files: README.md
