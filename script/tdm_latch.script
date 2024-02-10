@@ -14,7 +14,7 @@ object tdm_latch
 	void unlockDoors();
 	void setDoorsLockState(float lock);
 	void frobResponse();
-	void moveLatch(float latchOpen);
+	void moveLatch();
 	void rotateLatch();
 	void translateLatch();
 
@@ -27,8 +27,7 @@ void tdm_latch::init()
 
 	if ( areDoorsOpen() || !areDoorsLocked() )
 	{
-		latchOpen = 1;
-		thread moveLatch(latchOpen);
+		thread moveLatch();
 	}
 
 	//start checking whether the player is allowed to frob the latch
@@ -230,8 +229,13 @@ void tdm_latch::setDoorsLockState(float lock)
 
 void tdm_latch::frobResponse()
 {
-	sys.waitForThread(moveThreadNumber);
-	
+	//sys.waitForThread(moveThreadNumber);
+
+	moveThreadNumber = thread moveLatch();
+}
+
+void tdm_latch::moveLatch()
+{
 	if( isMoving() || isRotating() )
 	{
 		sys.println("latch is moving, ignoring frob request.");
@@ -240,22 +244,17 @@ void tdm_latch::frobResponse()
 
 	sys.println("allowing frob request.");
 
+	// immediately set the latch to unfrobable instead of relying on the loop to 
+	// prevent player from moving it and locking the door in open position
+	setFrobable(0);
+
 	latchOpen = !latchOpen;
 
-	moveThreadNumber = thread moveLatch(latchOpen);
-}
-
-void tdm_latch::moveLatch(float latchOpen)
-{
 	time( getFloatKey("move_time") );
 
 	// if latch is opening, rotate then translate.  Reverse if latch is closing.
 	if ( latchOpen )
 	{
-		// immediately set the latch to unfrobable instead of relying on the loop to 
-		// prevent player from moving it and locking the door in open position
-		setFrobable(0);
-
 		rotateLatch();
 
 		while ( isRotating() )
@@ -295,7 +294,7 @@ void tdm_latch::moveLatch(float latchOpen)
 	// This will delay the frob loop because it waits until this thread finishes.
 	// It allows the latch to open and the door to start opening if auto-open on unlock is enabled.
 	// By the time the frob loop resumes, the latch should be unfrobable because the doors are opening
-	sys.wait(2);
+	sys.wait(1);
 
 	setDoorsAINotHandle( !latchOpen );
 }
