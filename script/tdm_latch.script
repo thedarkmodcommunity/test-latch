@@ -42,12 +42,12 @@ void tdm_latch::frobabilityLoop()
 
 	while(1)
 	{
-		sys.wait(10);
+		sys.wait(0.2);
 
 		// Let the thread moving the latch finish
 		sys.waitForThread(moveThreadNumber);
 
-		if ( ( sys.vecLength($player1.getEyePos() - latchPos ) > TRACE_LENGTH ) )
+		if ( ( sys.vecLength($player1.getEyePos() - latchPos ) > TRACE_LENGTH ) || isMoving() || isRotating() )
 		{
 			continue;    //skip if the player is too far away
 		}
@@ -58,15 +58,10 @@ void tdm_latch::frobabilityLoop()
 			continue;
 		}
 
-		// latch opens becomes unfrobable
-		// door becomes briefly frobable
-		// frob door
-
 		// if player is in same location as the latch, make it frobable
 		float frobable = ( getLocation() == $player1.getLocation() );
 
 		// We don't want the latch to be frobable if the door is open so you can't close the door on it.
-		// But only do this if the doors are open and the latch is open to prevent the latch from being stuck closed with the doors open
 		if ( areDoorsOpen() )
 		{
 			setFrobable( 0 );
@@ -225,7 +220,12 @@ void tdm_latch::setDoorsLockState(float lock)
 void tdm_latch::frobResponse()
 {
 	if( isMoving() || isRotating() )
+	{
+		sys.println("latch is moving, ignoring frob request.");
 		return;
+	}
+
+	sys.println("allowing frob request.");
 
 	latchOpen = !latchOpen;
 
@@ -256,6 +256,9 @@ void tdm_latch::moveLatch(float latchOpen)
 	}
 	else
 	{
+		// stop from being able to frob the door while the latch is closing
+		setDoorsFrobable( 0 );
+
 		translateLatch();
 
 		while ( isMoving() )
@@ -272,6 +275,11 @@ void tdm_latch::moveLatch(float latchOpen)
 	{
 		unlockDoors();
 		setDoorsFrobable( latchOpen );
+
+		// This will delay the frob loop because it waits until this thread finishes.
+		// It allows the latch to open and the door to start opening if auto-open on unlock is enabled.
+		// By the time the frob loop resumes, the latch should be unfrobable because the doors are opening
+		sys.wait(2);
 	}
 	else
 	{
