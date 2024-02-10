@@ -8,17 +8,18 @@
   </selectionGroups>
   <selectionSets/>
   <properties>
-    <property key="EditTimeInSeconds" value="14135"/>
-    <property key="LastCameraAngle" value="-34.5 66.4 0"/>
-    <property key="LastCameraPosition" value="155.589 496.847 -9.12206"/>
+    <property key="EditTimeInSeconds" value="14620"/>
+    <property key="LastCameraAngle" value="-39.3 100 0"/>
+    <property key="LastCameraPosition" value="189.153 510.789 -30.0703"/>
     <property key="LastShaderClipboardMaterial" value="textures/darkmod/_proto/proto_metal"/>
   </properties>
   <entity number="0">
     <primitives/>
     <keyValues>
-      <keyValue key="classname" value="atdm:latch_door_01"/>
-      <keyValue key="name" value="atdm_latch_door_01_N_lock"/>
-      <keyValue key="origin" value="191 550 -48"/>
+      <keyValue key="classname" value="func_static"/>
+      <keyValue key="name" value="atdm_latch_door_01_small_N_plateB"/>
+      <keyValue key="model" value="models/darkmod/door_related/latch_door_01_small_plateB.ase"/>
+      <keyValue key="origin" value="181 551 -64"/>
       <keyValue key="rotation" value="1 0 0 0 1 0 0 0 1"/>
     </keyValues>
     <layers>
@@ -31,9 +32,9 @@
     <primitives/>
     <keyValues>
       <keyValue key="classname" value="func_static"/>
-      <keyValue key="name" value="atdm_latch_door_01_N_plateB"/>
-      <keyValue key="model" value="models/darkmod/door_related/latch_door_01_plateB.ase"/>
-      <keyValue key="origin" value="178 552 -48"/>
+      <keyValue key="name" value="atdm_latch_door_01_small_N_plateA"/>
+      <keyValue key="model" value="models/darkmod/door_related/latch_door_01_small_plateA.ase"/>
+      <keyValue key="origin" value="187.5 551 -64"/>
       <keyValue key="rotation" value="1 0 0 0 1 0 0 0 1"/>
     </keyValues>
     <layers>
@@ -45,10 +46,9 @@
   <entity number="2">
     <primitives/>
     <keyValues>
-      <keyValue key="classname" value="func_static"/>
-      <keyValue key="name" value="atdm_latch_door_01_N_plateA"/>
-      <keyValue key="model" value="models/darkmod/door_related/latch_door_01_plateA.ase"/>
-      <keyValue key="origin" value="191 552 -48"/>
+      <keyValue key="classname" value="atdm:latch_door_01_small"/>
+      <keyValue key="name" value="atdm_latch_door_01_small_N_lock"/>
+      <keyValue key="origin" value="187.5 550 -64"/>
       <keyValue key="rotation" value="1 0 0 0 1 0 0 0 1"/>
     </keyValues>
     <layers>
