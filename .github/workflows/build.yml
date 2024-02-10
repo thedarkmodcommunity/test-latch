@@ -32,13 +32,13 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: tdm-latch-artifact
-          path: README.md
+          path: tdm-latch.pk4
 
-      - name: Run ReleaseMe
-        id: release
-        uses:  dev-build-deploy/release-me@v0.15.2
-        with:
-          token: ${{ secrets.RELEASE_TOKEN }}
-          prefix: v
-          #artifacts: tdm-latch-artifact
-          files: README.md
+      #- name: Run ReleaseMe
+      #  id: release
+      #  uses:  dev-build-deploy/release-me@v0.15.2
+      #  with:
+      #    token: ${{ secrets.RELEASE_TOKEN }}
+      #    prefix: v
+      #    #artifacts: tdm-latch-artifact
+      #    files: tdm-latch.pk4
