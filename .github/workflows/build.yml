@@ -37,7 +37,7 @@ jobs:
 
       - name: Release
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         uses: ridedott/release-me-action@v3.10.8
         with:
           release-branches: '["main"]'
