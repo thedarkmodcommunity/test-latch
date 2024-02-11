@@ -1,3 +1,9 @@
+## [0.2.2](https://github.com/thedarkmodcommunity/test-latch/compare/v0.2.1...v0.2.2) (2024-02-11)
+
+### Code Refactoring
+
+- comment out debug ([d95a3f9](https://github.com/thedarkmodcommunity/test-latch/commit/d95a3f923b9b6fcde0c138fc176bc77c4f50676d))
+
 ## [0.2.1](https://github.com/thedarkmodcommunity/test-latch/compare/v0.2.0...v0.2.1) (2024-02-11)
 
 ### Bug Fixes
