@@ -37,7 +37,7 @@ jobs:
 
       - name: Release
         env:
-          GITHUB_TOKEN: ${{ secrets.TEST }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }}
         uses: ridedott/release-me-action@v3.10.8
         with:
           disable-changelog: true
