@@ -59,7 +59,7 @@ void tdm_latch::frobabilityLoop()
 
 		if ( areDoorsRotating() )
 		{
-			sys.println("doors are moving");
+			//sys.println("doors are moving");
 			continue;
 		}
 
@@ -70,10 +70,6 @@ void tdm_latch::frobabilityLoop()
 		if ( getIntKey("location_aware") )
 		{
 			frobable = ( getLocation() == $player1.getLocation() );
-		}
-		else
-		{
-			sys.println("Skipping location check.");
 		}
 
 		// We don't want the latch to be frobable if the door is open so you can't close the door on it.
@@ -244,11 +240,11 @@ void tdm_latch::moveLatch()
 {
 	if( isMoving() || isRotating() )
 	{
-		sys.println("latch is moving, ignoring frob request.");
+		//sys.println("latch is moving, ignoring frob request.");
 		return;
 	}
 
-	sys.println("allowing frob request.");
+	//sys.println("allowing frob request.");
 
 	// immediately set the latch to unfrobable instead of relying on the loop to 
 	// prevent player from moving it and locking the door in open position
