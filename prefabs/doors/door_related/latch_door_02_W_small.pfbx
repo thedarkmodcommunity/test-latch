@@ -8,19 +8,19 @@
   </selectionGroups>
   <selectionSets/>
   <properties>
-    <property key="EditTimeInSeconds" value="14055"/>
-    <property key="LastCameraAngle" value="-46.2 306.7 0"/>
-    <property key="LastCameraPosition" value="233.532 84.7715 0.70373"/>
+    <property key="EditTimeInSeconds" value="13945"/>
+    <property key="LastCameraAngle" value="-48 157.6 0"/>
+    <property key="LastCameraPosition" value="172.721 48.201 -2.86422"/>
     <property key="LastShaderClipboardMaterial" value="textures/darkmod/_proto/proto_metal"/>
   </properties>
   <entity number="0">
     <primitives/>
     <keyValues>
       <keyValue key="classname" value="atdm:latch_door_02_small"/>
-      <keyValue key="name" value="atdm_latch_door_02_small_E_lock"/>
-      <keyValue key="origin" value="255 59 -39"/>
-      <keyValue key="rotation" value="0 -1 0 1 0 0 0 0 1"/>
-      <keyValue key="translate" value="0 -5 0"/>
+      <keyValue key="name" value="atdm_latch_door_02_small_W_lock"/>
+      <keyValue key="origin" value="125 65 -39"/>
+      <keyValue key="rotation" value="0 1 0 -1 0 0 0 0 1"/>
+      <keyValue key="translate" value="0 5 0"/>
     </keyValues>
     <layers>
       <layer id="0"/>
@@ -32,10 +32,10 @@
     <primitives/>
     <keyValues>
       <keyValue key="classname" value="func_static"/>
-      <keyValue key="name" value="atdm_latch_door_02_small_E_bracketB"/>
+      <keyValue key="name" value="atdm_latch_door_02_small_W_bracketA"/>
       <keyValue key="model" value="models/darkmod/door_related/latch_door_02_small_bracket.ase"/>
-      <keyValue key="origin" value="256 62 -39"/>
-      <keyValue key="rotation" value="0 -1 0 1 0 0 0 0 1"/>
+      <keyValue key="origin" value="124 57 -39"/>
+      <keyValue key="rotation" value="0 1 0 -1 0 0 0 0 1"/>
     </keyValues>
     <layers>
       <layer id="0"/>
@@ -47,10 +47,10 @@
     <primitives/>
     <keyValues>
       <keyValue key="classname" value="func_static"/>
-      <keyValue key="name" value="atdm_latch_door_02_small_E_bracketA"/>
+      <keyValue key="name" value="atdm_latch_door_02_small_W_bracketB"/>
       <keyValue key="model" value="models/darkmod/door_related/latch_door_02_small_bracket.ase"/>
-      <keyValue key="origin" value="256 67 -39"/>
-      <keyValue key="rotation" value="0 -1 0 1 0 0 0 0 1"/>
+      <keyValue key="origin" value="124 62 -39"/>
+      <keyValue key="rotation" value="0 1 0 -1 0 0 0 0 1"/>
     </keyValues>
     <layers>
       <layer id="0"/>
@@ -62,10 +62,10 @@
     <primitives/>
     <keyValues>
       <keyValue key="classname" value="func_static"/>
-      <keyValue key="name" value="atdm_latch_door_02_small_E_bracketC"/>
+      <keyValue key="name" value="atdm_latch_door_02_small_W_bracketC"/>
       <keyValue key="model" value="models/darkmod/door_related/latch_door_02_small_bracket.ase"/>
-      <keyValue key="origin" value="256 55 -39"/>
-      <keyValue key="rotation" value="0 -1 0 1 0 0 0 0 1"/>
+      <keyValue key="origin" value="124 69 -39"/>
+      <keyValue key="rotation" value="0 1 0 -1 0 0 0 0 1"/>
     </keyValues>
     <layers>
       <layer id="0"/>
