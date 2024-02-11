@@ -40,6 +40,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         uses: ridedott/release-me-action@v3.10.8
         with:
+          disable-changelog: true
           release-branches: '["main"]'
           release-assets: |
             ./tdm-latch.pk4
