@@ -18,7 +18,7 @@
     <keyValues>
       <keyValue key="classname" value="atdm:latch_door_01_small"/>
       <keyValue key="name" value="atdm_latch_door_01_small_W_lock"/>
-      <keyValue key="origin" value="72 467 -64"/>
+      <keyValue key="origin" value="72 462.5 -64"/>
       <keyValue key="rotation" value="0 1 0 -1 0 0 0 0 1"/>
       <keyValue key="translate" value="0 5 0"/>
     </keyValues>
