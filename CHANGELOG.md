@@ -8,6 +8,13 @@
 
 - updated prefabs with adjust latch_01 origins ([f82fb9a](https://github.com/thedarkmodcommunity/test-latch/commit/f82fb9a9b9bdb3d5f20ea6d5ddf3c8b2d115d542))
 
+## [0.3.1](https://github.com/thedarkmodcommunity/test-latch/compare/v0.3.0...v0.3.1) (2024-02-13)
+
+
+### Bug Fixes
+
+* release artifact upload ([7649d77](https://github.com/thedarkmodcommunity/test-latch/commit/7649d77197bd6b508872acae14dd4ccb09475502))
+
 ## [0.3.0](https://github.com/thedarkmodcommunity/test-latch/compare/v0.2.3...v0.3.0) (2024-02-13)
 
 
