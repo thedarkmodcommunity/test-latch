@@ -40,4 +40,9 @@ jobs:
         if: ${{ steps.release.outputs.release_created }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh release upload ./tdm-latch.${{ steps.release.outputs.tag_name }}.pk4 ./tdm-latch.pk4
+        run: |
+          #
+          # rename the .pk4 with the release version, and upload it to the Github release
+          #
+          mv ./tdm-latch.pk4 ./tdm-latch-${{ steps.release.outputs.tag_name }}.pk4
+          gh release upload ${{ steps.release.outputs.tag_name }} ./tdm-latch-${{ steps.release.outputs.tag_name }}.pk4
