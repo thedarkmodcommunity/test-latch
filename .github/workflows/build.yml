@@ -28,12 +28,22 @@ jobs:
           path: tdm-latch.pk4
 
       # Create an automated Github release
-      - name: Release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }}
-        uses: ridedott/release-me-action@v3.10.8
+      - uses: google-github-actions/release-please-action@v4
+        id: release
         with:
-          disable-changelog: false
-          release-branches: '["main"]'
-          release-assets: |
-            ./tdm-latch.pk4
+          release-type: simple
+      - name: Upload Release Artifact
+        if: ${{ steps.release.outputs.release_created }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh release upload ./tdm-latch.${{ steps.release.outputs.tag_name }}.pk4 ./tdm-latch.pk4
+
+      # - name: Release
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }}
+      #   uses: ridedott/release-me-action@v3.10.8
+      #   with:
+      #     disable-changelog: false
+      #     release-branches: '["main"]'
+      #     release-assets: |
+      #       ./tdm-latch.pk4
