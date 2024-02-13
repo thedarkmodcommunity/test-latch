@@ -8,6 +8,21 @@
 
 - updated prefabs with adjust latch_01 origins ([f82fb9a](https://github.com/thedarkmodcommunity/test-latch/commit/f82fb9a9b9bdb3d5f20ea6d5ddf3c8b2d115d542))
 
+## [0.3.0](https://github.com/thedarkmodcommunity/test-latch/compare/v0.2.3...v0.3.0) (2024-02-13)
+
+
+### Features
+
+* switch to release-please action ([bcaccf5](https://github.com/thedarkmodcommunity/test-latch/commit/bcaccf58d21396f2b463d849556d44ea8891a5a8))
+
+
+### Bug Fixes
+
+* add workflow permissions ([321ae9b](https://github.com/thedarkmodcommunity/test-latch/commit/321ae9b4197d23f492c4f287876d21d066b2423b))
+* move permissions block ([84296ad](https://github.com/thedarkmodcommunity/test-latch/commit/84296ad041a08445044f1f9e7551fa7752cb5c87))
+* remove token config ([2fa7945](https://github.com/thedarkmodcommunity/test-latch/commit/2fa7945eacb5dec5c2307f85857b04f5213bdb86))
+* skip release PRs ([3da9b6d](https://github.com/thedarkmodcommunity/test-latch/commit/3da9b6d076f5539a7228a0ef66aa0e6572c6eb2e))
+
 ## [0.2.2](https://github.com/thedarkmodcommunity/test-latch/compare/v0.2.1...v0.2.2) (2024-02-11)
 
 ### Code Refactoring
