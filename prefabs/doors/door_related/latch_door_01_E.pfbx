@@ -33,7 +33,7 @@
     <keyValues>
       <keyValue key="classname" value="atdm:latch_door_01"/>
       <keyValue key="name" value="atdm_latch_door_01_E_lock"/>
-      <keyValue key="origin" value="254 433 -48"/>
+      <keyValue key="origin" value="254 442 -48"/>
       <keyValue key="rotation" value="0 -1 0 1 0 0 0 0 1"/>
       <keyValue key="translate" value="0 -10 0"/>
     </keyValues>

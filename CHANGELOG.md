@@ -1,3 +1,19 @@
+## [0.2.3](https://github.com/thedarkmodcommunity/test-latch/compare/v0.2.2...v0.2.3) (2024-02-12)
+
+### Bug Fixes
+
+- updated origins on latch models ([4d752a2](https://github.com/thedarkmodcommunity/test-latch/commit/4d752a2fb41472d3eadd282136e7ac1b1df659a6))
+
+### Other
+
+- updated prefabs with adjust latch_01 origins ([f82fb9a](https://github.com/thedarkmodcommunity/test-latch/commit/f82fb9a9b9bdb3d5f20ea6d5ddf3c8b2d115d542))
+
+## [0.2.2](https://github.com/thedarkmodcommunity/test-latch/compare/v0.2.1...v0.2.2) (2024-02-11)
+
+### Code Refactoring
+
+- comment out debug ([d95a3f9](https://github.com/thedarkmodcommunity/test-latch/commit/d95a3f923b9b6fcde0c138fc176bc77c4f50676d))
+
 ## [0.2.1](https://github.com/thedarkmodcommunity/test-latch/compare/v0.2.0...v0.2.1) (2024-02-11)
 
 ### Bug Fixes
