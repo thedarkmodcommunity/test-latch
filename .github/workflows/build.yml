@@ -20,16 +20,24 @@ jobs:
 
       - uses: actions/checkout@v3
 
-      # Zip up the .pk4 file, excluding anything we don't want.  Use shell script for easy local testing.
+      # Zip up the .pk4 files.  Use shell scripts for easy local testing.
       - name: Create .pk4 file
-        run: ./zip.sh
+        run: |
+          ./zip.sh
+          ./zip-incl-map.sh
 
-      # Make the .pk4 a Github 'artifact' so it can be downloaded if not doing a release
+      # Make the .pk4s a Github 'artifact' so it can be downloaded if not doing a release
       - name: Archive .pk4 file
         uses: actions/upload-artifact@v4
         with:
           name: tdm-latch.pk4
           path: tdm-latch.pk4
+
+      - name: Archive .pk4 file with demo map
+        uses: actions/upload-artifact@v4
+        with:
+          name: tdm-latch-with-demo-map.pk4
+          path: tdm-latch-with-demo-map.pk4
 
       # Create an automated Github release
       - uses: google-github-actions/release-please-action@v4
@@ -46,3 +54,6 @@ jobs:
           #
           mv ./tdm-latch.pk4 ./tdm-latch-${{ steps.release.outputs.tag_name }}.pk4
           gh release upload ${{ steps.release.outputs.tag_name }} ./tdm-latch-${{ steps.release.outputs.tag_name }}.pk4
+
+          mv ./tdm-latch-with-demo-map.pk4 ./tdm-latch-with-demo-map-${{ steps.release.outputs.tag_name }}.pk4
+          gh release upload ${{ steps.release.outputs.tag_name }} ./tdm-latch-with-demo-map-${{ steps.release.outputs.tag_name }}.pk4
