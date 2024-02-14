@@ -1,1 +1,1 @@
-test_latch
+demo_latch
