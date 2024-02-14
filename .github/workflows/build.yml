@@ -37,6 +37,7 @@ jobs:
           zip -r tdm-latch-with-demo-map.pk4 \
             dds/* \
             def/* \
+            maps/demo_latch* \
             materials/* \
             models/* \
             prefabs/* \
