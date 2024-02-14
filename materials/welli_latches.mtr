@@ -6,9 +6,9 @@ tdm_door_latch_01
 		{
 			blend diffusemap
 			map models/darkmod/props/textures/tdm_door_latch_01_s
-				red .6
-				green .6
-				blue .5
+				red .7
+				green .7
+				blue .6
 		}
 			{
 				maskcolor				
@@ -38,9 +38,9 @@ tdm_door_latch_02
 		{
 			blend diffusemap
 			map models/darkmod/props/textures/tdm_door_latch_02_s
-				red .6
-				green .6
-				blue .5
+				red .7
+				green .7
+				blue .6
 		}
 			{
 				maskcolor				
