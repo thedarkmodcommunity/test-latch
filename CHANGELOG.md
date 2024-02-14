@@ -8,6 +8,18 @@
 
 - updated prefabs with adjust latch_01 origins ([f82fb9a](https://github.com/thedarkmodcommunity/test-latch/commit/f82fb9a9b9bdb3d5f20ea6d5ddf3c8b2d115d542))
 
+## [0.4.0](https://github.com/thedarkmodcommunity/test-latch/compare/v0.3.1...v0.4.0) (2024-02-14)
+
+
+### Features
+
+* latch demo map called "demo_latch" ([e7a9320](https://github.com/thedarkmodcommunity/test-latch/commit/e7a9320c41d00b2b893599de4a39ada5524e054a))
+
+
+### Bug Fixes
+
+* brightened diffuse on latches a hair ([ccabfa6](https://github.com/thedarkmodcommunity/test-latch/commit/ccabfa6ba0f4bf80f06763fb659e8d6a062b25d2))
+
 ## [0.3.1](https://github.com/thedarkmodcommunity/test-latch/compare/v0.3.0...v0.3.1) (2024-02-13)
 
 
