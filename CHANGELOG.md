@@ -8,6 +8,20 @@
 
 - updated prefabs with adjust latch_01 origins ([f82fb9a](https://github.com/thedarkmodcommunity/test-latch/commit/f82fb9a9b9bdb3d5f20ea6d5ddf3c8b2d115d542))
 
+## [0.5.0](https://github.com/thedarkmodcommunity/test-latch/compare/v0.4.0...v0.5.0) (2024-02-14)
+
+
+### Features
+
+* include version with demo map ([fa49343](https://github.com/thedarkmodcommunity/test-latch/commit/fa4934340703409fc0dfeb93e3ca26419e598966))
+
+
+### Bug Fixes
+
+* forgot to add demo map to 2nd pk4 ([86a3cd5](https://github.com/thedarkmodcommunity/test-latch/commit/86a3cd5cded57941192489373d4c7ac7b63f4acf))
+* move zip scripts to build file ([4feb643](https://github.com/thedarkmodcommunity/test-latch/commit/4feb643459ef935fbbb102c8ee27e3b9225e64af))
+* update startingmap.txt to point at demo ([0b5c05c](https://github.com/thedarkmodcommunity/test-latch/commit/0b5c05cba9760a6fd9f56c292b4c3c9698c92602))
+
 ## [0.4.0](https://github.com/thedarkmodcommunity/test-latch/compare/v0.3.1...v0.4.0) (2024-02-14)
 
 
