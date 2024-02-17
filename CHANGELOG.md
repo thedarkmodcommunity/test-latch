@@ -8,6 +8,14 @@
 
 - updated prefabs with adjust latch_01 origins ([f82fb9a](https://github.com/thedarkmodcommunity/test-latch/commit/f82fb9a9b9bdb3d5f20ea6d5ddf3c8b2d115d542))
 
+## [0.5.1](https://github.com/thedarkmodcommunity/test-latch/compare/v0.5.0...v0.5.1) (2024-02-17)
+
+
+### Bug Fixes
+
+* increased length of latch_02 for clearance ([c5015a8](https://github.com/thedarkmodcommunity/test-latch/commit/c5015a8dd86cc48038390cdb7a1579ea3a31ccac))
+* updated translate value on latch_02 ([d4494e0](https://github.com/thedarkmodcommunity/test-latch/commit/d4494e04f192667afe8209f7dd5fad28e2230994))
+
 ## [0.5.0](https://github.com/thedarkmodcommunity/test-latch/compare/v0.4.0...v0.5.0) (2024-02-14)
 
 
