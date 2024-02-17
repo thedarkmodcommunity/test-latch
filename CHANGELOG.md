@@ -8,6 +8,13 @@
 
 - updated prefabs with adjust latch_01 origins ([f82fb9a](https://github.com/thedarkmodcommunity/test-latch/commit/f82fb9a9b9bdb3d5f20ea6d5ddf3c8b2d115d542))
 
+## [0.5.1](https://github.com/thedarkmodcommunity/test-latch/compare/v0.5.0...v0.5.1) (2024-02-17)
+
+
+### Bug Fixes
+
+* move door open check earlier in frob loop ([d385a34](https://github.com/thedarkmodcommunity/test-latch/commit/d385a34d5cbe74b8e377a5cf02a8c10ab0cefa92))
+
 ## [0.5.0](https://github.com/thedarkmodcommunity/test-latch/compare/v0.4.0...v0.5.0) (2024-02-14)
 
 
