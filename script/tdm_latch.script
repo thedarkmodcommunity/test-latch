@@ -5,7 +5,6 @@ object tdm_latch
 {
 	void init();
 	void frobabilityLoop();
-	boolean areDoorsRotating();
 	boolean areDoorsOpen();
 	boolean areDoorsLocked();
 	void setDoorsFrobable(float frobable);
@@ -96,23 +95,6 @@ void tdm_latch::frobabilityLoop()
 			setDoorsFrobable( !frobable );
 		}
 	}
-}
-
-boolean tdm_latch::areDoorsRotating()
-{
-	float i;
-
-	for(i = 0; i < numTargets(); i++)
-	{
-		entity e = getTarget(i);
-
-		if( e.getKey("spawnclass") == "CFrobDoor" )
-		{
-			if ( e.isRotating() )
-				return true;
-		}
-	}
-	return false;
 }
 
 boolean tdm_latch::areDoorsOpen()
