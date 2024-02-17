@@ -57,12 +57,6 @@ void tdm_latch::frobabilityLoop()
 			continue;    //skip if the player is too far away
 		}
 
-		if ( areDoorsRotating() )
-		{
-			//sys.println("doors are moving");
-			continue;
-		}
-
 		//  latch frobable by default.  Do we definitely want this?
 		float frobable = 1;
 
@@ -71,8 +65,7 @@ void tdm_latch::frobabilityLoop()
 		{
 			frobable = ( getLocation() == $player1.getLocation() );
 		}
-
-		// We don't want the latch to be frobable if the door is open so you can't close the door on it.
+		
 		if ( areDoorsOpen() )
 		{
 			setFrobable( 0 );
