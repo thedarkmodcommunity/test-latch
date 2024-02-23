@@ -2,98 +2,17 @@ DarkRadiant Map Information File Version 2
 {
 	MapProperties
 	{
-		KeyValue { "EditTimeInSeconds" "9424" } 
-		KeyValue { "LastCameraAngle" "3.6 278 0" } 
-		KeyValue { "LastCameraPosition" "167.553 -37.4853 -70.3707" } 
+		KeyValue { "EditTimeInSeconds" "10779" } 
+		KeyValue { "LastCameraAngle" "-12.6 349.6 0" } 
+		KeyValue { "LastCameraPosition" "808.096 177.426 -44.333" } 
 		KeyValue { "LastShaderClipboardMaterial" "textures/darkmod/_proto/proto" } 
-	}
-	SelectionSets
-	{
 	}
 	MapEditTimings
 	{
-		TotalSecondsEdited { 9424 }
+		TotalSecondsEdited { 10779 }
 	}
-	SelectionGroups
+	SelectionSets
 	{
-		SelectionGroup 2 { "" }
-	}
-	SelectionGroupNodeMapping
-	{
-		Node { ( 0 0 ) ( 2 ) } // brush (Brush)
-		Node { ( 0 1 ) ( 2 ) } // brush (Brush)
-		Node { ( 0 2 ) ( 2 ) } // brush (Brush)
-		Node { ( 0 3 ) ( 2 ) } // brush (Brush)
-		Node { ( 0 4 ) ( 2 ) } // brush (Brush)
-		Node { ( 0 5 ) ( 2 ) } // brush (Brush)
-		Node { ( 1 ) ( 2 ) } // entity (ambient_world)
-		Node { ( 2 ) ( 2 ) } // entity (Objectives)
-		Node { ( 3 ) ( 2 ) } // entity (CompassEasy)
-		Node { ( 4 ) ( 2 ) } // entity (LanternEasy)
-		Node { ( 5 ) ( 2 ) } // entity (SpyglassEasy)
-		Node { ( 6 ) ( 2 ) } // entity (HealthPotionsEasy)
-		Node { ( 7 ) ( 2 ) } // entity (SwordEasy)
-		Node { ( 8 ) ( 2 ) } // entity (BlackjackEasy)
-		Node { ( 9 ) ( 2 ) } // entity (BreathPotionsEasy)
-		Node { ( 10 ) ( 2 ) } // entity (FlashbombsEasy)
-		Node { ( 11 ) ( 2 ) } // entity (key_master)
-		Node { ( 12 ) ( 2 ) } // entity (ShopItems)
-		Node { ( 13 ) ( 2 ) } // entity (BroadheadsEasy)
-		Node { ( 14 ) ( 2 ) } // entity (BroadheadsHard)
-		Node { ( 15 ) ( 2 ) } // entity (BroadheadsExpert)
-		Node { ( 16 ) ( 2 ) } // entity (FireArrowsEasy)
-		Node { ( 17 ) ( 2 ) } // entity (FireArrowsHard)
-		Node { ( 18 ) ( 2 ) } // entity (FireArrowsExpert)
-		Node { ( 19 ) ( 2 ) } // entity (GasArrowsEasy)
-		Node { ( 20 ) ( 2 ) } // entity (GasArrowsHard)
-		Node { ( 21 ) ( 2 ) } // entity (GasArrowsExpert)
-		Node { ( 22 ) ( 2 ) } // entity (MossArrowsEasy)
-		Node { ( 23 ) ( 2 ) } // entity (MossArrowsExpert)
-		Node { ( 24 ) ( 2 ) } // entity (MossArrowsHard)
-		Node { ( 25 ) ( 2 ) } // entity (NoiseArrowsEasy)
-		Node { ( 26 ) ( 2 ) } // entity (NoiseArrowsHard)
-		Node { ( 27 ) ( 2 ) } // entity (NoiseArrowsExpert)
-		Node { ( 28 ) ( 2 ) } // entity (RopeArrowsEasy)
-		Node { ( 29 ) ( 2 ) } // entity (RopeArrowsHard)
-		Node { ( 30 ) ( 2 ) } // entity (RopeArrowsExpert)
-		Node { ( 31 ) ( 2 ) } // entity (WaterArrowsEasy)
-		Node { ( 32 ) ( 2 ) } // entity (WaterArrowsHard)
-		Node { ( 33 ) ( 2 ) } // entity (WaterArrowsExpert)
-		Node { ( 34 ) ( 2 ) } // entity (BlackjackHard)
-		Node { ( 35 ) ( 2 ) } // entity (BlackjackExpert)
-		Node { ( 36 ) ( 2 ) } // entity (SwordHard)
-		Node { ( 37 ) ( 2 ) } // entity (SwordExpert)
-		Node { ( 38 ) ( 2 ) } // entity (CompassHard)
-		Node { ( 39 ) ( 2 ) } // entity (CompassExpert)
-		Node { ( 40 ) ( 2 ) } // entity (LanternHard)
-		Node { ( 41 ) ( 2 ) } // entity (LanternExpert)
-		Node { ( 42 ) ( 2 ) } // entity (SpyglassHard)
-		Node { ( 43 ) ( 2 ) } // entity (SpyglassExpert)
-		Node { ( 44 ) ( 2 ) } // entity (FlashbombsHard)
-		Node { ( 45 ) ( 2 ) } // entity (FlashbombsExpert)
-		Node { ( 46 ) ( 2 ) } // entity (HealthPotionsHard)
-		Node { ( 47 ) ( 2 ) } // entity (HealthPotionsExpert)
-		Node { ( 48 ) ( 2 ) } // entity (BreathPotionsHard)
-		Node { ( 49 ) ( 2 ) } // entity (BreathPotionsExpert)
-		Node { ( 50 ) ( 2 ) } // entity (LockpickSnakeEasy)
-		Node { ( 51 ) ( 2 ) } // entity (LockpickTriangleEasy)
-		Node { ( 52 ) ( 2 ) } // entity (MinesEasy)
-		Node { ( 53 ) ( 2 ) } // entity (HolyWatersEasy)
-		Node { ( 54 ) ( 2 ) } // entity (FlashminesEasy)
-		Node { ( 55 ) ( 2 ) } // entity (LockpickSnakeHard)
-		Node { ( 56 ) ( 2 ) } // entity (LockpickSnakeExpert)
-		Node { ( 57 ) ( 2 ) } // entity (LockpickTriangleHard)
-		Node { ( 58 ) ( 2 ) } // entity (LockpickTriangleExpert)
-		Node { ( 59 ) ( 2 ) } // entity (FlashminesHard)
-		Node { ( 60 ) ( 2 ) } // entity (FlashminesExpert)
-		Node { ( 61 ) ( 2 ) } // entity (MinesHard)
-		Node { ( 62 ) ( 2 ) } // entity (MinesExpert)
-		Node { ( 63 ) ( 2 ) } // entity (HolyWatersHard)
-		Node { ( 64 ) ( 2 ) } // entity (HolyWatersExpert)
-		Node { ( 65 ) ( 2 ) } // entity (VineArrowsEasy)
-		Node { ( 66 ) ( 2 ) } // entity (VineArrowsHard)
-		Node { ( 67 ) ( 2 ) } // entity (VineArrowsExpert)
-		Node { ( 68 ) ( 2 ) } // entity (atdm_location_settings_1)
 	}
 	Layers
 	{
@@ -111,6 +30,8 @@ DarkRadiant Map Information File Version 2
 	NodeToLayerMapping
 	{
 		Node { 0 } // entity (world)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
@@ -382,5 +303,97 @@ DarkRadiant Map Information File Version 2
 		Node { 0 } // entity (location_trapdoor_underneath_frobable)
 		Node { 0 } // entity (info_locationSeparator_5)
 		Node { 0 } // entity (info_locationSeparator_6)
+		Node { 0 } // entity (atdm_latch_door_02_small_E_lock)
+		Node { 0 } // entity (atdm_latch_door_02_small_E_bracketB)
+		Node { 0 } // entity (atdm_latch_door_02_small_E_bracketA)
+		Node { 0 } // entity (atdm_latch_door_02_small_E_bracketC)
+		Node { 0 } // entity (atdm_mover_door_sliding_1)
+		Node { 0 } // brush (Brush)
+	}
+	SelectionGroups
+	{
+		SelectionGroup 2 { "" }
+		SelectionGroup 4 { "" }
+	}
+	SelectionGroupNodeMapping
+	{
+		Node { ( 0 0 ) ( 2 ) } // brush (Brush)
+		Node { ( 0 1 ) ( 2 ) } // brush (Brush)
+		Node { ( 0 2 ) ( 2 ) } // brush (Brush)
+		Node { ( 0 3 ) ( 2 ) } // brush (Brush)
+		Node { ( 0 4 ) ( 2 ) } // brush (Brush)
+		Node { ( 0 5 ) ( 2 ) } // brush (Brush)
+		Node { ( 1 ) ( 2 ) } // entity (ambient_world)
+		Node { ( 2 ) ( 2 ) } // entity (Objectives)
+		Node { ( 3 ) ( 2 ) } // entity (CompassEasy)
+		Node { ( 4 ) ( 2 ) } // entity (LanternEasy)
+		Node { ( 5 ) ( 2 ) } // entity (SpyglassEasy)
+		Node { ( 6 ) ( 2 ) } // entity (HealthPotionsEasy)
+		Node { ( 7 ) ( 2 ) } // entity (SwordEasy)
+		Node { ( 8 ) ( 2 ) } // entity (BlackjackEasy)
+		Node { ( 9 ) ( 2 ) } // entity (BreathPotionsEasy)
+		Node { ( 10 ) ( 2 ) } // entity (FlashbombsEasy)
+		Node { ( 11 ) ( 2 ) } // entity (key_master)
+		Node { ( 12 ) ( 2 ) } // entity (ShopItems)
+		Node { ( 13 ) ( 2 ) } // entity (BroadheadsEasy)
+		Node { ( 14 ) ( 2 ) } // entity (BroadheadsHard)
+		Node { ( 15 ) ( 2 ) } // entity (BroadheadsExpert)
+		Node { ( 16 ) ( 2 ) } // entity (FireArrowsEasy)
+		Node { ( 17 ) ( 2 ) } // entity (FireArrowsHard)
+		Node { ( 18 ) ( 2 ) } // entity (FireArrowsExpert)
+		Node { ( 19 ) ( 2 ) } // entity (GasArrowsEasy)
+		Node { ( 20 ) ( 2 ) } // entity (GasArrowsHard)
+		Node { ( 21 ) ( 2 ) } // entity (GasArrowsExpert)
+		Node { ( 22 ) ( 2 ) } // entity (MossArrowsEasy)
+		Node { ( 23 ) ( 2 ) } // entity (MossArrowsExpert)
+		Node { ( 24 ) ( 2 ) } // entity (MossArrowsHard)
+		Node { ( 25 ) ( 2 ) } // entity (NoiseArrowsEasy)
+		Node { ( 26 ) ( 2 ) } // entity (NoiseArrowsHard)
+		Node { ( 27 ) ( 2 ) } // entity (NoiseArrowsExpert)
+		Node { ( 28 ) ( 2 ) } // entity (RopeArrowsEasy)
+		Node { ( 29 ) ( 2 ) } // entity (RopeArrowsHard)
+		Node { ( 30 ) ( 2 ) } // entity (RopeArrowsExpert)
+		Node { ( 31 ) ( 2 ) } // entity (WaterArrowsEasy)
+		Node { ( 32 ) ( 2 ) } // entity (WaterArrowsHard)
+		Node { ( 33 ) ( 2 ) } // entity (WaterArrowsExpert)
+		Node { ( 34 ) ( 2 ) } // entity (BlackjackHard)
+		Node { ( 35 ) ( 2 ) } // entity (BlackjackExpert)
+		Node { ( 36 ) ( 2 ) } // entity (SwordHard)
+		Node { ( 37 ) ( 2 ) } // entity (SwordExpert)
+		Node { ( 38 ) ( 2 ) } // entity (CompassHard)
+		Node { ( 39 ) ( 2 ) } // entity (CompassExpert)
+		Node { ( 40 ) ( 2 ) } // entity (LanternHard)
+		Node { ( 41 ) ( 2 ) } // entity (LanternExpert)
+		Node { ( 42 ) ( 2 ) } // entity (SpyglassHard)
+		Node { ( 43 ) ( 2 ) } // entity (SpyglassExpert)
+		Node { ( 44 ) ( 2 ) } // entity (FlashbombsHard)
+		Node { ( 45 ) ( 2 ) } // entity (FlashbombsExpert)
+		Node { ( 46 ) ( 2 ) } // entity (HealthPotionsHard)
+		Node { ( 47 ) ( 2 ) } // entity (HealthPotionsExpert)
+		Node { ( 48 ) ( 2 ) } // entity (BreathPotionsHard)
+		Node { ( 49 ) ( 2 ) } // entity (BreathPotionsExpert)
+		Node { ( 50 ) ( 2 ) } // entity (LockpickSnakeEasy)
+		Node { ( 51 ) ( 2 ) } // entity (LockpickTriangleEasy)
+		Node { ( 52 ) ( 2 ) } // entity (MinesEasy)
+		Node { ( 53 ) ( 2 ) } // entity (HolyWatersEasy)
+		Node { ( 54 ) ( 2 ) } // entity (FlashminesEasy)
+		Node { ( 55 ) ( 2 ) } // entity (LockpickSnakeHard)
+		Node { ( 56 ) ( 2 ) } // entity (LockpickSnakeExpert)
+		Node { ( 57 ) ( 2 ) } // entity (LockpickTriangleHard)
+		Node { ( 58 ) ( 2 ) } // entity (LockpickTriangleExpert)
+		Node { ( 59 ) ( 2 ) } // entity (FlashminesHard)
+		Node { ( 60 ) ( 2 ) } // entity (FlashminesExpert)
+		Node { ( 61 ) ( 2 ) } // entity (MinesHard)
+		Node { ( 62 ) ( 2 ) } // entity (MinesExpert)
+		Node { ( 63 ) ( 2 ) } // entity (HolyWatersHard)
+		Node { ( 64 ) ( 2 ) } // entity (HolyWatersExpert)
+		Node { ( 65 ) ( 2 ) } // entity (VineArrowsEasy)
+		Node { ( 66 ) ( 2 ) } // entity (VineArrowsHard)
+		Node { ( 67 ) ( 2 ) } // entity (VineArrowsExpert)
+		Node { ( 68 ) ( 2 ) } // entity (atdm_location_settings_1)
+		Node { ( 132 ) ( 4 ) } // entity (atdm_latch_door_02_small_E_lock)
+		Node { ( 133 ) ( 4 ) } // entity (atdm_latch_door_02_small_E_bracketB)
+		Node { ( 134 ) ( 4 ) } // entity (atdm_latch_door_02_small_E_bracketA)
+		Node { ( 135 ) ( 4 ) } // entity (atdm_latch_door_02_small_E_bracketC)
 	}
 }

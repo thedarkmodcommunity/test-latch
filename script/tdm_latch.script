@@ -23,10 +23,11 @@ object tdm_latch
 
 void tdm_latch::init()
 {
-
 	// Move the latch into the open position on map start if its doors are open or unlocked
 	if ( areDoorsOpen() || !areDoorsLocked() )
 	{
+		//latchOpen = 1;
+		//sys.println("latchOpen: " + latchOpen);
 		thread moveLatch();
 	}
 	else
@@ -208,17 +209,17 @@ void tdm_latch::frobResponse()
 {
 	//sys.waitForThread(moveThreadNumber);
 
-	moveThreadNumber = thread moveLatch();
-}
-
-void tdm_latch::moveLatch()
-{
 	if( isMoving() || isRotating() )
 	{
 		//sys.println("latch is moving, ignoring frob request.");
 		return;
 	}
 
+	moveThreadNumber = thread moveLatch();
+}
+
+void tdm_latch::moveLatch()
+{
 	//sys.println("allowing frob request.");
 
 	// immediately set the latch to unfrobable instead of relying on the loop to 
@@ -285,5 +286,28 @@ void tdm_latch::rotateLatch()
 void tdm_latch::translateLatch()
 {
 	startSound( "snd_translate", SND_CHANNEL_ANY, false);
-	moveToPos( getVectorKey("origin") + latchOpen * getVectorKey("translate") );
+
+    // equation from Dragofer to account for partially open door at map start
+	// doorOrigin + ( ( ( latchOffset + ( latchState(0/1) * latchTranslate) ) rotated by ( doorRotate spawnarg * doorFractionalOpenness ) ) 
+
+	vector latchOrigin = getVectorKey("origin");
+	entity door = getBindMaster();
+
+	vector doorOrigin = door.getWorldOrigin();
+	vector doorRotate = door.getVectorKey("rotate");
+	vector doorTranslate = door.getVectorKey("translate");
+	vector latchOffset = latchOrigin - doorOrigin;
+
+	vector translateVec = latchOffset + ( latchOpen * getVectorKey("translate") );
+
+	// rotating doors 
+	if ( doorRotate != '0 0 0' )
+	{
+		moveToPos( doorOrigin + sys.VecRotate(translateVec, doorRotate * door.GetFractionalPosition() ) );
+	}
+	// sliding doors
+	else if ( doorTranslate != '0 0 0' )
+	{
+		moveToPos( doorOrigin + translateVec + ( doorTranslate * door.GetFractionalPosition() ) );
+	}
 }
