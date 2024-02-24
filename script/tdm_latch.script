@@ -16,6 +16,7 @@ object tdm_latch
 	void moveLatch();
 	void rotateLatch();
 	void translateLatch();
+	void openLatch();
 
 	float latchOpen;	//1 = open, 0 = closed
 	float moveThreadNumber;
@@ -26,9 +27,16 @@ void tdm_latch::init()
 	// Move the latch into the open position on map start if its doors are open or unlocked
 	if ( areDoorsOpen() || !areDoorsLocked() )
 	{
-		//latchOpen = 1;
+		latchOpen = 1;
 		//sys.println("latchOpen: " + latchOpen);
-		thread moveLatch();
+		rotateLatch();
+
+		while ( isRotating() )
+		{
+			sys.wait( 0.2 );
+		}
+
+		openLatch();
 	}
 	else
 	{
@@ -286,7 +294,12 @@ void tdm_latch::rotateLatch()
 void tdm_latch::translateLatch()
 {
 	startSound( "snd_translate", SND_CHANNEL_ANY, false);
+	moveToPos( getVectorKey("origin") + latchOpen * getVectorKey("translate") );
+}
 
+// called at map start if door is open
+void tdm_latch::openLatch()
+{
 	// equation from Dragofer to account for partially open door at map start
 	// doorOrigin + ( ( ( latchOffset + ( latchState(0/1) * latchTranslate) ) rotated by ( doorRotate spawnarg * doorFractionalOpenness ) ) 
 
@@ -302,7 +315,7 @@ void tdm_latch::translateLatch()
 
 		vector translateVec = latchOffset + ( latchOpen * getVectorKey("translate") );
 
-		// rotating doors 
+		// rotating doors
 		if ( doorRotate != '0 0 0' )
 		{
 			moveToPos( doorOrigin + sys.VecRotate(translateVec, doorRotate * door.GetFractionalPosition() ) );
