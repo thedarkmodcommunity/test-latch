@@ -328,7 +328,7 @@ void tdm_latch::openLatch()
 	}
 	else
 	{
-		// Latch not bound to any door
-		moveToPos( getVectorKey("origin") + latchOpen * getVectorKey("translate") );
+		// Latch not bound to any door, no need to account for open door angles, etc.
+		translateLatch();
 	}
 }
