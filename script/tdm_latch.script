@@ -23,19 +23,17 @@ object tdm_latch
 
 void tdm_latch::init()
 {
+
+	vector latchTranslate = sys.VecRotate( (getVectorKey("translate") * latchOpen), getAngles() );
+
+	sys.println( self.getName() + ": origin spawnarg: " + getVectorKey("origin") );
+	sys.println(self.getName() + ": getAngles(): " + getAngles());
+	sys.println(self.getName() + ": latchTranslate: " + latchTranslate);
+
 	// Move the latch into the open position on map start if its doors are open or unlocked
 	if ( areDoorsOpen() || !areDoorsLocked() )
 	{
-		latchOpen = 1;
-		//sys.println("latchOpen: " + latchOpen);
-		rotateLatch();
-
-		while ( isRotating() )
-		{
-			sys.wait( 0.2 );
-		}
-
-		translateLatch();
+		moveLatch();
 	}
 	else
 	{
@@ -282,6 +280,8 @@ void tdm_latch::moveLatch()
 	sys.wait(1);
 
 	setDoorsAINotHandle( !latchOpen );
+
+	sys.println( self.getName() + ": origin after move: " + getVectorKey("origin") );
 }
 
 void tdm_latch::rotateLatch()
@@ -304,7 +304,9 @@ void tdm_latch::translateLatch()
 	vector doorRotate = door.getVectorKey("rotate");
 	float doorOpenFrac = door.GetFractionalPosition();        //how open the door is from 0 to 1. Always returns 0 when the door is closed
 
-	vector targetPos = doorOrigin + sys.VecRotate( latchOffset + latchTranslate, doorRotate * doorOpenFrac );
+	//vector targetPos = doorOrigin + sys.VecRotate( latchOffset + latchTranslate, doorRotate * doorOpenFrac );
+	vector targetPos = doorOrigin + latchTranslate + sys.VecRotate( latchOffset, doorRotate * doorOpenFrac );
+
 
 	moveToPos( targetPos );
 }
