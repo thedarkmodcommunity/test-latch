@@ -304,7 +304,10 @@ void tdm_latch::translateLatch()
 	vector doorRotate = door.getVectorKey("rotate");
 	float doorOpenFrac = door.GetFractionalPosition();        //how open the door is from 0 to 1. Always returns 0 when the door is closed
 
+	// this causes the latch to be offset slightly if associated with an open, rotating door
 	//vector targetPos = doorOrigin + sys.VecRotate( latchOffset + latchTranslate, doorRotate * doorOpenFrac );
+
+	// This fixes the offset problem, but the latch translates the wrong direction
 	vector targetPos = doorOrigin + latchTranslate + sys.VecRotate( latchOffset, doorRotate * doorOpenFrac );
 
 

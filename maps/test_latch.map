@@ -2081,8 +2081,8 @@ brushDef3
 {
 "classname" "info_player_start"
 "name" "info_player_start_1"
-"angle" "90.000000"
-"origin" "154 435 -128"
+"angle" "-90.000000"
+"origin" "55 151 -128"
 }
 // entity 70
 {
@@ -2576,7 +2576,6 @@ brushDef3
 "bind" "atdm_mover_door_7"
 "move_time" ".35"
 "origin" "173 -50 -69"
-"rotation" "1 0 0 0 -1 1.11022e-16 0 -1.11022e-16 -1"
 "snd_move" "metal_cabinet01_open"
 "target0" "atdm_mover_door_7"
 }
@@ -2594,7 +2593,7 @@ brushDef3
 "snd_close" "chest_wood_close"
 "snd_locked" "door_locked_03"
 "snd_open" "chest_wood_open"
-"start_rotate" "0 45 0"
+"start_rotate" "0 90 0"
 "used_by" "-"
 // primitive 0
 {
@@ -3461,8 +3460,9 @@ brushDef3
 {
 "classname" "atdm:latch_door_01"
 "name" "closed_door_latch_01"
-"origin" "-321.5 534 -48"
+"origin" "-311.5 534 -48"
 "target0" "atdm_mover_door_1"
+"rotation" "1 0 0 0 1 0 0 0 1"
 }
 // entity 127
 {
