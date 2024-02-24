@@ -287,27 +287,35 @@ void tdm_latch::translateLatch()
 {
 	startSound( "snd_translate", SND_CHANNEL_ANY, false);
 
-    // equation from Dragofer to account for partially open door at map start
+	// equation from Dragofer to account for partially open door at map start
 	// doorOrigin + ( ( ( latchOffset + ( latchState(0/1) * latchTranslate) ) rotated by ( doorRotate spawnarg * doorFractionalOpenness ) ) 
 
 	vector latchOrigin = getVectorKey("origin");
 	entity door = getBindMaster();
 
-	vector doorOrigin = door.getWorldOrigin();
-	vector doorRotate = door.getVectorKey("rotate");
-	vector doorTranslate = door.getVectorKey("translate");
-	vector latchOffset = latchOrigin - doorOrigin;
-
-	vector translateVec = latchOffset + ( latchOpen * getVectorKey("translate") );
-
-	// rotating doors 
-	if ( doorRotate != '0 0 0' )
+	if (door)
 	{
-		moveToPos( doorOrigin + sys.VecRotate(translateVec, doorRotate * door.GetFractionalPosition() ) );
+		vector doorOrigin = door.getWorldOrigin();
+		vector doorRotate = door.getVectorKey("rotate");
+		vector doorTranslate = door.getVectorKey("translate");
+		vector latchOffset = latchOrigin - doorOrigin;
+
+		vector translateVec = latchOffset + ( latchOpen * getVectorKey("translate") );
+
+		// rotating doors 
+		if ( doorRotate != '0 0 0' )
+		{
+			moveToPos( doorOrigin + sys.VecRotate(translateVec, doorRotate * door.GetFractionalPosition() ) );
+		}
+		// sliding doors
+		else if ( doorTranslate != '0 0 0' )
+		{
+			moveToPos( doorOrigin + translateVec + ( doorTranslate * door.GetFractionalPosition() ) );
+		}
 	}
-	// sliding doors
-	else if ( doorTranslate != '0 0 0' )
+	else
 	{
-		moveToPos( doorOrigin + translateVec + ( doorTranslate * door.GetFractionalPosition() ) );
+		// Latch not bound to any door
+		moveToPos( getVectorKey("origin") + latchOpen * getVectorKey("translate") );
 	}
 }
