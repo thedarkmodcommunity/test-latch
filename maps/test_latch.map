@@ -932,11 +932,11 @@ brushDef3
 brushDef3
 {
 ( 0 0 1 -32 ) ( ( 0.00390625 0 0.21875 ) ( 0 0.00390625 -4.1875 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
-( 1 0 0 -872 ) ( ( 0.00390625 0 0.2187499999999996 ) ( 0 0.00390625 2.636779683484747e-16 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
-( 0 1 0 -136 ) ( ( 0.00390625 0 4.187499999999979 ) ( 0 0.00390625 5.329070518200751e-15 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( 1 0 0 -872 ) ( ( 0.00390625 0 0.21875 ) ( 0 0.00390625 2.636779683484747e-16 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( 0 1 0 -136 ) ( ( 0.00390625 0 4.1875 ) ( 0 0.00390625 5.329070518200751e-15 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
 ( 0 0 -1 -128 ) ( ( 0.00390625 0 0.21875 ) ( 0 0.00390625 4.1875 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
-( -1 0 0 864 ) ( ( 0.00390625 0 -0.2187499999999998 ) ( 0 0.00390625 0 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
-( 0 -1 0 72 ) ( ( 0.00390625 0 -4.187499999999998 ) ( 0 0.00390625 2.664535259100376e-15 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( -1 0 0 864 ) ( ( 0.00390625 0 -0.21875 ) ( 0 0.00390625 0 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( 0 -1 0 72 ) ( ( 0.00390625 0 -4.1875 ) ( 0 0.00390625 2.664535259100376e-15 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
 }
 }
 // primitive 78
@@ -944,11 +944,11 @@ brushDef3
 brushDef3
 {
 ( 0 0 1 -32 ) ( ( 0.00390625 0 -0.21875 ) ( 0 0.00390625 -4.1875 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
-( 1 0 0 -872 ) ( ( 0.003906249999999997 0 -0.2187500000000004 ) ( 0 0.003906250000000001 3.885780586188048e-16 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
-( 0 1 0 -248 ) ( ( 0.00390625 0 4.187499999999979 ) ( 0 0.00390625 5.329070518200751e-15 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( 1 0 0 -872 ) ( ( 0.00390625 0 -0.21875 ) ( 0 0.00390625 3.885780586188048e-16 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( 0 1 0 -248 ) ( ( 0.00390625 0 4.1875 ) ( 0 0.00390625 5.329070518200751e-15 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
 ( 0 0 -1 -128 ) ( ( 0.00390625 0 -0.21875 ) ( 0 0.00390625 4.1875 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
-( -1 0 0 864 ) ( ( 0.00390625 0 0.2187500000000009 ) ( 0 0.00390625 0 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
-( 0 -1 0 184 ) ( ( 0.00390625 0 -4.187499999999998 ) ( 0 0.00390625 4.884981308350689e-15 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( -1 0 0 864 ) ( ( 0.00390625 0 0.21875 ) ( 0 0.00390625 0 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
+( 0 -1 0 184 ) ( ( 0.00390625 0 -4.1875 ) ( 0 0.00390625 4.884981308350689e-15 ) ) "textures/darkmod/_proto/proto_metal" 0 0 0
 }
 }
 // primitive 79
@@ -2081,8 +2081,8 @@ brushDef3
 {
 "classname" "info_player_start"
 "name" "info_player_start_1"
-"origin" "744 152 -128"
-"angle" "-0.000000"
+"angle" "-90.000000"
+"origin" "55 151 -128"
 }
 // entity 70
 {
@@ -2114,6 +2114,7 @@ brushDef3
 "snd_move" "door_open_creaky01"
 "snd_open" "door_open_10"
 "used_by" "-"
+"locked" "1"
 // primitive 0
 {
 brushDef3
@@ -2333,13 +2334,6 @@ brushDef3
 }
 // entity 72
 {
-"classname" "func_static"
-"name" "func_static_3"
-"model" "models/darkmod/door_related/latch_door_01_plateA.ase"
-"origin" "-312 536 -48"
-}
-// entity 73
-{
 "classname" "atdm:mover_door"
 "name" "atdm_mover_door_2"
 "lock_picktype" "-"
@@ -2367,7 +2361,7 @@ brushDef3
 }
 }
 }
-// entity 74
+// entity 73
 {
 "classname" "atdm:mover_door"
 "name" "atdm_mover_door_3"
@@ -2396,7 +2390,7 @@ brushDef3
 }
 }
 }
-// entity 75
+// entity 74
 {
 "classname" "func_static"
 "name" "func_static_2"
@@ -2405,7 +2399,7 @@ brushDef3
 "origin" "-369 136 -66"
 "rotation" "-1 0 0 0 -1 0 0 0 1"
 }
-// entity 76
+// entity 75
 {
 "classname" "func_static"
 "name" "func_static_4"
@@ -2414,7 +2408,7 @@ brushDef3
 "origin" "-349 136 -66"
 "rotation" "-1 0 0 0 -1 0 0 0 1"
 }
-// entity 77
+// entity 76
 {
 "classname" "func_static"
 "name" "func_static_5"
@@ -2423,7 +2417,7 @@ brushDef3
 "origin" "-343 136 -66"
 "rotation" "-1 0 0 0 -1 0 0 0 1"
 }
-// entity 78
+// entity 77
 {
 "classname" "func_static"
 "name" "func_static_7"
@@ -2432,7 +2426,7 @@ brushDef3
 "origin" "-355 136 -66"
 "rotation" "-1 0 0 0 -1 0 0 0 1"
 }
-// entity 79
+// entity 78
 {
 "classname" "light"
 "name" "light_3"
@@ -2446,15 +2440,7 @@ brushDef3
 "origin" "168 384 116"
 "rotation" "0 -1 0 1 0 0 0 0 1"
 }
-// entity 80
-{
-"classname" "func_static"
-"name" "func_static_8"
-"bind" "atdm_mover_door_1"
-"model" "models/darkmod/door_related/latch_door_01_plateB.ase"
-"origin" "-325 536 -48"
-}
-// entity 81
+// entity 79
 {
 "classname" "atdm:mover_door"
 "name" "atdm_mover_door_4"
@@ -2482,7 +2468,7 @@ brushDef3
 }
 }
 }
-// entity 82
+// entity 80
 {
 "classname" "atdm:mover_door"
 "name" "atdm_mover_door_5"
@@ -2510,43 +2496,7 @@ brushDef3
 }
 }
 }
-// entity 83
-{
-"classname" "func_static"
-"name" "func_static_9"
-"bind" "atdm_mover_door_4"
-"model" "models/darkmod/door_related/latch_door_02_bracket.ase"
-"origin" "143 536 -66"
-"rotation" "1 0 0 0 1 0 0 0 1"
-}
-// entity 84
-{
-"classname" "func_static"
-"name" "func_static_10"
-"bind" "atdm_mover_door_5"
-"model" "models/darkmod/door_related/latch_door_02_bracket.ase"
-"origin" "170 536 -66"
-"rotation" "1 0 0 0 1 0 0 0 1"
-}
-// entity 85
-{
-"classname" "func_static"
-"name" "func_static_11"
-"bind" "atdm_mover_door_5"
-"model" "models/darkmod/door_related/latch_door_02_bracket.ase"
-"origin" "155 536 -66"
-"rotation" "1 0 0 0 1 0 0 0 1"
-}
-// entity 86
-{
-"classname" "func_static"
-"name" "func_static_12"
-"bind" "atdm_mover_door_4"
-"model" "models/darkmod/door_related/latch_door_02_bracket.ase"
-"origin" "149 536 -66"
-"rotation" "1 0 0 0 1 0 0 0 1"
-}
-// entity 87
+// entity 81
 {
 "classname" "light"
 "name" "light_2"
@@ -2560,7 +2510,7 @@ brushDef3
 "origin" "168 672 116"
 "rotation" "0 -1 0 1 0 0 0 0 1"
 }
-// entity 88
+// entity 82
 {
 "classname" "atdm:moveable_bowl"
 "name" "atdm_playertools_health_potion_2"
@@ -2568,7 +2518,7 @@ brushDef3
 "origin" "-215.995 208 -94.7"
 "rotation" "0 -1 0 0 0 -1 1 0 0"
 }
-// entity 89
+// entity 83
 {
 "classname" "atdm:moveable_bowl"
 "name" "atdm_playertools_health_potion_1"
@@ -2576,7 +2526,7 @@ brushDef3
 "origin" "-215.995 240 -94.7"
 "rotation" "0 -1 0 0 0 -1 1 0 0"
 }
-// entity 90
+// entity 84
 {
 "classname" "atdm:mover_latch"
 "name" "func_static_1"
@@ -2591,7 +2541,7 @@ brushDef3
 "snd_move" "metal_cabinet01_open"
 "translate" "10 0 0"
 }
-// entity 91
+// entity 85
 {
 "classname" "atdm:mover_latch"
 "name" "func_static_6"
@@ -2602,24 +2552,7 @@ brushDef3
 "snd_move" "frob_lever_metal_small_01"
 "translate" "-11 0 0"
 }
-// entity 92
-{
-"classname" "atdm:mover_latch"
-"name" "func_static_13"
-"bind" "atdm_mover_door_5"
-"latch_normal" "0 -90 0"
-"model" "models/darkmod/door_related/latch_door_02_lock.ase"
-"move_time" "0.5"
-"open" "0"
-"origin" "153 534 -66"
-"rotate" "0 0 -90"
-"rotation" "-1 0 0 0 1 -1.11022e-16 0 -1.11022e-16 -1"
-"snd_move" "frob_lever_metal_small_01"
-"target0" "atdm_mover_door_5"
-"target1" "atdm_mover_door_4"
-"translate" "12 0 0"
-}
-// entity 93
+// entity 86
 {
 "classname" "atdm:latch_door_02"
 "name" "atdm_latch_door_02_1"
@@ -2636,33 +2569,17 @@ brushDef3
 "target1" "atdm_mover_door_2"
 "translate" "-11 0 0"
 }
-// entity 94
-{
-"classname" "atdm:latch_door_01"
-"name" "atdm_latch_door_01_1"
-"latch_normal" "0 -90 0"
-"move_time" ".3"
-"origin" "-312 534 -48"
-"rotation" "1 0 0 0 1 0 0 0 1"
-"snd_move" "silence"
-"snd_translate" "metal_cabinet01_open"
-"target0" "atdm_mover_door_1"
-"translate" "10 0 0"
-}
-// entity 95
+// entity 87
 {
 "classname" "atdm:latch_door_02"
-"name" "atdm_latch_door_02_2"
+"name" "angle_door_latch_02"
 "bind" "atdm_mover_door_7"
-"latch_normal" "0 90 0"
 "move_time" ".35"
 "origin" "173 -50 -69"
-"rotation" "1 0 0 0 -1 1.11022e-16 0 -1.11022e-16 -1"
 "snd_move" "metal_cabinet01_open"
 "target0" "atdm_mover_door_7"
-"translate" "-10 0 0"
 }
-// entity 96
+// entity 88
 {
 "classname" "atdm:mover_door"
 "name" "atdm_mover_door_7"
@@ -2676,7 +2593,7 @@ brushDef3
 "snd_close" "chest_wood_close"
 "snd_locked" "door_locked_03"
 "snd_open" "chest_wood_open"
-"start_rotate" "0 45 0"
+"start_rotate" "0 90 0"
 "used_by" "-"
 // primitive 0
 {
@@ -2691,7 +2608,7 @@ brushDef3
 }
 }
 }
-// entity 97
+// entity 89
 {
 "classname" "func_static"
 "name" "func_static_15"
@@ -2700,7 +2617,7 @@ brushDef3
 "origin" "157 -52 -69"
 "rotation" "-1 0 0 0 -1 0 0 0 1"
 }
-// entity 98
+// entity 90
 {
 "classname" "func_static"
 "name" "func_static_16"
@@ -2708,7 +2625,7 @@ brushDef3
 "origin" "180 -52 -69"
 "rotation" "-1 0 0 0 -1 0 0 0 1"
 }
-// entity 99
+// entity 91
 {
 "classname" "func_static"
 "name" "func_static_14"
@@ -2717,7 +2634,7 @@ brushDef3
 "origin" "172 -52 -69"
 "rotation" "-1 0 0 0 -1 0 0 0 1"
 }
-// entity 100
+// entity 92
 {
 "classname" "light"
 "name" "light_4"
@@ -2731,7 +2648,7 @@ brushDef3
 "origin" "151 55 116"
 "rotation" "0 -1 0 1 0 0 0 0 1"
 }
-// entity 101
+// entity 93
 {
 "classname" "light"
 "name" "light_5"
@@ -2745,21 +2662,21 @@ brushDef3
 "origin" "679 367 116"
 "rotation" "0 -1 0 1 0 0 0 0 1"
 }
-// entity 102
+// entity 94
 {
 "classname" "atdm:mover_door_sliding"
 "name" "atdm_mover_door_6"
 "lock_picktype" "-"
 "lock_pins" "0"
 "model" "atdm_mover_door_6"
+"open" "1"
 "origin" "648 -54 -128"
 "snd_close" "chest_wood_close"
 "snd_locked" "door_locked_03"
 "snd_open" "chest_wood_open"
+"start_position" "-40 0 0 0"
 "translate" "-80 0 0 0"
 "used_by" "-"
-"open" "1"
-"start_position" "-40 0 0 0"
 // primitive 0
 {
 brushDef3
@@ -2773,7 +2690,7 @@ brushDef3
 }
 }
 }
-// entity 103
+// entity 95
 {
 "classname" "atdm:latch_door_01"
 "name" "atdm_latch_door_01_2"
@@ -2785,7 +2702,7 @@ brushDef3
 "target0" "atdm_mover_door_6"
 "translate" "0 0 10"
 }
-// entity 104
+// entity 96
 {
 "classname" "func_static"
 "name" "func_static_17"
@@ -2793,7 +2710,7 @@ brushDef3
 "origin" "628 -52 -24"
 "rotation" "0 0 1 0 -1 0 1 0 0"
 }
-// entity 105
+// entity 97
 {
 "classname" "func_static"
 "name" "func_static_18"
@@ -2802,28 +2719,7 @@ brushDef3
 "origin" "628 -52 -38"
 "rotation" "0 0 1 0 -1 0 1 0 0"
 }
-// entity 106
-{
-"classname" "atdm:latch_door_01"
-"name" "overhead_latch"
-"latch_normal" "0 0 90"
-"move_time" ".3"
-"origin" "648 376 -15"
-"rotation" "-6.16298e-33 -1 1.11022e-16 1.11022e-16 -1.11022e-16 -1 1 6.16298e-33 1.11022e-16"
-"snd_move" "metal_cabinet01_open"
-"target1" "atdm_mover_door_8"
-"translate" "0 -10 0"
-}
-// entity 107
-{
-"classname" "func_static"
-"name" "func_static_19"
-"bind" "atdm_mover_door_8"
-"model" "models/darkmod/door_related/latch_door_01_plateB.ase"
-"origin" "648 390 -16"
-"rotation" "0 -1 1.11022e-16 0 -1.11022e-16 -1 1 0 0"
-}
-// entity 108
+// entity 98
 {
 "classname" "atdm:mover_door"
 "name" "atdm_mover_door_8"
@@ -2847,15 +2743,7 @@ brushDef3
 }
 }
 }
-// entity 109
-{
-"classname" "func_static"
-"name" "func_static_20"
-"model" "models/darkmod/door_related/latch_door_01_plateA.ase"
-"origin" "648 376 -16"
-"rotation" "0 -1 0 1.11022e-16 0 -1 1 0 1.11022e-16"
-}
-// entity 110
+// entity 99
 {
 "classname" "func_static"
 "name" "func_static_21"
@@ -2863,7 +2751,7 @@ brushDef3
 "origin" "647.986 528 -20"
 "rotation" "0 -1 0 -1.11022e-16 0 1 -1 0 -1.11022e-16"
 }
-// entity 111
+// entity 100
 {
 "classname" "atdm:mover_door"
 "name" "atdm_mover_door_9"
@@ -2887,7 +2775,7 @@ brushDef3
 }
 }
 }
-// entity 112
+// entity 101
 {
 "classname" "atdm:latch_door_01"
 "name" "underneath_latch"
@@ -2899,7 +2787,7 @@ brushDef3
 "target0" "atdm_mover_door_9"
 "translate" "0 -10 0"
 }
-// entity 113
+// entity 102
 {
 "classname" "func_static"
 "name" "func_static_22"
@@ -2908,7 +2796,7 @@ brushDef3
 "origin" "647.986 542 -20"
 "rotation" "0 -1 -1.11022e-16 0 -1.11022e-16 1 -1 0 0"
 }
-// entity 114
+// entity 103
 {
 "classname" "atdm:latch_door_01"
 "name" "eastwest_latch"
@@ -2920,7 +2808,7 @@ brushDef3
 "target0" "atdm_mover_door_10"
 "translate" "0 10 0"
 }
-// entity 115
+// entity 104
 {
 "classname" "atdm:mover_door"
 "name" "atdm_mover_door_10"
@@ -3156,7 +3044,7 @@ brushDef3
 }
 }
 }
-// entity 116
+// entity 105
 {
 "classname" "func_static"
 "name" "func_static_23"
@@ -3165,7 +3053,7 @@ brushDef3
 "origin" "-1076 383 -48"
 "rotation" "0 1 0 -1 0 0 0 0 1"
 }
-// entity 117
+// entity 106
 {
 "classname" "func_static"
 "name" "func_static_24"
@@ -3173,7 +3061,7 @@ brushDef3
 "origin" "-1076 396 -48"
 "rotation" "0 1 0 -1 0 0 0 0 1"
 }
-// entity 118
+// entity 107
 {
 "classname" "light"
 "name" "light_6"
@@ -3187,7 +3075,7 @@ brushDef3
 "origin" "-752 360 256"
 "rotation" "0 -1 0 1 0 0 0 0 1"
 }
-// entity 119
+// entity 108
 {
 "classname" "atdm:mover_door"
 "name" "atdm_mover_door_11"
@@ -3423,7 +3311,7 @@ brushDef3
 }
 }
 }
-// entity 120
+// entity 109
 {
 "classname" "func_static"
 "name" "func_static_25"
@@ -3431,7 +3319,7 @@ brushDef3
 "origin" "-712 316 -48"
 "rotation" "0 -1 0 1 0 0 0 0 1"
 }
-// entity 121
+// entity 110
 {
 "classname" "func_static"
 "name" "func_static_26"
@@ -3440,7 +3328,7 @@ brushDef3
 "origin" "-712 329 -48"
 "rotation" "0 -1 0 1 0 0 0 0 1"
 }
-// entity 122
+// entity 111
 {
 "classname" "atdm:latch_door_01"
 "name" "eastwest_latch1"
@@ -3452,80 +3340,79 @@ brushDef3
 "target0" "atdm_mover_door_11"
 "translate" "0 -10 0"
 }
-// entity 123
+// entity 112
 {
 "classname" "info_locationSeparator"
 "name" "info_locationSeparator_1"
 "origin" "152 324 32"
 }
-// entity 124
+// entity 113
 {
 "classname" "info_location"
 "name" "location_latch_frobable"
 "origin" "152 448 -56"
 }
-// entity 125
+// entity 114
 {
 "classname" "info_location"
 "name" "location_latch_frobable1"
 "origin" "152 604 -56"
 }
-// entity 126
+// entity 115
 {
 "classname" "info_locationSeparator"
 "name" "info_locationSeparator_2"
 "origin" "152 544 -40"
 }
-// entity 127
+// entity 116
 {
 "classname" "info_locationSeparator"
 "name" "info_locationSeparator_3"
 "origin" "672 648 -80"
 }
-// entity 128
+// entity 117
 {
 "classname" "info_locationSeparator"
 "name" "info_locationSeparator_4"
 "origin" "672 320 -80"
 }
-// entity 129
+// entity 118
 {
 "classname" "info_location"
 "name" "location_trapdoor_underneath_frobable"
 "origin" "664 496 -48"
 }
-// entity 130
+// entity 119
 {
 "classname" "info_locationSeparator"
 "name" "info_locationSeparator_5"
 "origin" "672 432 -16"
 }
-// entity 131
+// entity 120
 {
 "classname" "info_locationSeparator"
 "name" "info_locationSeparator_6"
 "origin" "672 576 -16"
 }
-// entity 132
+// entity 121
 {
 "classname" "atdm:latch_door_02_small"
 "name" "atdm_latch_door_02_small_E_lock"
+"bind" "atdm_mover_door_sliding_1"
 "origin" "863 179.075 -37.625"
 "rotation" "0 0 -1 1 0 0 0 -1 0"
-"translate" "0 0 -5"
-"bind" "atdm_mover_door_sliding_1"
 "target0" "atdm_mover_door_sliding_1"
 }
-// entity 133
+// entity 122
 {
 "classname" "func_static"
 "name" "atdm_latch_door_02_small_E_bracketB"
+"bind" "atdm_mover_door_sliding_1"
 "model" "models/darkmod/door_related/latch_door_02_small_bracket.ase"
 "origin" "864 179.075 -34.625"
 "rotation" "0 0 -1 1 0 0 0 -1 0"
-"bind" "atdm_mover_door_sliding_1"
 }
-// entity 134
+// entity 123
 {
 "classname" "func_static"
 "name" "atdm_latch_door_02_small_E_bracketA"
@@ -3533,39 +3420,135 @@ brushDef3
 "origin" "864 179.075 -29.625"
 "rotation" "0 0 -1 1 0 0 0 -1 0"
 }
-// entity 135
+// entity 124
 {
 "classname" "func_static"
 "name" "atdm_latch_door_02_small_E_bracketC"
+"bind" "atdm_mover_door_sliding_1"
 "model" "models/darkmod/door_related/latch_door_02_small_bracket.ase"
 "origin" "864 179.075 -41.625"
 "rotation" "0 0 -1 1 0 0 0 -1 0"
-"bind" "atdm_mover_door_sliding_1"
 }
-// entity 136
+// entity 125
 {
 "classname" "atdm:mover_door_sliding"
 "name" "atdm_mover_door_sliding_1"
-"model" "atdm_mover_door_sliding_1"
-"origin" "866 160 -80"
 "lock_picktype" "-"
 "lock_pins" "0"
 "locked" "0"
+"model" "atdm_mover_door_sliding_1"
+"open" "1"
+"origin" "866 160 -80"
 "rotate" "0 0 0"
+"start_position" "-1 -20 0"
 "translate" "-1 -40 0"
 "used_by" "-"
-"open" "1"
-"start_position" "-1 -20 0"
 // primitive 0
 {
 brushDef3
 {
-( 0 0 1 -48 ) ( ( 0.02083333333333304 0 125.1666667461355 ) ( 0 0.125 147.9999999999952 ) ) "textures/darkmod/door/wood/diamond_pattern02_nails" 0 0 0
-( 0 1 0 -24 ) ( ( 0.125 0 108.9999999999998 ) ( 0 0.01041666666666652 255.6666666567398 ) ) "textures/darkmod/door/wood/diamond_pattern02_nails" 0 0 0
-( 1 0 0 -2 ) ( ( 0.02083333333333348 0 125.1666667461394 ) ( 0 0.01041666666666652 255.6666666567324 ) ) "textures/darkmod/door/wood/diamond_pattern02_nails" 0 0 0
-( 0 0 -1 -48 ) ( ( 0.02083333333333304 0 125.1666667461428 ) ( 0 0.125 109 ) ) "textures/darkmod/door/wood/diamond_pattern02_nails" 0 0 0
-( 0 -1 0 -24 ) ( ( 0.125 0 20.00000000000243 ) ( 0 0.01041666666666652 255.6666666567382 ) ) "textures/darkmod/door/wood/diamond_pattern02_nails" 0 0 0
-( -1 0 0 -2 ) ( ( 0.02083333333333333 0 3.833333253860474 ) ( 0 0.01041666666666652 255.6666666567326 ) ) "textures/darkmod/door/wood/diamond_pattern02_nails" 0 0 0
+( 0 0 1 -48 ) ( ( 0.02083333395421505 0 125.1666641235352 ) ( 0 0.125 148 ) ) "textures/darkmod/door/wood/diamond_pattern02_nails" 0 0 0
+( 0 1 0 -24 ) ( ( 0.125 0 109 ) ( 0 0.01041666697710752 255.6666717529297 ) ) "textures/darkmod/door/wood/diamond_pattern02_nails" 0 0 0
+( 1 0 0 -2 ) ( ( 0.02083333395421505 0 125.1666641235352 ) ( 0 0.01041666697710752 255.6666717529297 ) ) "textures/darkmod/door/wood/diamond_pattern02_nails" 0 0 0
+( 0 0 -1 -48 ) ( ( 0.02083333395421505 0 125.1666641235352 ) ( 0 0.125 109 ) ) "textures/darkmod/door/wood/diamond_pattern02_nails" 0 0 0
+( 0 -1 0 -24 ) ( ( 0.125 0 20 ) ( 0 0.01041666697710752 255.6666717529297 ) ) "textures/darkmod/door/wood/diamond_pattern02_nails" 0 0 0
+( -1 0 0 -2 ) ( ( 0.02083333395421505 0 3.833333253860474 ) ( 0 0.01041666697710752 255.6666717529297 ) ) "textures/darkmod/door/wood/diamond_pattern02_nails" 0 0 0
 }
 }
+}
+// entity 126
+{
+"classname" "atdm:latch_door_01"
+"name" "closed_door_latch_01"
+"origin" "-311.5 534 -48"
+"target0" "atdm_mover_door_1"
+"rotation" "1 0 0 0 1 0 0 0 1"
+}
+// entity 127
+{
+"classname" "func_static"
+"name" "atdm_latch_door_01_N_plateB"
+"model" "models/darkmod/door_related/latch_door_01_plateB.ase"
+"origin" "-325.5 536 -48"
+"rotation" "1 0 0 0 1 0 0 0 1"
+"bind" "atdm_mover_door_1"
+}
+// entity 128
+{
+"classname" "func_static"
+"name" "atdm_latch_door_01_N_plateA"
+"model" "models/darkmod/door_related/latch_door_01_plateA.ase"
+"origin" "-312.5 536 -48"
+"rotation" "1 0 0 0 1 0 0 0 1"
+}
+// entity 129
+{
+"classname" "func_static"
+"name" "atdm_latch_door_02_N_bracketB"
+"model" "models/darkmod/door_related/latch_door_02_bracket.ase"
+"origin" "149 536 -67"
+"rotation" "1 0 0 0 1 0 0 0 1"
+"bind" "atdm_mover_door_4"
+}
+// entity 130
+{
+"classname" "func_static"
+"name" "atdm_latch_door_02_N_bracketA"
+"model" "models/darkmod/door_related/latch_door_02_bracket.ase"
+"origin" "143 536 -67"
+"rotation" "1 0 0 0 1 0 0 0 1"
+"bind" "atdm_mover_door_4"
+}
+// entity 131
+{
+"classname" "func_static"
+"name" "atdm_latch_door_02_N_bracketD"
+"model" "models/darkmod/door_related/latch_door_02_bracket.ase"
+"origin" "169 536 -67"
+"rotation" "1 0 0 0 1 0 0 0 1"
+"bind" "atdm_mover_door_5"
+}
+// entity 132
+{
+"classname" "func_static"
+"name" "atdm_latch_door_02_N_bracketC"
+"model" "models/darkmod/door_related/latch_door_02_bracket.ase"
+"origin" "155 536 -67"
+"rotation" "1 0 0 0 1 0 0 0 1"
+"bind" "atdm_mover_door_5"
+}
+// entity 133
+{
+"classname" "atdm:latch_door_02"
+"name" "atdm_latch_door_02_N_lock"
+"origin" "160 534 -67"
+"rotation" "1 0 0 0 1 0 0 0 1"
+"target0" "atdm_mover_door_5"
+"target1" "atdm_mover_door_4"
+"bind" "atdm_mover_door_5"
+}
+// entity 134
+{
+"classname" "atdm:latch_door_01"
+"name" "atdm_latch_door_01_N_lock1"
+"origin" "648.008 385 -14.0077"
+"rotation" "0 -1 0 0 0 -1 1 0 0"
+"target0" "atdm_mover_door_8"
+}
+// entity 135
+{
+"classname" "func_static"
+"name" "atdm_latch_door_01_N_plateB1"
+"model" "models/darkmod/door_related/latch_door_01_plateB.ase"
+"origin" "648.008 389 -16.0077"
+"rotation" "0 -1 0 0 0 -1 1 0 0"
+"bind" "atdm_mover_door_8"
+}
+// entity 136
+{
+"classname" "func_static"
+"name" "atdm_latch_door_01_N_plateA1"
+"model" "models/darkmod/door_related/latch_door_01_plateA.ase"
+"origin" "648.008 376 -16.0077"
+"rotation" "0 -1 0 0 0 -1 1 0 0"
 }

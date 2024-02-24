@@ -20,7 +20,6 @@
       <keyValue key="name" value="atdm_latch_door_02_small_S_lock"/>
       <keyValue key="origin" value="191 -3 -39"/>
       <keyValue key="rotation" value="-1 0 0 0 -1 0 0 0 1"/>
-      <keyValue key="translate" value="-5 0 0"/>
     </keyValues>
     <layers>
       <layer id="0"/>

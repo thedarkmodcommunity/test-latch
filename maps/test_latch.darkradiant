@@ -1,18 +1,15 @@
 DarkRadiant Map Information File Version 2
 {
-	MapProperties
-	{
-		KeyValue { "EditTimeInSeconds" "10779" } 
-		KeyValue { "LastCameraAngle" "-12.6 349.6 0" } 
-		KeyValue { "LastCameraPosition" "808.096 177.426 -44.333" } 
-		KeyValue { "LastShaderClipboardMaterial" "textures/darkmod/_proto/proto" } 
-	}
 	MapEditTimings
 	{
-		TotalSecondsEdited { 10779 }
+		TotalSecondsEdited { 11570 }
 	}
-	SelectionSets
+	MapProperties
 	{
+		KeyValue { "EditTimeInSeconds" "11570" } 
+		KeyValue { "LastCameraAngle" "-16 263.4 0" } 
+		KeyValue { "LastCameraPosition" "176.969 3.5378 -42.7391" } 
+		KeyValue { "LastShaderClipboardMaterial" "textures/darkmod/_proto/proto" } 
 	}
 	Layers
 	{
@@ -199,7 +196,6 @@ DarkRadiant Map Information File Version 2
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
-		Node { 0 } // entity (func_static_3)
 		Node { 0 } // entity (atdm_mover_door_2)
 		Node { 0 } // brush (Brush)
 		Node { 0 } // entity (atdm_mover_door_3)
@@ -209,24 +205,17 @@ DarkRadiant Map Information File Version 2
 		Node { 0 } // entity (func_static_5)
 		Node { 0 } // entity (func_static_7)
 		Node { 0 } // entity (light_3)
-		Node { 0 } // entity (func_static_8)
 		Node { 0 } // entity (atdm_mover_door_4)
 		Node { 0 } // brush (Brush)
 		Node { 0 } // entity (atdm_mover_door_5)
 		Node { 0 } // brush (Brush)
-		Node { 0 } // entity (func_static_9)
-		Node { 0 } // entity (func_static_10)
-		Node { 0 } // entity (func_static_11)
-		Node { 0 } // entity (func_static_12)
 		Node { 0 } // entity (light_2)
 		Node { 0 } // entity (atdm_playertools_health_potion_2)
 		Node { 0 } // entity (atdm_playertools_health_potion_1)
 		Node { 0 } // entity (func_static_1)
 		Node { 0 } // entity (func_static_6)
-		Node { 0 } // entity (func_static_13)
 		Node { 0 } // entity (atdm_latch_door_02_1)
-		Node { 0 } // entity (atdm_latch_door_01_1)
-		Node { 0 } // entity (atdm_latch_door_02_2)
+		Node { 0 } // entity (angle_door_latch_02)
 		Node { 0 } // entity (atdm_mover_door_7)
 		Node { 0 } // brush (Brush)
 		Node { 0 } // entity (func_static_15)
@@ -239,11 +228,8 @@ DarkRadiant Map Information File Version 2
 		Node { 0 } // entity (atdm_latch_door_01_2)
 		Node { 0 } // entity (func_static_17)
 		Node { 0 } // entity (func_static_18)
-		Node { 0 } // entity (overhead_latch)
-		Node { 0 } // entity (func_static_19)
 		Node { 0 } // entity (atdm_mover_door_8)
 		Node { 0 } // brush (Brush)
-		Node { 0 } // entity (func_static_20)
 		Node { 0 } // entity (func_static_21)
 		Node { 0 } // entity (atdm_mover_door_9)
 		Node { 0 } // brush (Brush)
@@ -309,11 +295,24 @@ DarkRadiant Map Information File Version 2
 		Node { 0 } // entity (atdm_latch_door_02_small_E_bracketC)
 		Node { 0 } // entity (atdm_mover_door_sliding_1)
 		Node { 0 } // brush (Brush)
+		Node { 0 } // entity (closed_door_latch_01)
+		Node { 0 } // entity (atdm_latch_door_01_N_plateB)
+		Node { 0 } // entity (atdm_latch_door_01_N_plateA)
+		Node { 0 } // entity (atdm_latch_door_02_N_bracketB)
+		Node { 0 } // entity (atdm_latch_door_02_N_bracketA)
+		Node { 0 } // entity (atdm_latch_door_02_N_bracketD)
+		Node { 0 } // entity (atdm_latch_door_02_N_bracketC)
+		Node { 0 } // entity (atdm_latch_door_02_N_lock)
+		Node { 0 } // entity (atdm_latch_door_01_N_lock1)
+		Node { 0 } // entity (atdm_latch_door_01_N_plateB1)
+		Node { 0 } // entity (atdm_latch_door_01_N_plateA1)
 	}
 	SelectionGroups
 	{
 		SelectionGroup 2 { "" }
 		SelectionGroup 4 { "" }
+		SelectionGroup 5 { "" }
+		SelectionGroup 7 { "" }
 	}
 	SelectionGroupNodeMapping
 	{
@@ -391,9 +390,18 @@ DarkRadiant Map Information File Version 2
 		Node { ( 66 ) ( 2 ) } // entity (VineArrowsHard)
 		Node { ( 67 ) ( 2 ) } // entity (VineArrowsExpert)
 		Node { ( 68 ) ( 2 ) } // entity (atdm_location_settings_1)
-		Node { ( 132 ) ( 4 ) } // entity (atdm_latch_door_02_small_E_lock)
-		Node { ( 133 ) ( 4 ) } // entity (atdm_latch_door_02_small_E_bracketB)
-		Node { ( 134 ) ( 4 ) } // entity (atdm_latch_door_02_small_E_bracketA)
-		Node { ( 135 ) ( 4 ) } // entity (atdm_latch_door_02_small_E_bracketC)
+		Node { ( 121 ) ( 4 ) } // entity (atdm_latch_door_02_small_E_lock)
+		Node { ( 122 ) ( 4 ) } // entity (atdm_latch_door_02_small_E_bracketB)
+		Node { ( 123 ) ( 4 ) } // entity (atdm_latch_door_02_small_E_bracketA)
+		Node { ( 124 ) ( 4 ) } // entity (atdm_latch_door_02_small_E_bracketC)
+		Node { ( 126 ) ( 5 ) } // entity (closed_door_latch_01)
+		Node { ( 127 ) ( 5 ) } // entity (atdm_latch_door_01_N_plateB)
+		Node { ( 128 ) ( 5 ) } // entity (atdm_latch_door_01_N_plateA)
+		Node { ( 134 ) ( 7 ) } // entity (atdm_latch_door_01_N_lock1)
+		Node { ( 135 ) ( 7 ) } // entity (atdm_latch_door_01_N_plateB1)
+		Node { ( 136 ) ( 7 ) } // entity (atdm_latch_door_01_N_plateA1)
+	}
+	SelectionSets
+	{
 	}
 }
