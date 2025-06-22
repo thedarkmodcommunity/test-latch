@@ -8,6 +8,14 @@
 
 - updated prefabs with adjust latch_01 origins ([f82fb9a](https://github.com/thedarkmodcommunity/test-latch/commit/f82fb9a9b9bdb3d5f20ea6d5ddf3c8b2d115d542))
 
+## [0.5.2](https://github.com/thedarkmodcommunity/test-latch/compare/v0.5.1...v0.5.2) (2025-06-22)
+
+
+### Bug Fixes
+
+* [#25](https://github.com/thedarkmodcommunity/test-latch/issues/25) handle doors open at map start ([4414cc7](https://github.com/thedarkmodcommunity/test-latch/commit/4414cc71be1811d91738795563846cf0dd7e0062))
+* account for latches not bound to door ([832cf3a](https://github.com/thedarkmodcommunity/test-latch/commit/832cf3a717fe0bd968b0490b2e969e5c7fbb3dc8))
+
 ## [0.5.1](https://github.com/thedarkmodcommunity/test-latch/compare/v0.5.0...v0.5.1) (2024-02-17)
 
 
